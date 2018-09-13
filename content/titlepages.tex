@@ -1,4 +1,4 @@
-% !TEX root = ../thesis-example.tex
+% !TEX root = ../tesi.tex
 %
 % ------------------------------------  --> cover title page
 \begin{titlepage}
@@ -22,10 +22,9 @@
 	\centering
 
 	{\Large \thesisUniversity} \\[4mm]
-	\includegraphics[width=6cm]{gfx/Clean-Thesis-Logo} \\[2mm]
-	\textsf{\thesisUniversityDepartment} \\
-	\textsf{\thesisUniversityInstitute} \\
-	\textsf{\thesisUniversityGroup} \\
+	\includegraphics[width=4.5cm]{gfx/logo} \\[2mm]
+	\textsf{\large \thesisUniversityInstitute} \\
+	\textsf{\large \thesisUniversityDepartment} \\
 
 	\vfill
 	{\large \thesisSubject} \\[5mm]
@@ -35,31 +34,33 @@
 	\vfill
 	\begin{minipage}[t]{.27\textwidth}
 		\raggedleft
-		\textit{1. Reviewer}
+		\textit{Reviewer}
 	\end{minipage}
 	\hspace*{15pt}
 	\begin{minipage}[t]{.65\textwidth}
-		{\Large \thesisFirstReviewer} \\
-	  	{\small \thesisFirstReviewerDepartment} \\[-1mm]
-		{\small \thesisFirstReviewerUniversity}
-	\end{minipage} \\[5mm]
-	\begin{minipage}[t]{.27\textwidth}
-		\raggedleft
-		\textit{2. Reviewer}
-	\end{minipage}
-	\hspace*{15pt}
-	\begin{minipage}[t]{.65\textwidth}
-		{\Large \thesisSecondReviewer} \\
-	  	{\small \thesisSecondReviewerDepartment} \\[-1mm]
-		{\small \thesisSecondReviewerUniversity}
+		{\large \thesisReviewer}
+	  	% {\small \thesisReviewerDepartment} \\[-1mm]
+		% {\small \thesisReviewerUniversity}
 	\end{minipage} \\[10mm]
 	\begin{minipage}[t]{.27\textwidth}
 		\raggedleft
-		\textit{Supervisors}
+		\textit{Supervisor}
 	\end{minipage}
 	\hspace*{15pt}
 	\begin{minipage}[t]{.65\textwidth}
-		\thesisFirstSupervisor\ and \thesisSecondSupervisor
+		{\large \thesisFirstSupervisor} 
+		% {\small \thesisFirstSupervisorUniversity} \\[-1mm]
+	  	% {\small \thesisFirstSupervisorDepartment} 
+	\end{minipage} \\[5mm]
+	\begin{minipage}[t]{.27\textwidth}
+		\raggedleft
+		\textit{Co-supervisor}
+	\end{minipage}
+	\hspace*{15pt}
+	\begin{minipage}[t]{.65\textwidth}
+		{\large \thesisSecondSupervisor}
+		% {\small \thesisSecondSupervisorUniversity} \\[-1mm]
+	  	% {\small \thesisSecondSupervisorDepartment} 
 	\end{minipage} \\[10mm]
 
 	\thesisDate \\
@@ -75,12 +76,10 @@
 	\textbf{\thesisName} \\
 	\textit{\thesisTitle} \\
 	\thesisSubject, \thesisDate \\
-	Reviewers: \thesisFirstReviewer\ and \thesisSecondReviewer \\
+	Reviewer: \thesisReviewer\  \\
 	Supervisors: \thesisFirstSupervisor\ and \thesisSecondSupervisor \\[1.5em]
 	\textbf{\thesisUniversity} \\
-	\textit{\thesisUniversityGroup} \\
 	\thesisUniversityInstitute \\
 	\thesisUniversityDepartment \\
-	\thesisUniversityStreetAddress \\
-	\thesisUniversityPostalCode\ and \thesisUniversityCity
+	\thesisUniversityStreetAddress
 }

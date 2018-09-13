@@ -228,7 +228,7 @@
 % **************************************************
 % Load Packages
 % **************************************************
-% \RequirePackage{fixltx2e}			% packages provides fixes to LaTeX2e
+\RequirePackage{fixltx2e}			% packages provides fixes to LaTeX2e
 \RequirePackage{microtype}			% typographic tuning
 \RequirePackage{setspace}			% for line spacing, e.g. \onehalfspacing
 \RequirePackage[]{graphicx}			% graphics import features
@@ -278,12 +278,12 @@
 \RequirePackage[					% use biblatex for bibliography
 	backend=\cthesis@bibsys,		% 	- use biber backend (bibtex replacement) or bibtex
 	bibencoding=utf8,				% 	- use auto file encode
-	style=\cthesis@bibstyle,		% 	- use alphabetic (or numeric) bib style
+	style=nature,	            	% 	- use alphabetic (or numeric) bib style
 	natbib=true,					% 	- allow natbib commands
 	hyperref=true,					% 	- activate hyperref support
 	backref=true,					% 	- activate backrefs
 	isbn=false,						% 	- don't show isbn tags
-	url=false,						% 	- don't show url tags
+	url=true,						% 	- don't show url tags
 	doi=false,						% 	- don't show doi tags
 	urldate=long,					% 	- display type for dates
 	maxnames=3,%
