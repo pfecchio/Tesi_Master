@@ -22,8 +22,10 @@ Universe at the beginning of its life.
 \section{QCD: the theory of the Strong Interaction}
 \label{sec:1.1}
 
+
 In 1964 M. Gell-Mann and G. Zweig proposed independently a model that could explain the existence of
-the great variety of hadrons discovered in the 1950s and 1960s \cite{gellmann, zweig1, zweig2}. 
+the great variety of hadrons discovered in the 1950s and 1960s 
+\cite{gellmann, zweig1, zweig2}. 
 This model, known as the Static Quark Model, was based on the assumption that hadrons are not
 fundamental particles, but they are composed states of elementary constituents called quarks.
 In this way it was possible to explain the large number of particles observed and their properties,
@@ -45,7 +47,7 @@ The local invariance under $\mathrm{SU(3)}_{c}$ implies the existence of 8 massl
 mediators of the colour interaction, called gluons \cite{fr-gm-hl-gluons}.
 Therefore the QCD Lagrangian can be written as:
 \begin{equation}
-    \Lagr_{\mathrm{QCD}} = \bar{\psi_{i}}(i(\gamma^{\mu}D_{\mu})_{ij}-m\delta_{ij})\psi_{j} 
+    \Lagr_{\mathrm{QCD}} = \bar{\psi_{i}}(i(\gamma^{\mu}D_{\mu})_{ij}-m\,\delta_{ij})\psi_{j} 
     - \frac{1}{4}G^{a}_{\mu \nu} G^{\mu \nu}_{a}
 \end{equation}
 where the first term is related to quarks fields while the second is releted to gluons fields.
@@ -138,7 +140,7 @@ As a result, the QCD shows up its specific features, \textit{asymptotic freedom}
 
 Setting $\alpha_{s} = g^{2}_{s}/4\pi\ $ strong coupling constant can be written as \cite{pdg}:
 \begin{equation} \label{eq:alphastrong1}
-    \alpha_{s}(Q^{2}) = \frac{\alpha_{s}(\mu^{2})}{1 + \alpha_{s}(\mu^{2})(33 - 2 n_{f})
+    \alpha_{s}(Q^{2}) = \frac{\alpha_{s}(\mu^{2})}{1 + \alpha_{s}(\mu^{2})(33 - 2\,n_{f})
     \ln(Q^{2}/\mu^{2})}
 \end{equation}
 where $n_{f}\ $ is the number of quark families and $\mu\ $ is the renormalization scale of 
@@ -150,11 +152,11 @@ This behaviour of the QCD copuling constant has been confirmed by experimental r
 years as shown in Figure \ref{fig:alpharun}.
 The equation \ref{eq:alphastrong1} can be rewritten fixing the energy scale:
 \begin{equation} \label{eq:alphastrong2}
-    \alpha_{s}(Q^{2}) = \frac{12 \pi}{(33 - 2 n_{f})\ln(Q^{2}/\Lambda_{\mathrm{QCD}})}
+    \alpha_{s}(Q^{2}) = \frac{12 \pi}{(33 - 2\,n_{f})\ln(Q^{2}/\Lambda_{\mathrm{QCD}})}
 \end{equation}
 where $\Lambda_{\mathrm{QCD}}$ is the renormalization scale of QCD (typically $\approx 200$ MeV).
 
-\begin{figure}[]
+\begin{figure}
     \captionsetup{justification=centering}
     \centering
     \includegraphics[width=0.8\textwidth]{gfx/alpharun}
@@ -169,7 +171,7 @@ Therefore, is impossible to express the elements of the scattering matrix in ter
 expansion of the Strong copuling constant.
 In this regime it is still possible to evaluate the Green’s functions of the QCD Lagrangian
 on a space-time lattice with spacing a, as proposed in 1974 by Wilson \cite{lattice}.
-With this method, called lattice QCD (LQCD) is possible to extrapolate to the continuum 
+With this method, called lattice QCD (lQCD) is possible to extrapolate to the continuum 
 ($a \rightarrow 0$) and get results to be compared with the experiments.
 
 %
@@ -196,7 +198,7 @@ Figure \ref{fig:qgpdiagram} shows the phase diagram of the QCD matter predicted 
 the values of temperature $T$ and baryon chemical potential $(\mu_{B})$ which are accessible
 experimentally in high energy heavy ion collisions.
 
-\begin{figure}[]
+\begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{gfx/qgpphase}
 	\caption{Schematic representation of the nuclear matter phase diagram from \cite{qgpphase}. QGP refers to the Quark Gluon Plasma state, CFL (Colour-Flavour Locked) corresponds to the colour superconducting phase that is present in systems with high baryon chemical potential. The green arrows represent the phase space investigated by collider experiments at the Relativistic Heavy Ion Collider (RHIC) and at the LHC.}
@@ -247,6 +249,7 @@ Nowdays the two main hadron colliders active with an HIC program and dedicated e
 Relativistic Heavy Ion Collider (RHIC) at the Brookhaven National Laboratory (BNL) and the Large Hadron
 Collider (LHC) at CERN.
 
+%
 \subsection{The "Little Bang" at the LHC}
 \label{sec:1.3.1}
 
@@ -275,7 +278,7 @@ such as the total number of particles produced in the collision.
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.9\textwidth]{gfx/glauber}
+    \includegraphics[width=0.8\textwidth]{gfx/glauber}
 	\caption{Sketch of the longitudinal and transverse view of an heavy ion collision taken from \cite{glauber}. In the side view, the colliding nuclei are squeezed to represent the Lorentz boost contraction due to their momentum.}
 	\label{fig:glauber}
 \end{figure}
@@ -283,7 +286,7 @@ such as the total number of particles produced in the collision.
 Following the notation introduced in Figure \ref{fig:glauber} the nuclear overlap function for two colliding
 nuclei (A and B) can be written as:
 \begin{equation} \label{eq:overlap}
-    T_{AB}(\vec{b}) = \int T_{A}(\vec{s})\,T_{B}(\vec{s}-\vec{b}) \,d^{2}s
+    T_{AB}(\vec{b}) = \int T_{A}(\vec{s})\,T_{B}(\vec{s}-\vec{b}) \mathop{d^{2}s}
 \end{equation}
 and represents the probability of finding a nucleon in both the colliding nuclei inside the 
 overlap region in the transverse plane.
@@ -292,10 +295,298 @@ nuclei.
 They represent the probability of finding a nucleon in the unit transverse area located at 
 $\vec{s}\xspace$ given the probability per unit volume $\rho(\vec{s},z)$:
 \begin{equation} \label{eq:thickfunc}
-    T(\vec{s}) = \int \rho(\vec{s},z) \,dz.
+    T(\vec{s}) = \int \rho(\vec{s},z) \mathop{dz}.
+\end{equation}
+As assumed, binary only interactions between nucleons are considered and the interaction does not
+deflect the trajectory of the interacting nucleons.
+Therefore, each nucleons can participate in more than one binary collision. 
+The probability of having $n$ binary collisions between the nuclei A and B, having A and B nucleons
+respectively, can be computed using the binomial statistics:
+\begin{equation} \label{eq:ABprob}
+    P(n,\vec{b}) = \frac{AB!}{n! (AB-n)!}[T_{AB}(\vec{b})\sigma_{inel}]^{n} [1-T_{AB}(\vec{b})\sigma_{inel}]^{AB-n}.
+\end{equation}
+From this expression the total inelastic cross section is obtained as a function of the impact
+parameter integrating the double differential cross section for two colliding nuclei:
+\begin{equation} \label{eq:doublediff}
+    \frac{d^{2} \sigma^{AB}_{inel}(b)}{\mathop{db^{2}}} = \sum_{n=1}^{AB} P(n,b)
+    = 1 - [1-T_{AB}(\vec{b})\, \sigma_{inel}]^{AB}
+\end{equation}
+\begin{equation}
+    \sigma^{AB}_{inel}(b) = \int_{0}^{\infty} 2 \pi \, b \mathop{db} \,
+    [1 - [1-T_{AB}(\vec{b})\, \sigma_{inel}]^{AB}]
 \end{equation}
 
 
+From eq. \ref{eq:ABprob}, $\mathrm{N}_{coll}$ can be derived as a function of the impact parameter 
+summing all the possible numbers of collisions weighted by their own probability and using the
+definition of the mean of the binomial distribution:
+\begin{equation} \label{eq:ncoll}
+    \mathrm{N}_{coll}(b) = \sum_{n=1}^{AB} n\, P(n,b) \ = AB\, T_{AB}\, \sigma_{inel}.
+\end{equation}
+Similarly $\mathrm{N}_{part}$ can be obtained by integrating over $\vec{s}$ the contribution of the
+projectile nucleus and the contribution of the target nucleus as follow:
+\begin{equation} \label{eq:npart}
+    \mathrm{N}_{part}(b) = \int \mathop{d^{2}s} \, \bigl\{ A\, T_{A}(\vec{s})[1-(1- T_{B}(\vec{b}-\vec{s})\, \sigma_{inel})^{B}
+    ] + B\, T_{B}(\vec{b}-\vec{s}) [1-(1-T_{A}(\vec{s})\,\sigma_{inel})^{A}] \bigr\}
+\end{equation}
+In eq. \ref{eq:ncoll} and \ref{eq:npart}, $\vec{b}$ has been replaced with its norm as the direction 
+of the vector is relevant for polarised nuclei only.
 
+In spite of its simplicity, the Glauber Model allows to express $\mathrm{N}_{coll}$ and 
+$\mathrm{N}_{part}$ starting from $\rho(\vec{s})$ and $\sigma_{inel}$. The main limitation
+is the usage of continuous density functions that implies considering discrete physical quantities 
+as continuous.
 
-% Then, the probability of observing an interaction between two nucleons located in the overlap region is defined as the product of the nuclear overlap function and the total in- elastic cross section between two nucleons σinel. As already introduced, each nucleon does not deflect its trajectory after the interaction with another nucleons. As a consequence each nucleon can participate in more than one binary collision and the probability of having n binary collisions between the nuclei A and B, having A and B nucleons respectively, can be computed using the binomial statistics:
+%
+\subsection{Space time evolution of Heavy Ion collisions} \label{sec.1.3.2}
+
+When two ultrarelativistic atomic nuclei collide, high hadron density and high temperatures
+are produced in the impact region. 
+In these conditions a long lived and strongly interacting system is created.
+The evolution of such a system, as well as the characterisation of its properties, is very important
+to improve our understanding of the Strong interaction. Hence it is one of the main subject of 
+investigation of HI experiments.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{gfx/evolution}
+    \caption{Space-time representation of the evolution of the system created in a central Heavy Ion collision in the mid-rapidity region. The z direction is parallel to the beam line.}
+	\label{fig:evolution}
+\end{figure}
+
+The space-time evolution of the system (procede) in different phases.
+The current view on the evolution is summarized in Figure \ref{fig:evolution}.
+\begin{enumerate}
+    \item \textbf{\textit{t < 0} fm/\textit{c}:} the two atomic nuclei travel in the beam line. In modern accelerators
+        the nuclei are strongly Lorentz contracted in the beam line direction due to their (velocità)
+        vicina  aquella della luce (factor of 2700 at the LHC);
+
+    \item \textbf{\textit{t = 0} fm/\textit{c}:} collision time. The geometry of the collision can be described using the Glauber Model described in the previous section;
+
+    \item \textbf{\textit{0 < t}} $\, \pmb{\lesssim \, \text{\Large$ \tau_{0} $} \sim }$ \textbf{\textit{1} fm/\textit{c}:}
+            in the early collision stages hard processes (i.e. process with high transferred momentum $Q^{2}$) occur between
+            colliding partons. In this phase called \textit{pre–equilibrium}, all the particles with high mass or/and
+            high momentum are produced. In high energy collisions, as at the LHC, the nuclei constituent partons 
+            lose their energy in the mid-rapidity\footnote{The rapidity is defined, for a particle with four-momentum 
+            $p^{\mu} = (E,\vec{p})$, as $y = \frac{1}{2} \log \bigl( \frac{E+p_{z}}{E-p_{z}} \bigr) $, with $z$ parallel
+            to the beam direction.} region ($y\approx 0$) and then they escape at forward rapidities ($|y| \gg 0$). 
+            The escaping valence quarks bring the baryonic potential carried by the colliding nuclei at forward rapidity,
+            vanishing the baryon chemical potential at mid-rapidity.
+            The resulting system is an hot and dense medium. If the energy density is high enough, as at the LHC, a 
+            transition to the QGP state is expected.
+            After a short strong parton rescattering phase, the obtained droplet of QGP matter reaches the equilibrium
+            at his proper time $\tau_{0}$;
+            
+    \item \textbf{\textit{1}} $\, \pmb{\lesssim}$ \textbf{\textit{t}} $\, \pmb{\lesssim}$ \textbf{\textit{10} fm/\textit{c}:}
+            the QGP droplet reach the thermal equilibrium and collectively expands under the push of the thermal pressure
+            gradients generated at the system boundaries. Relativistic hydrodynamics models \cite{relhydro} are commonly 
+            used to describe the rapid expansion of the QGP matter, providing useful insights to interpret the 
+            experimental data.
+            As a consequence of the expantion, the system cools down and the energy density decreases, transing eventually
+            from the Quark Gluon Plasma phase and ordinary hadronic matter;
+
+    \item \textbf{\textit{10}} $\, \pmb{\lesssim}$ \textbf{\textit{t}} $\, \pmb{\lesssim}$ \textbf{\textit{15} fm/\textit{c}:}
+            the critical temperature between the two phases is reached. At this temperature the hadronization process
+            starts, leading the system into an interacting \textit{hadron resonance gas}. In this stage, the expansion
+            and the cooling of the system continue, meanwhile elastic and inelastic interactions among the hadrons
+            occour. 
+            When the energy density is decreased that much to not allowing inelastic interactions, the relative 
+            abundances of different particle species are fixed. The temperature at which the system stops to 
+            interact inelastically is called temperature of \textit{chemical freeze-out} T$_{ch}$. After the
+            \textit{chemical freeze-out} only elastic processes took place, varying the particles momentum.
+            When elestic interactions ends as well, the particles momentum spectra are fixed and this occours
+            at the temperature of \textit{kinetic freeze-out} T$_{kin}$;
+
+    \item \textbf{\textit{t}} $\, \pmb{\gtrsim}$ \textbf{\textit{15} fm/\textit{c}:} hadrons created in 
+            the collision escape the interaction region with no further interactions. This regime is 
+            also known as \textit{free hadron stream}.
+\end{enumerate}
+
+The particles produced in the collisions and escaped from the interaction region are detected by 
+the experimental apparata carrying informations about the environment in 
+which they have been produced and about the medium in which thay have travelled. 
+In the following it will be shown how properties of the systems and characteristics of its 
+evolution can be inferred by the measurement of particle production spectra and particle correlations.
+
+%
+%
+\section{Nuclei production in Heavy Ion collisions} \label{sec:1.4}
+
+The main subject of this thesis is the study of the \dst dibaryon production at the LHC energies.
+Except for the deuteron, dibaryons are little known objects. In the next chapter, more details
+on what dibaryons are and what our understanding is about dibaryons, will be provided. 
+
+The (anti-)nuclei are loosely bound objects and it is not trivial how they can emerge from Heavy 
+Ion collisions. 
+The following sections are dedicated to a brief description of the major two classes of models
+that try to explain the nuclei and anti–nuclei production in HI collisions: the Statistical 
+Hadronisation Models (SHMs) and the Coalescence model \cite{deuprod}.
+Dibaryons and in particular \dst \ \ -- which can be considered as an excited deuteron -- \ should 
+be subject of same production mechanisms as for (anti-)nuclei.
+
+%
+\subsection{Statistical Hadronisation Models} \label{sec:1.4.1}
+
+The Statistical Hadronisation Models (also known as Thermal Models) was successfully developed
+in order to describe the abundances of different particle species produced in the collision 
+between particles.
+
+The general idea behind these models is that the final state of the interaction is composed by
+all the particle states compatible with the conservation laws imposed by the underlying theory 
+of interaction (in our case the Standard Model of particle physics). 
+The relative abundance of different particle states is set by the maximisation of the total phase
+space filled by the system, to which each particle species contributes according to its partition 
+function. These models are of particular interest in HI collisions as the presence of an expanding 
+medium that eventually reaches the thermal equilibrium seems appropriate for the statistical
+hadronisation approach. 
+
+The system created in a relativistic HIC is large enough to be modelled using the Grand Canonical
+ensemble. 
+This formalism can be used as the central rapidity region is in equilibrium with a thermal reservoir 
+(the rest of the medium created in a HI collision) and quantities like energy, baryon number, 
+charge and isospin are conserved on average. Most of the barrel experiments (as for ALICE central
+detectors) measure only this part of the phase space, hence the use of the Grand Canonical formalism 
+is allowed.
+Within this formalism the parameters describing the equilibrium condition of a HIC
+include the temperature T and the baryon chemical potential $\mu_{B}$. On this basis 
+the partition function of the system can be written as:
+\begin{equation} \label{eq:partfunction}
+    Z(T,V,\mu) = \Tr \Big[ e^{-\beta(H-\Sigma_{i}Q_{i}\mu_{i})} \Big]
+\end{equation}
+with
+\begin{equation}
+    \mu = \sum_{i} Q_{i} \mu_{Q_{i}} \ \ \ \mathrm{and} \ \ \ \beta = \frac{1}{T}
+\end{equation}
+where $V$ is the volume of the system at equilibrium, $H$ is the
+Hamiltonian and $\mu_{Q_{i}}$ is the chemical potential associated to the conserved quantum number
+$Q_{i}$.
+For a strongly interacting medium, the main conserved quantum numbers are the electric charge $Q$,
+the strangeness content of the system $S$ and the baryon number $B$.
+The Hamiltonian $H$ in the partition function is that one of a Hadron Resonance Gas since it is able 
+to describe the behaviour of a strongly interacting medium reproducing over a wide temperature range
+the equation of state obtained with lQCD calculations before the transition to a deconfined state.
+The choice of the mesonic, baryonic and resonance states included in the Hamiltonian depends on the
+implementation of the model and it determines the maximum temperature that can be described accurately.
+
+The partition function of the system is the product of the contribution of all the particle states
+in the Hadron Resonance Gas:
+\begin{equation} \label{eq:partfuncprod}
+    Z(T,V,\mu) = \prod_{i} Z_{i}(T,V,\mu_{i}) \ \ \ \rightarrow \ \ \ 
+    \log Z(T,V,\mu) = \sum_{i} \log Z_{i}(T,V,\mu_{i}).
+\end{equation}
+The partition functions are defined by the spin–statistics theorem:
+\begin{equation} \label{eq:partfuncspin}
+    \log Z_{i}(T,V,\mu_{i}) = \frac{V g_{i}}{2 \pi^{2}} \int_{0}^{\infty}\
+     \pm p^{2} \mathop{dp} \, \log \Big[1\pm \lambda_{i}(T,\mu_{i})e^{- \beta \epsilon_{i}} \Big]
+\end{equation}
+Bose-Einstein distribution for bosons ($+$) and Fermi-Dirac distribution for fermions ($-$).
+The $g_{i}$ constant is the degeneracy state $i$ and $\epsilon_{i}$ is the energy of one 
+particle of the species $i$ with momentum $p (\epsilon_{i} = \sqrt{p^{2} + m_{i}^{2}})$.
+The dependence on the chemical potentials is encoded within the \textit{fugacity}
+$\lambda_{i}$:
+\begin{equation} \label{eq:fugacity}
+    \lambda_{i}(T,\mu_{i}) = e^{\beta(B_{i}\mu_{B} + S_{i}\mu_{S} + Q_{i}\mu_{Q})}
+    = e^{\beta \mu_{i}}
+\end{equation}
+where $B_{i}$, $S_{i}$ and $Q_{i}$ are the baryon number,strangeness content and electric
+charge associated with the particle species and $\mu_{B}$ , $\mu_{S}$ and $\mu_{Q}$ are the 
+respective chemical potentials. As described in \cite{pbmstat}, expanding the logarithm and
+integrating over the momentum, the partition function for the species $i$ becomes:
+\begin{equation}
+    \log Z_{i}(T,V,\mu_{i}) = \frac{V T g_{i}}{2 \pi^{2}}
+    \sum_{k=1}^{\infty} \frac{(\pm 1)^{k+1}}{k^{2}} \lambda^{k}_{i} m_{i}^{2} K_{2}(\beta k m_{i})
+\end{equation}
+where the ($+$) is for bosons, the ($-$) for fermions and the $K_{2}$ is the second 
+kind modified Bessel function of second order.
+
+The average number of particle for the species $i$ for a system described by the Gran
+Canonical ensemble, is defined as:
+\begin{equation} \label{eq:particleyields1}
+    \langle N_{i} \rangle ^{th} (T,V,\mu_{i}) = \frac{1}{\beta} \frac{\partial}{\partial \mu_{i}}
+    \log Z_{i}(T,V,\mu_{i})
+    \frac{V T g_{i}}{2 \pi^{2}}
+    \sum_{k=1}^{\infty} \frac{(\pm 1)^{k+1}}{k} \lambda^{k}_{i} m_{i}^{2} K_{2}(\beta k m_{i}).
+\end{equation}
+This equation does not fully describe the particle abundances measured in HI callisions.
+For the measured yields one should consider the feed–down contributions from all the other
+particle species (resonances) $j$ in the thermal system that can decay strongly in a final
+state containing particles of the species $i$:
+\begin{equation} \label{eq:particleyields2}
+    \langle N_{i} \rangle ^{th} (T,V,\mu) = \langle N_{i} \rangle ^{th} (T,V,\mu_{i})
+    + \sum_{j} \Gamma_{j \to i} \langle N_{j} \rangle ^{th} (T,V,\mu_{j})
+\end{equation}
+where $\Gamma_{j \to i}$ is the decay rate of the state $j$ into the final state $i$.
+
+The definition of particle yields is valid in the limit of a low density system, 
+where the repulsion interaction between the hadrons constituting the systems is negligible.
+The treatment of these interactions is still matter of active theoretical research. Nevertheless 
+Eq \ref{eq:particleyields2} and \ref{eq:particleyields1} already indicate the crucial 
+dependencies of the observed particle yields on the
+temperature $T$, volume $V$ and the chemical potentials $\mu_B$, $\mu_Q$ and $\mu_S$.
+
+Heavy Ions collisions no net strangeness is present in the colliding nuclei, thus 
+$\mu_S = 0$, and $\mu_Q$ is fixed by the isospin asymmetry in the collision.
+Therefore two of the five parameters of the model are constrained by the collisions
+conditions.
+The baryon chemical potential $\mu_B$ is not constrained as the "amount of baryonic number"
+transported in the equilibrium region depends on the energy of the collision.
+The dependence on the volume $V$ of the system can be removed looking at ratio between 
+the yields of different particle species, which therefore depends only on the temperature 
+of the system and on the baryon chemical potential.
+\begin{figure} 
+    \centering
+    \includegraphics[width=0.7\textwidth]{gfx/yields}
+    \caption{Thermal model predictions for the production of various nuclei, anti-nuclei and hyper–nuclei as a function of the ion collision energy taken from \cite{yields}. At low collision energy the baryon chemical potential differs significantly from zero and the particle yield favours matter over anti–matter. As the energy increases, $\mu_{B}$ decreases and this difference vanishes.
+}
+\label{fig:aliceyields}
+\end{figure}
+In the framework of the thermal models, light nuclei yields arise naturally when the chemical 
+freeze–out temperature and the baryon chemical potential are set.
+A possible explanation on how the light nuclei can survive to the high temperature of the chemical 
+freeze–out was pointed out in \cite{yields}: as the system expansion after the chemical freeze–out
+is supposed to conserve the entropy density, such conservation could be the steering mechanism for 
+the nuclei production. From the fit of the particle abundances at lower energies, the 
+authors of \cite{yields} predicted, using the thermal model, the yields of (hyper-)(anti-)nuclei 
+at the LHC energy \ref{fig:aliceyields}.
+
+%
+\subsection{Coalescence Models} \label{sec:1.4.2}
+
+Coalescence models \cite{deuprod} represent a different theoretical approach developed to explain 
+the measured light nuclei production in Heavy Ions collisions. 
+These models address the problem guessing that light nuclei are created at the kinetic freeze-out. 
+They are static models and there is no attempt to give a detailed description of the 
+interactions that lead to their formation.
+The fundamental idea behind these predictions is that if nuclei constituents are close enough in 
+phase space at the kinematic freeze-out they can bind to form a nucleus. 
+The coalescence models make a prediction about the momentum distribution of the produced light 
+nuclei as a function of the production spectra of the constituents.
+
+The first coalescence model was developed to describe the deuteron formation in
+proton-nucleus collisions in 1961, in the following years has been extended to 
+the production of various light nuclei in nucleus-nucleus collisions.
+The momentum spectrum for the $i$ species related is linked to the proton momentum spectrum,
+which is used as a proxy of the constituent spectrum, by the following equation:
+\begin{equation}
+    E_{i} \frac{d^{3}N_{i}}{\mathop{dp_{i}^{3}}} = B_{A} \Big( E_{p} \frac{d^{3}N_{p}}{\mathop{dp_{p}^{3}}} \Big)^{A}.
+\end{equation}
+The proton spectrum is assumed to be identical to that one of the constituent neutron.
+One of the main reasons behind this generalization is that proton spectra are easier to measure
+in an experiment.
+These nucleon spectra are not those measured in the experiments, but the ones produced in the 
+collision and not yet modified by the coalescence mechanism.
+The coalescence parameter $B_{A}$ is interpreted as a function of the radius $p_{0}$, that 
+is the maximum distance at which coalescence can happen.
+In the simplest formulation of the coalescence models only the momentum space is considered
+(not the space-time), thus the coalescence parameter can be expressed neglecting the spin:
+\begin{equation} 
+    B_{A} = \Big( \frac{4}{3}\, \pi \,p_{0}^3 \Big)^{A-1} \frac{m_{i}}{m_{p}^{A}}.
+\end{equation}
+where $p_{0}$ is the aforementioned radius and $m_{i}$ and $m_{p}$ are the nucleus and proton
+mass, respectively.
+
+More sophisticated versions of this model predict a dependence on the geometry of the system
+and rely on different constituents momentum spectra and different formulation of 
+the coalescence parameter $B_{A}$. Nevertheless, thanks to its simplicity and the presence
+of just one parameter $p_{0}$, the most commonly used for the comparison with the data is
+the simple model briefly shown above.

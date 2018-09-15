@@ -1732,5 +1732,158 @@
     \field{eprintclass}{nucl-ex}
     \field{year}{2007}
   \endentry
+
+  \entry{relhydro}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GC}{%
+         family={Gale},
+         familyi={G\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jeon},
+         familyi={J\bibinitperiod},
+         given={Sangyong},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Schenke},
+         familyi={S\bibinitperiod},
+         given={Björn},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GC+1}
+    \strng{fullhash}{GCJSSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1142/S0217751X13400113
+    \endverb
+    \field{number}{11}
+    \field{pages}{1340011}
+    \field{title}{Hydrodynamic Modelling og Heavy-Hion Collisions}
+    \field{volume}{28}
+    \field{journaltitle}{International Journal of Modern Physics A}
+    \field{year}{2013}
+  \endentry
+
+  \entry{deuprod}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KJI}{%
+         family={Kapusta},
+         familyi={K\bibinitperiod},
+         given={Joseph\bibnamedelima I.},
+         giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{KJI1}
+    \strng{fullhash}{KJI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevC.21.1301
+    \endverb
+    \field{issue}{4}
+    \field{pages}{1301\bibrangedash 1310}
+    \field{title}{Mechanisms for deuteron production in relativistic nuclear
+  collisions}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevC.21.1301
+    \endverb
+    \field{volume}{21}
+    \field{journaltitle}{Physical Review C}
+    \field{year}{1980}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{pbmstat}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BMP}{%
+         family={Braun-Munzinger},
+         familyi={B\bibinitperiod-M\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RK}{%
+         family={Redlich},
+         familyi={R\bibinitperiod},
+         given={Krzysztof},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Stachel},
+         familyi={S\bibinitperiod},
+         given={Johanna},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMP+1}
+    \strng{fullhash}{BMPRKSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1142/9789812795533_0008
+    \endverb
+    \verb{eprint}
+    \verb nucl-th/0304013
+    \endverb
+    \field{pages}{491\bibrangedash 599}
+    \field{title}{{Particle production in heavy ion collisions}}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{nucl-th}
+    \field{year}{2003}
+  \endentry
+
+  \entry{yields}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AA}{%
+         family={Andronic},
+         familyi={A\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BMP}{%
+         family={Braun-Munzinger},
+         familyi={B\bibinitperiod-M\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Stachel},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Stocker},
+         familyi={S\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AA+1}
+    \strng{fullhash}{AABMPSJSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.physletb.2011.01.053
+    \endverb
+    \verb{eprint}
+    \verb 1010.2995
+    \endverb
+    \field{pages}{203\bibrangedash 207}
+    \field{title}{{Production of light nuclei, hypernuclei and their
+  antiparticles in relativistic nuclear collisions}}
+    \field{volume}{B697}
+    \field{journaltitle}{Physical Letters}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{nucl-th}
+    \field{year}{2011}
+  \endentry
 \endsortlist
 \endinput

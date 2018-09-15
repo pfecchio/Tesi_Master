@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.31)  13 SEP 2018 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.31)  16 SEP 2018 00:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/pietro/cernbox/docu/tesi/project_tesi/tesi.tex
-(/Users/pietro/cernbox/docu/tesi/project_tesi/tesi.tex
+**/Users/pietro/cernbox/docu/tesi/Tesi_Master/tesi.tex
+(/Users/pietro/cernbox/docu/tesi/Tesi_Master/tesi.tex
 LaTeX2e <2017/01/01> patch level 1
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/scrreprt.cls
@@ -136,6 +136,57 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box28
 LaTeX Info: Redefining \\ on input line 3056.
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/feynmp-auto/feynmp-auto.sty
+Package: feynmp-auto 2013/05/03 v1.1 Automatic processing of feynmp graphics
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/feynmf/feynmp.sty
+Package: feynmp 1996/12/02 v1.08 LaTeX/MetaPost Feynman Diagram Package (ohl)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count96
+))
+\@outfmf=\write3
+\fmfbuf@=\toks16
+\c@fmfgraph=\count97
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip56
@@ -146,7 +197,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
+\@emptytoks=\toks17
 \ex@=\dimen108
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -156,13 +207,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count96
+\inf@bad=\count98
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count97
-\leftroot@=\count98
+\uproot@=\count99
+\leftroot@=\count100
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count99
-\DOTSCASE@=\count100
+\classnum@=\count101
+\DOTSCASE@=\count102
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -171,33 +222,46 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen110
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count101
-\c@MaxMatrixCols=\count102
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
 \dotsspace@=\muskip10
-\c@parentequation=\count103
-\dspbrk@lvl=\count104
-\tag@help=\toks17
-\row@=\count105
-\column@=\count106
-\maxfields@=\count107
-\andhelp@=\toks18
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks18
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks19
 \eqnshift@=\dimen111
 \alignsep@=\dimen112
 \tagshift@=\dimen113
 \tagwidth@=\dimen114
 \totwidth@=\dimen115
 \lineht@=\dimen116
-\@envbody=\toks19
+\@envbody=\toks20
 \multlinegap=\skip57
 \multlinetaggap=\skip58
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
@@ -516,63 +580,12 @@ Language: english 2017/01/24 v3.3q English support from the babel system
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
-\babel@savecnt=\count108
+\babel@savecnt=\count110
 \U@D=\dimen117
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/feynmp-auto/feynmp-auto.sty
-Package: feynmp-auto 2013/05/03 v1.1 Automatic processing of feynmp graphics
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/feynmf/feynmp.sty
-Package: feynmp 1996/12/02 v1.08 LaTeX/MetaPost Feynman Diagram Package (ohl)
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count109
-))
-\@outfmf=\write3
-\fmfbuf@=\toks23
-\c@fmfgraph=\count110
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
 ))
 (./cleanthesis.sty
 Package: cleanthesis 2015/08/26 v0.3.1 Clean-looking thesis style inspired by A
@@ -1397,14 +1410,14 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 117.
+(hyperref)                removing `superscript' on input line 122.
 
-Package hyperref Info: Option `plainpages' set `false' on input line 117.
-Package hyperref Info: Option `colorlinks' set `false' on input line 117.
-Package hyperref Info: Option `breaklinks' set `true' on input line 117.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 117.
+Package hyperref Info: Option `plainpages' set `false' on input line 122.
+Package hyperref Info: Option `colorlinks' set `false' on input line 122.
+Package hyperref Info: Option `breaklinks' set `true' on input line 122.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 122.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 117.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 122.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1413,28 +1426,28 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 (./tesi.aux)
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 127.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Try loading font information for T1+bch on input line 122.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Try loading font information for T1+bch on input line 127.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
@@ -1469,7 +1482,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 122.
+LaTeX Info: Redefining \microtypecontext on input line 127.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1485,7 +1498,7 @@ File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 
 )
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 122.
+Package hyperref Info: Link coloring OFF on input line 127.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1495,9 +1508,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count349
 )
-LaTeX Info: Redefining \ref on input line 122.
-LaTeX Info: Redefining \pageref on input line 122.
-LaTeX Info: Redefining \nameref on input line 122.
+LaTeX Info: Redefining \ref on input line 127.
+LaTeX Info: Redefining \pageref on input line 127.
+LaTeX Info: Redefining \nameref on input line 127.
 
 (./tesi.out) (./tesi.out)
 \@outlinefile=\write6
@@ -1582,11 +1595,16 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'csp':
 (biblatex)                - Invalid format of field 'month'.
 
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'deuprod':
+(biblatex)                - Invalid format of field 'month'.
+
 )
-Package biblatex Info: Reference section=0 on input line 122.
-Package biblatex Info: Reference segment=0 on input line 122.
-Package scrbase Info: activating english \figurename on input line 127.
-Package scrbase Info: activating english \tablename on input line 128.
+Package biblatex Info: Reference section=0 on input line 127.
+Package biblatex Info: Reference segment=0 on input line 127.
+Package scrbase Info: activating english \figurename on input line 132.
+Package scrbase Info: activating english \tablename on input line 133.
  (./content/ch1-HENP.tex
 chapter 1.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 3.
@@ -1642,6 +1660,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 8.
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
 LaTeX Font Info:    Try loading font information for T1+qhv on input line 22.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
@@ -1661,13 +1695,13 @@ Package microtype Info: Loading generic settings for font family
 File: 2gluoni1quark.1 Graphic file (type mps)
  [MP to PDF]
 (./2gluoni1quark.1) (./2gluoni1quark.t1)
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 79.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 81.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 79.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 81.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1684,31 +1718,23 @@ File: 4gluoni.1 Graphic file (type mps)
 Underfull \vbox (badness 5431) has occurred while \output is active []
 
  [2]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 157.
-
-<gfx/alpharun.png, id=68, 1057.9525pt x 680.5425pt>
+<gfx/alpharun.png, id=84, 1057.9525pt x 680.5425pt>
 File: gfx/alpharun.png Graphic file (type png)
  <use gfx/alpharun.png>
-Package pdftex.def Info: gfx/alpharun.png used on input line 160.
+Package pdftex.def Info: gfx/alpharun.png used on input line 162.
 (pdftex.def)             Requested size: 316.36266pt x 203.49973pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 161.
+(Font)              <10> on input line 163.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 161.
+(Font)              <7> on input line 163.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 161.
+(Font)              <5> on input line 163.
 
-[3]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 199.
-
-<gfx/qgpphase.jpg, id=83, 192.67181pt x 175.32703pt>
+[3] <gfx/qgpphase.jpg, id=99, 192.67181pt x 175.32703pt>
 File: gfx/qgpphase.jpg Graphic file (type jpg)
- <use gfx/qgpphase.jpg>
-Package pdftex.def Info: gfx/qgpphase.jpg used on input line 201.
+
+<use gfx/qgpphase.jpg>
+Package pdftex.def Info: gfx/qgpphase.jpg used on input line 203.
 (pdftex.def)             Requested size: 237.2735pt x 215.92917pt.
 
 Underfull \vbox (badness 7504) has occurred while \output is active []
@@ -1717,83 +1743,129 @@ Underfull \vbox (badness 7504) has occurred while \output is active []
 Underfull \vbox (badness 5050) has occurred while \output is active []
 
  [5 <./gfx/qgpphase.jpg>]
-LaTeX Font Info:    Try loading font information for TS1+bch on input line 260.
+LaTeX Font Info:    Try loading font information for TS1+bch on input line 263.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
-[6] <gfx/glauber.png, id=108, 1219.55624pt x 680.5425pt>
+[6] <gfx/glauber.png, id=124, 1219.55624pt x 680.5425pt>
 File: gfx/glauber.png Graphic file (type png)
  <use gfx/glauber.png>
-Package pdftex.def Info: gfx/glauber.png used on input line 278.
-(pdftex.def)             Requested size: 355.9042pt x 198.59837pt.
-) [7 <./gfx/glauber.png>] [8
+Package pdftex.def Info: gfx/glauber.png used on input line 281.
+(pdftex.def)             Requested size: 316.36266pt x 176.53189pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [7 <./gfx/glauber.png>]
+Overfull \hbox (7.98242pt too wide) detected at line 331
+[]\OT1/lmr/m/n/10.95 N[](\OML/lmm/m/it/10.95 b\OT1/lmr/m/n/10.95 ) = [] [] []\O
+ML/lmm/m/it/10.95 A T[]\OT1/lmr/m/n/10.95 ([])[1 \OMS/lmsy/m/n/10.95 ^^@ \OT1/l
+mr/m/n/10.95 (1 \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 T[]\OT1/lmr/m/n/10.
+95 ([] \OMS/lmsy/m/n/10.95 ^^@ []\OT1/lmr/m/n/10.95 ) \OML/lmm/m/it/10.95 ^^[[]
+\OT1/lmr/m/n/10.95 )[]] + \OML/lmm/m/it/10.95 B T[]\OT1/lmr/m/n/10.95 ([] \OMS/
+lmsy/m/n/10.95 ^^@ []\OT1/lmr/m/n/10.95 )[1 \OMS/lmsy/m/n/10.95 ^^@ \OT1/lmr/m/
+n/10.95 (1 \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 T[]\OT1/lmr/m/n/10.95 ([
+]) \OML/lmm/m/it/10.95 ^^[[]\OT1/lmr/m/n/10.95 )[]][]
+ []
+
+<gfx/evolution.png, id=141, 954.56625pt x 669.50125pt>
+File: gfx/evolution.png Graphic file (type png)
+ <use gfx/evolution.png>
+Package pdftex.def Info: gfx/evolution.png used on input line 352.
+(pdftex.def)             Requested size: 355.9042pt x 249.61171pt.
+
+[8]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 366.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 372.
+ [9 <./gfx/evolution.png>]
+Underfull \vbox (badness 1253) has occurred while \output is active []
+
+ [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+[12] <gfx/yields.png, id=206, 754.82pt x 674.52pt>
+File: gfx/yields.png Graphic file (type png)
+ <use gfx/yields.png>
+Package pdftex.def Info: gfx/yields.png used on input line 538.
+(pdftex.def)             Requested size: 276.81505pt x 247.36594pt.
+
+[13 <./gfx/yields.png>]) [14]
 chapter without number
 
-Package biblatex Warning: Type 'online' not found on input line 171.
+Package biblatex Warning: Type 'online' not found on input line 176.
 
 
 Package biblatex Warning: prefixnumbers option to \printbibliography is no long
 er supported, use 'labelprefix' option to \newrefcontext.
 
 
-LaTeX Warning: Empty bibliography on input line 171.
+LaTeX Warning: Empty bibliography on input line 176.
 
-[9
+[15
 
 
-] [10
+
+
+] [16
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
  (./tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 145A6CCD382E9D733427091E538A9948;420.
+(rerunfilecheck)             Checksum: F4DD92DC8D3534C7787765A648BB748B;763.
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
  ) 
 Here is how much of TeX's memory you used:
- 22525 strings out of 493013
- 373014 string characters out of 6133343
- 946656 words of memory out of 5000000
- 25452 multiletter control sequences out of 15000+600000
- 96348 words of font info for 189 fonts, out of 8000000 for 9000
+ 23106 strings out of 493013
+ 380611 string characters out of 6133343
+ 949050 words of memory out of 5000000
+ 25902 multiletter control sequences out of 15000+600000
+ 122964 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,12n,106p,8860b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/lo
+ 65i,13n,106p,8859b,1932s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
 cal/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texliv
-e/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2016/texmf-d
-ist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2016/texmf-dist/fonts/
-enc/dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips
-/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<
+e/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-d
+ist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/d
+vips/lm/lm-mathex.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm
+-ec.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}<
 /usr/local/texlive/2016/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/lm/lmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/lm/lmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/urw/bookman/ubkli8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvr8a.pfb>
-Output written on tesi.pdf (10 pages, 1506705 bytes).
+r/local/texlive/2016/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/lm/lmmi5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/lm/lmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi7
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/lm/lmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmssbx
+10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/urw/bookman/ubkli8a.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/urw/helvetic/uhvr8a.pfb>
+Output written on tesi.pdf (16 pages, 2103622 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 28736 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 35434 words of extra memory for PDF output out of 35830 (max. 10000000)
 
