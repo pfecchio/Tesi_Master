@@ -1,4 +1,4 @@
-% 4gluoni.mp -- do not edit, generated automatically by tesi.tex
+% 4gluoni.mp -- do not edit, generated automatically by main.tex
 input feynmp
 require_RCS_revision "1.30";
 beginchar(1, 80*1.0pt#, 60*1.0pt#, 0);
