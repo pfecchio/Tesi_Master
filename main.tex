@@ -50,9 +50,15 @@
 
 % **************************************************
 % Package for Custom COMMAND
+
 \usepackage{xspace}
 \usepackage{lineno}
+\usepackage{feynmp-auto}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{relsize}
+\usepackage{tabularx}
+\usepackage{booktabs}
 
 % **************************************************
 % Custom COMMAND
@@ -83,13 +89,15 @@
 \newcommand{\Mmass}  {\mbox{\ensuremath{\mathrm{MeV}/c^{2}}}\xspace}
 
 \newcommand{\Lagr}{\mathcal{L}}
+\newcommand{\boldm}[1] {\mathversion{bold}#1\mathversion{normal}}
+
+\DeclareMathOperator{\Tr}{Tr}
 
 % **************************************************
 % Load and Configure Packages
 % **************************************************
 \usepackage[utf8]{inputenc}		% defines file's character encoding
 \usepackage[english]{babel}		% babel system, adjust the language of the content
-\usepackage{feynmp-auto}
 
 \usepackage[					% clean thesis style
 	figuresep=colon,%
@@ -154,7 +162,7 @@
 \pagestyle{maincontentstyle} 	% fancy header and footer
 
 \input{content/ch1-HENP}		% INCLUDE: introduction on HENP
-% \input{content/chapter-related-work} % INCLUDE: related work
+%\input{content/ch2-ALICE}		% INCLUDE: ALICE chapter
 % \input{content/chapter-system}		% INCLUDE: system
 % \input{content/chapter-concepts} 		% INCLUDE: concepts
 % \input{content/chapter-conclusion} 	% INCLUDE: conclusion
