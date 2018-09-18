@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.31)  17 SEP 2018 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.31)  17 SEP 2018 23:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1603,48 +1603,12 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'gellmann':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'fritzsch-gellmann':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'fr-gm-hl-gluons':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'pdg':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'lattice':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'csp':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'deuprod':
-(biblatex)                - Invalid format of field 'month'.
-
-)
+(./main.bbl)
 Package biblatex Info: Reference section=0 on input line 130.
 Package biblatex Info: Reference segment=0 on input line 130.
 Package scrbase Info: activating english \figurename on input line 135.
 Package scrbase Info: activating english \tablename on input line 136.
- (./content/ch1-HENP.tex
+ (./content/ch2-ALICE.tex
 chapter 1.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 3.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
@@ -1654,22 +1618,22 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for T1+pbk on input line 8.
+LaTeX Font Info:    Try loading font information for T1+pbk on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pbk.fd
 File: t1pbk.fd 2001/06/04 font definitions for T1/pbk.
 )
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <11> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 8.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 9.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `pbk' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <75> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 8.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <75> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 8.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 8.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 9.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1678,28 +1642,28 @@ File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 8.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 8.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 8.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 8.
+(Font)              <10.95> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 8.
+(Font)              <8> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 8.
-LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+(Font)              <6> on input line 9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1707,7 +1671,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1724,115 +1688,83 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `qhv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [1
 
-
-
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout3 = `2gluoni1quark.mp'.
-
-File: 2gluoni1quark.1 Graphic file (type mps)
- [MP to PDF]
-(./2gluoni1quark.1) (./2gluoni1quark.t1)
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 78.
+<gfx/lhc.png, id=32, 865.2325pt x 696.6025pt>
+File: gfx/lhc.png Graphic file (type png)
+ <use gfx/lhc.png>
+Package pdftex.def Info: gfx/lhc.png used on input line 29.
+(pdftex.def)             Requested size: 316.36266pt x 254.69891pt.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 30.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 78.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 30.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\openout3 = `3gluoni.mp'.
+ [1
 
-File: 3gluoni.1 Graphic file (type mps)
- [MP to PDF]
-(./3gluoni.1) (./3gluoni.t1)
-\openout3 = `4gluoni.mp'.
 
-File: 4gluoni.1 Graphic file (type mps)
- [MP to PDF] (./4gluoni.1) (./4gluoni.t1)
-Underfull \vbox (badness 5431) has occurred while \output is active []
 
- [2]
-<gfx/alpharun.png, id=84, 1057.9525pt x 680.5425pt>
-File: gfx/alpharun.png Graphic file (type png)
- <use gfx/alpharun.png>
-Package pdftex.def Info: gfx/alpharun.png used on input line 159.
-(pdftex.def)             Requested size: 316.36266pt x 203.49973pt.
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \vbox (badness 3872) has occurred while \output is active []
+
+ [2 <./gfx/lhc.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 160.
+(Font)              <9> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 160.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 160.
+(Font)              <5> on input line 75.
+ <gfx/alicelumi.png, id=68, 1927.2pt x 1619.04875pt>
+File: gfx/alicelumi.png Graphic file (type png)
 
-[3] <gfx/qgpphase.jpg, id=99, 192.67181pt x 175.32703pt>
-File: gfx/qgpphase.jpg Graphic file (type jpg)
-
-<use gfx/qgpphase.jpg>
-Package pdftex.def Info: gfx/qgpphase.jpg used on input line 200.
-(pdftex.def)             Requested size: 237.2735pt x 215.92917pt.
-
-Underfull \vbox (badness 7504) has occurred while \output is active []
-
- [4 <./gfx/alpharun.png>]
-Underfull \vbox (badness 5050) has occurred while \output is active []
-
- [5 <./gfx/qgpphase.jpg>]
-LaTeX Font Info:    Try loading font information for TS1+bch on input line 260.
-
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1bch.fd
-File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
-)
-[6] <gfx/glauber.jpg, id=124, 642.4pt x 364.36125pt>
-File: gfx/glauber.jpg Graphic file (type jpg)
- <use gfx/glauber.jpg>
-Package pdftex.def Info: gfx/glauber.jpg used on input line 278.
-(pdftex.def)             Requested size: 316.36266pt x 179.43924pt.
+<use gfx/alicelumi.png>
+Package pdftex.def Info: gfx/alicelumi.png used on input line 82.
+(pdftex.def)             Requested size: 237.2735pt x 199.31721pt.
+ [3 <./gfx/alicelumi.png>]
+<gfx/alice3D.jpg, id=92, 767.0256pt x 521.3076pt>
+File: gfx/alice3D.jpg Graphic file (type jpg)
+ <use gfx/alice3D.jpg>
+Package pdftex.def Info: gfx/alice3D.jpg used on input line 133.
+(pdftex.def)             Requested size: 355.9042pt x 241.89644pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./gfx/glauber.jpg>]
-Overfull \hbox (7.98242pt too wide) detected at line 328
-[]\OT1/lmr/m/n/10.95 N[](\OML/lmm/m/it/10.95 b\OT1/lmr/m/n/10.95 ) = [] [] []\O
-ML/lmm/m/it/10.95 A T[]\OT1/lmr/m/n/10.95 ([])[1 \OMS/lmsy/m/n/10.95 ^^@ \OT1/l
-mr/m/n/10.95 (1 \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 T[]\OT1/lmr/m/n/10.
-95 ([] \OMS/lmsy/m/n/10.95 ^^@ []\OT1/lmr/m/n/10.95 ) \OML/lmm/m/it/10.95 ^^[[]
-\OT1/lmr/m/n/10.95 )[]] + \OML/lmm/m/it/10.95 B T[]\OT1/lmr/m/n/10.95 ([] \OMS/
-lmsy/m/n/10.95 ^^@ []\OT1/lmr/m/n/10.95 )[1 \OMS/lmsy/m/n/10.95 ^^@ \OT1/lmr/m/
-n/10.95 (1 \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 T[]\OT1/lmr/m/n/10.95 ([
-]) \OML/lmm/m/it/10.95 ^^[[]\OT1/lmr/m/n/10.95 )[]][]
+ [4]
+
+LaTeX Warning: Reference `sec:1.3.2' on page 5 undefined on input line 154.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 161.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 161.
+
+Overfull \hbox (6.18156pt too wide) in alignment at lines 161--195
+[] [] [] [] [] 
  []
 
-<gfx/evolution.png, id=140, 954.56625pt x 669.50125pt>
-File: gfx/evolution.png Graphic file (type png)
- <use gfx/evolution.png>
-Package pdftex.def Info: gfx/evolution.png used on input line 349.
-(pdftex.def)             Requested size: 355.9042pt x 249.61171pt.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 204.
+[5 <./gfx/alice3D.jpg>] [6] <gfx/its.png, id=121, 953.5625pt x 666.49pt>
+File: gfx/its.png Graphic file (type png)
 
-[8]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 363.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 369.
- [9 <./gfx/evolution.png>]
-Underfull \vbox (badness 1253) has occurred while \output is active []
-
- [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-[12] <gfx/yields.png, id=205, 754.82pt x 674.52pt>
-File: gfx/yields.png Graphic file (type png)
- <use gfx/yields.png>
-Package pdftex.def Info: gfx/yields.png used on input line 535.
-(pdftex.def)             Requested size: 276.81505pt x 247.36594pt.
-
-[13 <./gfx/yields.png>]) [14]
+<use gfx/its.png>
+Package pdftex.def Info: gfx/its.png used on input line 250.
+(pdftex.def)             Requested size: 296.58885pt x 207.3013pt.
+ [7]) [8 <./gfx/its.png>]
 chapter without number
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 175.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 
 Package biblatex Warning: Type 'online' not found on input line 176.
 
@@ -1843,12 +1775,12 @@ er supported, use 'labelprefix' option to \newrefcontext.
 
 LaTeX Warning: Empty bibliography on input line 176.
 
-[15
+[9
 
 
 
 
-] [16
+] [10
 
 
 ]
@@ -1858,53 +1790,55 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F4DD92DC8D3534C7787765A648BB748B;763.
+(rerunfilecheck)             Checksum: 795574910E80B0779CA452B13B02A439;372.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
  ) 
 Here is how much of TeX's memory you used:
- 23264 strings out of 493013
- 382740 string characters out of 6133343
- 951740 words of memory out of 5000000
- 26051 multiletter control sequences out of 15000+600000
- 122964 words of font info for 250 fonts, out of 8000000 for 9000
+ 23015 strings out of 493013
+ 380172 string characters out of 6133343
+ 980391 words of memory out of 5000000
+ 25923 multiletter control sequences out of 15000+600000
+ 121562 words of font info for 207 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,106p,8859b,1932s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
-cal/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texliv
-e/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-d
-ist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/d
-vips/lm/lm-mathex.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm
--ec.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}<
+ 65i,13n,106p,8859b,1850s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
+16/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dist/
+fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/
+dvips/base/8r.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mat
+hex.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}<
 /usr/local/texlive/2016/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/lm/lmmi5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/lm/lmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi7
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/lm/lmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmssbx
-10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/urw/bookman/ubkli8a.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/urw/helvetic/uhvr8a.pfb>
-Output written on main.pdf (16 pages, 1385056 bytes).
+dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/lm/lmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/lm/lmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi9.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/lm/lmssbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/lm/lmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lms
+y7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on main.pdf (10 pages, 6188259 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 306 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 35434 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 210 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 37957 words of extra memory for PDF output out of 42996 (max. 10000000)
 

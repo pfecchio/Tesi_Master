@@ -1,4 +1,4 @@
-% !TEX root = ../tesi.tex
+% !TEX root = ../main.tex
 %
 \chapter{The ALICE experiment}
 \label{sec:3}
@@ -130,7 +130,7 @@ The current layout of the ALICE experiment is shown in Figure \ref{fig:alice3D} 
 \ref{tab:alice} lists the position and the purpose of the ALICE sub-detectors.
 \begin{figure}
     \centering
-    \includegraphics[width=0.85\textwidth]{gfx/alice3D}
+    \includegraphics[width=0.9\textwidth]{gfx/alice3D}
 	\caption{The ALICE experimental setup and the red L3 solenoid magnet. The top right inset shows a zoom on the V0, T0, FMD and the ITS detectors.}
 	\label{fig:alice3D}
 \end{figure}
@@ -202,10 +202,92 @@ In the ALICE apparatus, three main parts can be distinguished: the \textit{centr
 \textit{muon spectrometer} and the \textit{forward detectors}.
 
 \paragraph{Central Barrel}
-Consists of all the detectors located in the pseudo-rapidity range $|\eta|$ < 0.9. The central barrel 
-tracking detectors include the Inner Track- ing System (ITS), the Time Projection Chamber (TPC) and the
-Transition Radiation Detector (TRD), covering the full azimuthal acceptance. 
-The central systems are dipped in a solenoidal magnetic field (B = 0.5 T) produced by the warm resistive
-magnet previously used for the L3 experiment at LEP \cite{lep}.
+Consists of all the detectors located in the pseudo-rapidity range $|\eta| < 0.9$ dipped in a 
+solenoidal magnetic field (B = 0.5 T) produced by the warm resistive magnet previously used for
+the L3 experiment at LEP \cite{lep}.
+The central barrel  tracking detectors include the Inner Track- ing System (ITS), the Time Projection 
+Chamber (TPC) and the Transition Radiation Detector (TRD), covering the full azimuthal acceptance.
+This detectors, toghether with the Time Of Flight (TOF) detector and the High-Momentum 
+Particle Identification (HMPID), provide also the information for particle identification (PID).
+There are also an ElectroMagnetic Calorimeter (EMCal) and a Photon Spectrometer (PHOS) dedicated to the
+physics of high \pt photons and jets.
+Finally, on top of the ALICE solenoid, there is the ACORDE detector, an array of 60 large scintillators
+used to study the high-energy cosmic air showers.
 
+\paragraph{Muon Spectrometer} 
+Located in the $-4 < \eta < -2.5$ region, is dedicated to the study of the spectrum of 
+heavy-quark vector-mesons resonances.
+It consists of an absorber wall with small atomic number Z, a spectrometer with a dipole magnet,
+five tracking stations, four trigger stations and an iron absorber.
 
+\paragraph{Forward Detectors}
+Located in the forward-backward pseudorapidity regions and as close as possible to the beam line.
+They are: the Forward Multiplicity Detector (FMD), made of silicon strips detectors, the Photon
+Multiplicity Detector (PMD) and the Zero Degree Calorimeters (ZDC) consisting of two hadronic 
+calorimeters, for protons and neutrons, plus one electromagnetic calorimeter. 
+In addition there are two trigger detectors located at each side of the interaction point:
+the V0, made of scintillator detectors, and the T0, composed by two arrays of Cherenkov counters.
+
+%
+%
+\section{ALICE detectors} \label{sec:alice_detectors}
+
+In the following sections more details on the detectors used for the study of the \dst production are
+provided.
+
+%
+\subsection{Inner Tracking System} \label{sec:its}
+
+The Inner Tracking System (ITS) [citare] is a silicon tracker and is the detector closest to the
+interaction point.
+It is composed of six cylindrical layers of silicon detectors, carried out with three different
+technologies.
+In Figure [figura] the layout of the Inner Tracking System is shown, while in Table [cita]
+more details on the resolution an the geometry of the different layers are provided.
+
+\begin{figure}[!tp] \small
+    \centering
+    \includegraphics[width=0.75\textwidth]{gfx/its}
+	\caption{Layout of the ALICE Inner Tracking System, with three different subdetectors.}
+	\label{fig:its}
+    \vspace{0.5cm}
+\end{figure}
+
+\paragraph{Silicon pixel detectors} 
+SPD are the two innermost layers of the ITS and are
+used for the determination of the primary vertex position as well as for the measurement of
+the impact parameter of secondary tracks.
+Furthermore, SPD, provides a quick trigger signal which contributes to the Level 0 trigger of 
+the experiment.
+
+\paragraph{Silicon drift detectors} 
+SDD are the two intermediate layers of the ITS. The technology used for the SDD 
+allows high 2D resolution with limited number of read-out channels and the low material budget.
+
+\paragraph{Silicon strip detectors}
+SSD are the outer layers of the ITS and are equipped with double sided silicon detectors, which
+provide a two dimensional measurement of the track position.
+The informations of the SSD are used 
+
+and it is crucial for the matching of the tracks from ITS to TPC, being the outermost layers of the silicon tracker system. The SSD, together with the SDD, provide also information about the energy loss of particles in their sensitive volume, extending the ALICE PID capabilities in the pT region below 200 MeV/c.
+
+\begingroup
+\setlength{\tabcolsep}{6pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.2} % Default value: 1
+\begin{table}[!tp]
+\centering
+\begin{tabular}{lccc}
+\textbf{Parameter}                      &  \textbf{SPD} & \textbf{SDD}  & \textbf{SSD} \\
+\midrule
+Material budget per layer (\%$X_{0}$)   &  1.14 - 1.14  &  1.13 - 1.26  &  0.83 - 0.86 \\
+Spatial resolution $r\phi$ ($\mu$m)     &       12      &       35      &       20     \\
+Spatial resolution $z$ ($\mu$m)         &       100     &       25      &      830     \\
+Two track resolution $r\phi$ ($\mu$m)   &       100     &      200      &      300     \\
+Two track resolution $z$ ($\mu$m)       &       850     &      600      &     2400     \\
+Active cell size ($\mu$m$^2$)           & 50$\times$425 & 202$\times$294& 95$\times$40000 \\
+Number of readout channels (k)          &      9835     &      133      &     2603     \\
+\midrule
+\end{tabular}
+\caption{Details about the material budget and spatial resolution of the ITS subdetectors \cite{alicemulti}. The material budget is reported for each single layer.}
+\end{table}
+\endgroup
