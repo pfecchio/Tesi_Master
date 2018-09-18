@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex main"] 1537219346 "main.aux" "main.bbl" "main" 1537257384
+["bibtex main"] 1537219346 "main.aux" "main.bbl" "main" 1537258707
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1480098434 63002 075c3f13314e99e71e6ff0a472a98980 ""
   "bib-refs.bib" 1537256777 28738 33f36cf5f3977eb1fdab0c2b53f8ea8c ""
   "main-blx.bib" 1537219382 307 3ad938b1e769725d8879bbe478471c54 ""
@@ -7,7 +7,7 @@
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1537219380 "/Users/pietro/cernbox/docu/tesi/Tesi_Master/main.tex" "main.pdf" "main" 1537257384
+["pdflatex"] 1537219380 "/Users/pietro/cernbox/docu/tesi/Tesi_Master/main.tex" "main.pdf" "main" 1537258707
   "/Users/pietro/cernbox/docu/tesi/Tesi_Master/main.tex" 1537256777 6940 0ec20b8d3c009ecfc1a983c27aaa1d62 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
@@ -233,8 +233,8 @@
   "main.tex" 1537256777 6940 0ec20b8d3c009ecfc1a983c27aaa1d62 ""
   (generated)
   "main.log"
-  "main.pdf"
-  "main-blx.bib"
   "main.run.xml"
   "main.out"
+  "main-blx.bib"
+  "main.pdf"
   "main.aux"

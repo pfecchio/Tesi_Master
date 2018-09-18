@@ -1,5 +1,6 @@
 .DS_Store
-main.fdb_latexmk
+*.fdb_latexmk
+.vscode/
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
