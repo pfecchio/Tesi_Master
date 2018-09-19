@@ -3,4 +3,17 @@
 \BOOKMARK [1][]{section*.5}{1.2 ALICE design}{chapter.1}% 3
 \BOOKMARK [1][]{section*.8}{1.3 ALICE detectors}{chapter.1}% 4
 \BOOKMARK [2][]{section*.9}{1.3.1 Inner Tracking System}{section*.8}% 5
-\BOOKMARK [0][]{chapter*.12}{Bibliography}{}% 6
+\BOOKMARK [2][]{section*.12}{1.3.2 Time Projection Chamber}{section*.8}% 6
+\BOOKMARK [2][]{section*.14}{1.3.3 Time Of Flight detector}{section*.8}% 7
+\BOOKMARK [2][]{section*.15}{1.3.4 T0 detector}{section*.8}% 8
+\BOOKMARK [2][]{section*.16}{1.3.5 V0 detector}{section*.8}% 9
+\BOOKMARK [1][]{section*.17}{1.4 Trigger and Data Acquisition}{chapter.1}% 10
+\BOOKMARK [1][]{section*.18}{1.5 ALICE offline framework}{chapter.1}% 11
+\BOOKMARK [2][]{section*.19}{1.5.1 Monte Carlo simulations}{section*.18}% 12
+\BOOKMARK [2][]{section*.20}{1.5.2 Event Reconstruction}{section*.18}% 13
+\BOOKMARK [2][]{section*.22}{1.5.3 ALICE analysis framework}{section*.18}% 14
+\BOOKMARK [1][]{section*.23}{1.6 ALICE performances}{chapter.1}% 15
+\BOOKMARK [2][]{section*.24}{1.6.1 Tracking}{section*.23}% 16
+\BOOKMARK [2][]{section*.27}{1.6.2 Vertexing}{section*.23}% 17
+\BOOKMARK [2][]{section*.28}{1.6.3 Particle Identification}{section*.23}% 18
+\BOOKMARK [0][]{chapter*.29}{Bibliography}{}% 19

@@ -20,52 +20,45 @@ Database file #1: main-blx.bib
 Database file #2: bib-refs.bib
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Warning--you've exceeded 250, the entry-string-size, for entry lhcbpenta
-while executing--line 2630 of file biblatex.bst
-*Please notify the bibstyle designer*
-Warning--you've exceeded 250, the entry-string-size, for entry lhcbpenta
-while executing--line 2658 of file biblatex.bst
-*Please notify the bibstyle designer*
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 11 entries,
+You've used 16 entries,
             6256 wiz_defined-function locations,
-            1253 strings with 24644 characters,
-and the built_in function-call counts, 790419 in all, are:
-= -- 74293
-> -- 6847
-< -- 219
-+ -- 34681
-- -- 4138
-* -- 62115
-:= -- 114563
+            1281 strings with 11413 characters,
+and the built_in function-call counts, 84842 in all, are:
+= -- 5849
+> -- 1407
+< -- 330
++ -- 2334
+- -- 667
+* -- 5921
+:= -- 9005
 add.period$ -- 0
-call.type$ -- 11
-change.case$ -- 96
+call.type$ -- 16
+change.case$ -- 168
 chr.to.int$ -- 30
-cite$ -- 20
-duplicate$ -- 93635
-empty$ -- 56023
-format.name$ -- 8772
-if$ -- 137651
+cite$ -- 30
+duplicate$ -- 9996
+empty$ -- 7921
+format.name$ -- 1060
+if$ -- 16914
 int.to.chr$ -- 0
-int.to.str$ -- 22
+int.to.str$ -- 33
 missing$ -- 0
-newline$ -- 4790
-num.names$ -- 410
-pop$ -- 12349
+newline$ -- 582
+num.names$ -- 576
+pop$ -- 5378
 preamble$ -- 1
-purify$ -- 1623
+purify$ -- 275
 quote$ -- 0
-skip$ -- 5105
+skip$ -- 2172
 stack$ -- 0
-substring$ -- 139652
-swap$ -- 11786
-text.length$ -- 984
-text.prefix$ -- 16
+substring$ -- 9273
+swap$ -- 2241
+text.length$ -- 344
+text.prefix$ -- 20
 top$ -- 1
-type$ -- 362
+type$ -- 532
 warning$ -- 0
-while$ -- 15444
+while$ -- 1199
 width$ -- 0
-write$ -- 4780
-(There were 2 warnings)
+write$ -- 567
