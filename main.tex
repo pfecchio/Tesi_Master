@@ -64,7 +64,9 @@
 % Custom COMMAND
 % **************************************************
 \newcommand{\s}      {\ensuremath{\sqrt{s}}\xspace}
+\newcommand{\sotev}  {\ensuremath{\sqrt{s}} = 8 TeV\xspace}
 \newcommand{\sctev}  {\ensuremath{\sqrt{s_{NN}}} = 5.02 TeV\xspace}
+\newcommand{\sdtev}  {\ensuremath{\sqrt{s_{NN}}} = 2.76 TeV\xspace}
 \newcommand{\trtev}  {\ensuremath{\sqrt{s}} = 13 TeV\xspace} % da controllare che sia giusto
 
 \newcommand{\pt}    {\ensuremath{p_{\mathrm{T}}}\xspace}
@@ -83,10 +85,12 @@
 \newcommand{\PbPb}   {Pb--Pb\xspace}
 \newcommand{\pPb}    {p--Pb\xspace}
 
-\newcommand{\mom}    {\mbox{\ensuremath{\mathrm{MeV}/c}}\xspace}
-\newcommand{\gmom}   {\mbox{\ensuremath{\mathrm{GeV}/c}}\xspace}
-\newcommand{\mass}   {\mbox{\ensuremath{\mathrm{GeV}/c^{2}}}\xspace}
-\newcommand{\Mmass}  {\mbox{\ensuremath{\mathrm{MeV}/c^{2}}}\xspace}
+\newcommand{\mevc}   {\mbox{\ensuremath{\mathrm{MeV}/c}}\xspace}
+\newcommand{\gevc}   {\mbox{\ensuremath{\mathrm{GeV}/c}}\xspace}
+\newcommand{\mevcs}  {\mbox{\ensuremath{\mathrm{MeV}/c^{2}}}\xspace}
+\newcommand{\gevcs}  {\mbox{\ensuremath{\mathrm{GeV}/c^{2}}}\xspace}
+
+\newcommand{\dedx}{\ensuremath{\mathrm{d}\hspace{-0.1em}E/\mathrm{d}x}\xspace}
 
 \newcommand{\Lagr}{\mathcal{L}}
 \newcommand{\boldm}[1] {\mathversion{bold}#1\mathversion{normal}}
@@ -162,7 +166,8 @@
 \pagestyle{maincontentstyle} 	% fancy header and footer
 
 \input{content/ch1-HENP}		% INCLUDE: introduction on HENP
-% \input{content/ch2-ALICE}		% INCLUDE: ALICE chapter
+\input{content/ch2-ALICE}		% INCLUDE: ALICE chapter
+
 \cleardoublepage
 
 % --------------------------
@@ -172,8 +177,8 @@
 \setstretch{1.1}
 \renewcommand{\bibfont}{\normalfont\small}
 \setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
-\printbibliography[nottype=online]
-\printbibliography[heading=subbibliography,title={Webseiten},type=online,prefixnumbers={@}]
+\printbibliography
+% \printbibliography[heading=subbibliography,title={Webseiten},type=online,prefixnumbers={@}]
 }
 \cleardoublepage
 

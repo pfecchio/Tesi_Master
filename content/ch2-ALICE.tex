@@ -15,12 +15,12 @@ to which the formation of the Quark Gluon Plasma is expected.
 While most of the LHC uptime is dedicated to the proton–proton physics that led to the discovery of 
 the Higgs Boson \cite{atlashiggs,cmshiggs} and of two charmed pentaquark states \cite{lhcbpenta}, 
 a significant part of the physics programme at the LHC is dedicated to heavy-ion physics and the 
-characterisation of the Quark Gluon Plasma.
+characterization of the Quark Gluon Plasma.
 
 \section{The Large Hadron Collider} \label{sec:3.1}
 
 The Large Hadron Collider is the last element of the accelerator complex at CERN (Figure \ref{fig:lhc})
-, a succesion of machines that accelerate particles to increasingly higher energies. Each element in
+, a succession of machines that accelerate particles to increasingly higher energies. Each element in
 this chain boosts the energy of a beam of particles, before injecting it into the next machine. 
 Protons and heavy ions are brought to their collision energies through different acceleration chains.
 
@@ -32,7 +32,7 @@ Protons and heavy ions are brought to their collision energies through different
 \end{figure}
 
 The protons injected in the LHC ring starts their journey in the LINAC2, where ionized hydrogen
-atoms are accelereted up to 50 MeV. Then the beam is injected in the Proton Synchrotron Booster 
+atoms are accelerated up to 50 MeV. Then the beam is injected in the Proton Synchrotron Booster 
 (PSB), which accelerates protons up to 1.4 GeV and provides the beam bunches to the Proton 
 Synchrotron (PS). The Proton Synchrotron provides 25 GeV protons to the Super Proton Synchrotron
 (SPS), where they are accelerated up to 450 GeV before the injection in the LHC.
@@ -84,7 +84,7 @@ where the luminosity is estimated.
 	\label{fig:alicelumi}
 \end{figure}
 
-In order to maximise the luminosity of the LHC, the option of a p$\bar{\mathrm{p}}$ collider
+In order to maximize the luminosity of the LHC, the option of a p$\bar{\mathrm{p}}$ collider
 was excluded due to the problem of the anti–protons production that is very complicated.
 The LHC can store up to 2808 bunches, with $\sim 10^{11}$ protons per bunch, with 25 ns spacing
 \cite{lhcperf}.
@@ -93,7 +93,7 @@ Figure \ref{fig:alicelumi} shows the delivered luminosity by the LHC (black line
 luminosities collected by ALICE, for different trigger configurations (colored lines), during the
 first Pb–Pb period in Run 2 at the end of 2015.
 
-A creucial information for the collider experiments is the the position where the collision
+A crucial information for the collider experiments is the the position where the collision
 between the two beams takes place: the \textit{primary vertex}. 
 The nominal position of the primary vertex is the origin of the coordinate reference frame of the 
 experiment. Nevertheless, due to the finite size of the bunches the position of the primary
@@ -115,14 +115,14 @@ $\sigma^{vertex}_{x,y}\,\sim 50\;\mu\mathrm{m}$ and $\sigma^{vertex}_{z}\,\sim 5
 %
 \section{ALICE design} \label{sec:3.2}
 
-The main goal of the ALICE esperiment is the study of the QCD matter created in high energy heavy
-ion collisions, hence has been specifically designed and optimised \cite{alicedesign1,alicedesign2}
+The main goal of the ALICE experiment is the study of the QCD matter created in high energy heavy
+ion collisions, hence has been specifically designed and optimized \cite{alicedesign1,alicedesign2}
 for this purpose.
 An heavy ion experiment must have an efficient tracking system with a large acceptance and a good
-particle identification (PID) capabilities in a wide momentum range, expecially at low momentum.
-Furthermore, it must work in an environment characterised by a large charged particle multiplicity.
+particle identification (PID) capabilities in a wide momentum range, especially at low momentum.
+Furthermore, it must work in an environment characterized by a large charged particle multiplicity.
 At the time of ALICE design, the charged particles multiplicity per rapidity unit in central Pb–Pb 
-collisions was predictied to range between 2000 and 8000 \cite{alicemulti}, and for this reason
+collisions was predicted to range between 2000 and 8000 \cite{alicemulti}, and for this reason
 detectors with high granularity and low material budget have been developed 
 \cite{alicedesign1,alicedesign2}.
 
@@ -141,17 +141,23 @@ the $y$ axis is perpendicular to the accelerator plane and points upward.
 As a consequence the $z$ axis is parallel to the beam direction and its positive direction is 
 defined by the chirality of the coordinate system. 
 For a more useful description of the apparatus and the physical quantities, two other coordinates
-are defined, which toghether with the $z$ axis described above, form a cylindrical coordinate system:
+are defined, which together with the $z$ axis described above, form a cylindrical coordinate system:
 the azimuthal angle $\phi$ increases counter-clockwise starting from $\phi = 0$ for $x$ axis looking
 towards the CMS side, and the polar angle $\theta$ increases from $z$ ($\theta=0$) to $-z$ 
 ($\theta=\pi$).
-Another usefull variable, widely used in this thesis, is the \textit{pseudo-rapidity} $\eta$:
+Other two useful variables, widely used in this thesis, are the \textit{pseudo-rapidity} $\eta$:
 \begin{equation}
     \eta = \frac{1}{2} \ln \frac{|p| + p_{z}}{|p| - p_{z}} =
-     - \ln \left[ \tan \left(\frac{\theta}{2} \right) \right].
+     - \ln \left[ \tan \left(\frac{\theta}{2} \right) \right],
 \end{equation}
-which, for ultra-relativistic objects, numerically converges to the \textit{rapidity} already defined
-in the first chapter (Section \ref{sec:1.3.2}).
+and \textit{rapidity}:
+\begin{equation} \label{eq:rapidity}
+    y = \frac{1}{2} \log \bigl( \frac{E+p_{z}}{E-p_{z}} \bigr) 
+\end{equation}
+for a particle with four-momentum $p^{\mu} = (E,\vec{p})$, and the $z$ axis parallel to the beam 
+direction.
+For ultra-relativistic objects, the \textit{pseudo-rapidity} numerically converges to the 
+\textit{rapidity}.
 
 \begingroup
 \setlength{\tabcolsep}{6pt} % Default value: 6pt
@@ -191,8 +197,9 @@ in the first chapter (Section \ref{sec:1.3.2}).
     \midrule
 	MCH	                     & -4.0 < $\eta$ < -2.5 & full & -14.2 < z/m < -5.4  & muon tracking \\
 	MTR$^{\dagger}$	         & -4.0 < $\eta$ < -2.5 & full & -17.1 < z/m < -16.1 & muon trigger \\	
-	\bottomrule
+    \bottomrule
     \end{tabular*}
+    \vspace{2pt}
 	\caption{Geometrical details and main purposes of the ALICE sub-detectors. This table has been taken and adapted from the description of the ALICE apparatus in \cite{alice:Perf2014}. The transverse (r) and longitudinal ($z$) coordinates as well as the acceptance (\textit{polar} and \textit{azimuthal}) are measured with respect to the ALICE coordinate reference frame, described in the text. When more than one position value is specified the detector is divided in two or several parts and the reported values are the minimum and maximum distances from the interaction point. The detectors marked with a dagger ($\dagger$) are also used for triggering.}
 	\label{tab:alice}
 \end{table}
@@ -207,7 +214,7 @@ solenoidal magnetic field (B = 0.5 T) produced by the warm resistive magnet prev
 the L3 experiment at LEP \cite{lep}.
 The central barrel  tracking detectors include the Inner Track- ing System (ITS), the Time Projection 
 Chamber (TPC) and the Transition Radiation Detector (TRD), covering the full azimuthal acceptance.
-This detectors, toghether with the Time Of Flight (TOF) detector and the High-Momentum 
+This detectors, together with the Time Of Flight (TOF) detector and the High-Momentum 
 Particle Identification (HMPID), provide also the information for particle identification (PID).
 There are also an ElectroMagnetic Calorimeter (EMCal) and a Photon Spectrometer (PHOS) dedicated to the
 physics of high \pt photons and jets.
@@ -232,25 +239,31 @@ the V0, made of scintillator detectors, and the T0, composed by two arrays of Ch
 %
 \section{ALICE detectors} \label{sec:alice_detectors}
 
-In the following sections more details on the detectors used for the study of the \dst production are
-provided.
+In the following sections more details on the detectors used for the study of the \dst dibaryon
+production are provided.
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=1 \textwidth]{gfx/alice_photo1}
+% 	\caption{Photo of the ALICE experiment, open during a technical maintenance period \cite{alice_photo}.}
+% 	\label{fig:its}
+% \end{figure}
 
 %
 \subsection{Inner Tracking System} \label{sec:its}
 
-The Inner Tracking System (ITS) [citare] is a silicon tracker and is the detector closest to the
-interaction point.
+The Inner Tracking System (ITS) \cite{alicemulti,alice:Perf2014} is a silicon tracker and is the
+detector closest to the interaction point.
 It is composed of six cylindrical layers of silicon detectors, carried out with three different
 technologies.
-In Figure [figura] the layout of the Inner Tracking System is shown, while in Table [cita]
+In Figure \ref{fig:its} the layout of the Inner Tracking System is shown, while in Table \ref{tab:its}
 more details on the resolution an the geometry of the different layers are provided.
 
-\begin{figure}[!tp] \small
+\begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{gfx/its}
+    \includegraphics[width=0.7 \textwidth]{gfx/its}
 	\caption{Layout of the ALICE Inner Tracking System, with three different subdetectors.}
 	\label{fig:its}
-    \vspace{0.5cm}
 \end{figure}
 
 \paragraph{Silicon pixel detectors} 
@@ -267,14 +280,22 @@ allows high 2D resolution with limited number of read-out channels and the low m
 \paragraph{Silicon strip detectors}
 SSD are the outer layers of the ITS and are equipped with double sided silicon detectors, which
 provide a two dimensional measurement of the track position.
-The informations of the SSD are used 
+The information of the SSD is crucial for the matching of the tracks from ITS to TPC, being the
+nearest layers to the TPC.
 
-and it is crucial for the matching of the tracks from ITS to TPC, being the outermost layers of the silicon tracker system. The SSD, together with the SDD, provide also information about the energy loss of particles in their sensitive volume, extending the ALICE PID capabilities in the pT region below 200 MeV/c.
+The main task of the ITS is the reconstruction of primary and secondary vertices, and the tracking
+of the low \pt particles.
+The first objective is achieved with a resolution better than 100 $\mu$m, while for the second the
+ITS extends the tracking of the low \pt particles down to $\pt = 80 \; \mevc$, thanks to its high
+spatial resolution (Table \ref{tab:its}) and low material budget.
+The total material budget of the ITS, keeping into account also the support structures and the 
+thermal shields, is 7.18 \% X/X0.
+The SSD, together with the SDD, provide also the measurement of the energy loss of particles 
+in their sensitive volume, extending the ALICE PID capabilities in the \pt region below 200 \mevc.
 
 \begingroup
-\setlength{\tabcolsep}{6pt} % Default value: 6pt
 \renewcommand{\arraystretch}{1.2} % Default value: 1
-\begin{table}[!tp]
+\begin{table}
 \centering
 \begin{tabular}{lccc}
 \textbf{Parameter}                      &  \textbf{SPD} & \textbf{SDD}  & \textbf{SSD} \\
@@ -288,6 +309,381 @@ Active cell size ($\mu$m$^2$)           & 50$\times$425 & 202$\times$294& 95$\ti
 Number of readout channels (k)          &      9835     &      133      &     2603     \\
 \midrule
 \end{tabular}
+\vspace{2pt}
 \caption{Details about the material budget and spatial resolution of the ITS subdetectors \cite{alicemulti}. The material budget is reported for each single layer.}
+\label{tab:its}
 \end{table}
 \endgroup
+
+%
+\subsection{Time Projection Chamber} \label{sec:tpc}
+
+The Time Projection Chamber (TPC), illustrated in Figure \ref{fig:tpc}, is the main ALICE
+tracking detector with good two-track separation. It is also one of the main PID detectors as it
+provides the information about the specific energy loss of the particles in its volume in a large
+momentum range. 
+
+\begin{figure}
+    \captionsetup{justification=centering}
+    \centering
+    \includegraphics[width=0.8\textwidth]{gfx/tpc}
+	\caption{Schematic layout of the ALICE Time Projection Chamber.}
+	\label{fig:tpc}
+\end{figure}
+
+The TPC, basically, is a 88 m$^3$ cylinder filled with gas and divided in two drift regions by the
+central electrode located at its axial centre. 
+For the LHC Run 2 (2015-2018) the gas is mixture of Ar and CO$_2$.
+The field cage secures the uniform electric field along the $z$ axis.
+Charged particles travelling in the TPC gas ionise the gas along their path, liberating electrons 
+that drift towards the end plates of the cylinder. 
+Each end plate is equipped with 36 readout chambers, which are organized in 18 sectors, covering 
+20$^{\circ}$ in azimuth each. 
+The readout chambers consist in a system of multi-wire proportional chambers (MWPC) with cathode pad
+read-out. Each sector is segmented by pads organized in rows and the longitudinal coordinate is given
+by the drift time. 
+Thanks to this segmentation, charged particles can be tracked and identified with up to 159 
+3-dimensional space points (TPC clusters), including also the specific energy loss information
+for the PID. The TPC radial position and acceptance are reported in Table \ref{tab:alice}.
+
+%
+\subsection{Time Of Flight detector} \label{sec:tof}
+
+The Time of Flight detector (TOF) has a cylindrical geometry and consists of a large area array of 
+Multi-gap Resistive-Plate Chambers (MRPC).
+With a sensitive area of 7.4 × 120 cm$^2$ each and an intrinsic resolution of about $\sim\;$ 40 ps 
+\cite{alicemulti}, is used to identify charged particles and light nuclei in the momentum interval 
+0.2--4 \gevc in the central pseudorapidity range ($|\eta|$ < 0.9).
+The time of flight of a particle is determined measuring the time between the event collision and the
+particle TOF hit cluster. 
+The time of flight of the particle together with the momentum, obtained from the track curvature, 
+allows to compute the particle $\beta$ and, as a consequence, its mass.
+The precise determination of the event collision time, the so called $t_{0}$, represents an important
+ingredient for the TOF PID and it is determined by using the information from the T0 detector as 
+well as from the TOF. 
+
+%
+\subsection{T0 detector} \label{sec:t0}
+
+The T0 detector consists of two arrays of Cherenkov counters placed on both sides of the interaction point 
+along the $z$ axis (Table \ref{tab:alice}).
+It is mainly used to determine the event collision time ($t_{0}$) with a resolution below 50 ps and 
+independently from track and vertex reconstruction. 
+The T0 information provides also the Level 0 trigger when the position of the vertex falls in appropriate 
+intervals.
+
+%
+\subsection{V0 detector} \label{sec:v0}
+
+The V0 is a small angle detector consisting of two arrays (V0A and V0C) of 64 scintillators counters 
+distributed in 8 rings and they are installed on both sides of the ALICE interaction point 
+(Table \ref{tab:alice}). 
+The V0 detectors are used to define the minimum bias (MB) trigger in ALICE and to determine the
+centrality in p–Pb and Pb–Pb collisions.
+
+%
+%
+\section{Trigger and Data Acquisition} \label{sec:data_flow}
+
+The trigger system in ALICE is managed by the Central Trigger Processor (CPT) \cite{alice_trigger} 
+which collects and synchronizes all the trigger inputs coming from all the triggering detectors 
+with the information on the LHC filling scheme providing a trigger signal to the readout detectors
+in case of fulfilled trigger conditions. 
+The Level 0 trigger (L0) decision is taken by using the fast detectors (SPD, V0, T0, EMCal, PHOS and 
+muon trigger). The L0 signal arrives to the CTP in 1.2 $\mu$s after the collision. 
+The signals from the detectors which are not fast enough for L0 trigger are collected in the level 1
+(L1) trigger signal and sent to the CTP after 6.5 $\mu$s. 
+Finally the third level of trigger is sent after 88 $\mu$s, which is the maximum drift time of electrons
+in the TPC, in order to help the rejection of the pile-up events in the TPC.
+The minimum-bias (MB) trigger  selection in ALICE is defined by the logical "\textit{or}" between the
+signals of V0A, V0C and SPD detectors. This minimum-bias trigger is the one used in the analysis
+presented in this thesis.
+
+The events passing all three trigger selections are sent both to the Data Acquisition (DAQ) machines 
+and to the High Level Trigger (HLT).
+
+
+The data fulfilling all the trigger requirements, are sent to the Local Data Concentrators (LDCs)
+through optical connections, the Detector Data Links (DDLs).
+LDCs is a farm of computers which build \textit{subevents} from the event fragments they receive from
+the front-end electronics and then sends \textit{subevents} to the Global Data Collectors (GDCs).
+The GDC compose the full event including information from the HLT.
+In the HLT level a fast reconstruction of the data -- including clusterisation and track reconstruction --
+is performed, allowing further selections that are not possible in the hardware triggers.
+When the event building in the GDC is completed, the data are buffered in a local disk pool waiting 
+to be transferred to the CERN computing centre, where they will be registered on tape.
+
+%
+%
+\section{ALICE offline framework} \label{sec:offline}
+
+The offline analysis framework is fundamental for any High Energy Physics experiment.
+The huge amount of data collected by detectors requires a proper infrastructure able to process and 
+analyse the reconstructed events.
+Beyond that, modern experiments need a large number of Monte Carlo simulations, for the development of
+the detectors, for performance studies, but also as a basis for physics analysis.
+
+The infrastructure realized by the CERN in order to menage the LHC data flow is the Worldwide 
+LHC Computing Grid (WLCG). The mission is precisely is to provide global 
+computing resources to store, distribute and analyse the $\sim$50-70 Petabytes of data expected every
+year of operations from the LHC experiments.
+
+The ALICE collaboration uses the WLCG resources for its simulations, event reconstruction and physics
+analysis. In the following section more details about this aspects of the ALiCE operations will be 
+provided.
+
+%
+\subsection{Monte Carlo simulations} \label{sec:montecarlo}
+
+The first step of Monte-Carlo simulations is the event generation. 
+The ALICE simulation tools include generators for all the interaction topologies provided for its
+physics program: pp, pA and heavy ion collisions.
+The event generator gives the set of all stable and weakly decaying particles produced in the collision,
+with their starting kinematic parameters. The strongly decaying particles -- as the \dst dibaryon studied
+in this analysis -- are usually handled at the generator level.
+The generated kinematic parameters are propagated, using a transport framework, through the experiment,
+whose geometry and material budget are precisely described in the ALICE software.
+Three different transport codes are available in the simulation framework: GEANT3, GEANT4 and FLUKA.
+These tools provide the information on the behavior of the transported particles through the sensitive
+part of the detector, giving the particle energy loss. 
+This information converted in detectors electronics signal through the simulation of each detector
+response. Finally, the digitalized signal is stored in the same detector raw data format used in the 
+real data taking and reconstruction.
+
+%
+\subsection{Event Reconstruction} \label{sec:event_rec}
+
+The ALICE event reconstruction flow starts from the raw data, collected or simulated, and is 
+schematically shown in Figure \ref{fig:reconstruction}. 
+
+In the first step of the event reconstruction the detector raw data are converted into clusters, 
+through a set of algorithms which perform the reconstruction for each detector separately.
+All clusters are characterized by positions, signal amplitude and time.
+Other information, like the energy lost by the particle, the time of flight or the Cherenkov 
+angle are attached to the clusters in the PID detectors allowing the identification of the 
+tracked particle.
+
+The second step of the reconstruction is a preliminary estimation of the position of the primary
+vertex using clusters in the SPD, the closest detectors to the interaction point.
+The first estimate of the primary vertex is fundamental to speed-up the tracking algorithm searching
+good candidate tracks, even if the final estimation of the position of the interaction vertex
+needs the full track information.
+
+Subsequently, the Kalman filter technique \cite{kalman} is used for performing track finding and
+fitting in TPC and ITS. 
+The main tracking detector, in ALICE, is the Time Projection Chamber. Therefore track are reconstructed 
+starting from the TPC, then they are prolonged in the ITS looking for matches with the ITS 
+reconstructed tracks. 
+The found tracks are backward propagated searching, also, for a possible match in the other central
+barrel detectors.
+% a che condizioni una traccia è fully reconstructed? 
+Finally, the primary vertex can be determined using the fully reconstructed tracks.
+
+The last step of the event reconstruction chain is the search for photon conversion and decays of
+strange hadrons.
+
+\begin{figure}
+    \captionsetup{justification=centering}
+    \centering
+    \includegraphics[width=0.8\textwidth]{gfx/reconstruction}
+	\caption{Vertex and tracks reconstruction procedure in ALICE \cite{alice:Perf2014}.}
+	\label{fig:reconstruction}
+\end{figure}
+
+%
+\subsection{ALICE analysis framework} \label{sec:anal_frame}
+
+The ALICE software infrastructure, that allows the access to the collected and simulated data 
+available everywhere on the grid, is the Alien (ALICE Environment) \cite{alien} grid middleware.
+Through the Alien user interface it is possible to launch the analysis tasks singularly on ALICE data. 
+When more users are interested in analyzing the same data sample, is possible to use an optimized
+access pattern, called \textit{analysis train}, which allows to run together all the tasks
+of those users in the same jobs.
+It defines a standard analysis flow in the ALICE experiment and it ensures the reproducibility of the
+analyses.
+
+The data collected by the ALICE experiment are stored in binary files using the ROOT framework data 
+format.
+The ALICE software environment is \textit{AliRoot}, introduce in 1998 and based on the ROOT framework
+\cite{root}.
+The analysis related code -- containing all the software used in physics analysis -- is collected
+in a part of the ALICE offline framework denominated \textit{AliPhysics}.
+The reconstructed events are stored in two different formats: the Event Summary Data (ESD) format, 
+that is mainly used for calibration and detector performance studies, and the Analysis Object Data 
+(AOD) format, which contains only the relevant information at the analysis level.
+
+%
+%
+\section{ALICE performances} \label{sec:ali_perf}
+
+The ALICE experiment was specifically designed for the demanding experimental environment of the 
+\PbPb collisions. 
+One of the most challenging task, in this conditions, is the precise reconstruction of both momentum
+and origin of the particles produced.
+In this section the tracking and vertexing performances of the ALICE experiment will be presented,
+as well as the methods used for the particle identification.
+
+%
+\subsection{Tracking} \label{sec:tarcking}
+
+The importance of the tracking process lies in its relation with the particle momentum
+measurement and with the vertexing (Section: \ref{sec:vertexing}).
+
+The momentum of a charged particle travelling in magnetic field is related to the radius of curvature
+of the particle track. Therefore, measuring the radius of curvature, it is possible to measure the
+particle momentum.
+In particular, in colliders experiments, the interaction point is surrounded by cylindrical 
+position-sensitive detectors located in magnetic field -- usually parallel to the beam axis -- 
+which provide a measurement of the \textit{sagitta} of the track.
+The particle momentum is related to the sagitta by the following expression:
+\begin{equation}
+    p = \frac{L^{2} q B}{8\,s},
+\end{equation}
+where $L$ is the lever arm length of the tracking detectors, $q$ is the charge of the particle and $B$
+the magnetic field.
+Therefore, the resolution on the particle momentum does not depend only on the magnetic field used,
+but also on $L$ and, of course, on the resolution on the sagitta $\sigma_{s}$:
+\begin{equation}
+    \frac{\sigma_{p}}{p} \propto p \frac{\sigma_{s}}{B\,L^{2}}.
+\end{equation}
+Thanks to the large radial coverage ($0.039 \leq r \leq 3.680\ $ m), despite the mild solenoidal
+magnetic field, the ALICE apparatus is able to reconstruct tracks over a wide momentum range.
+
+The first stage of the tracking algorithm starts building the track seeds at a large radius of 
+the TPC.
+The seeds are propagated inward looking for other TPC cluster compatible with the track.
+Whenever a compatible cluster is found the track parameters are updated using a Kalman filter 
+\cite{kalman}. 
+Different seeds can reuse the same cluster, therefore it is not uncommon to have two or more
+tracks sharing some clusters. 
+If the fraction of shared clusters is above a predefined threshold (between 25\% and 50\%), a
+dedicated algorithm rejects the candidate tracks with the worst parameters quality.
+The tracks with at least 20 clusters (out of a maximum of 159) and that miss no more than 50\% 
+of the expected clusters are accepted and propagated to the inner radius of the TPC.
+Figure \ref{fig:tpc_rec_eff} shows the track reconstruction efficiency in the TPC.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{gfx/tpc_rec_eff}
+	\caption{TPC track reconstruction efficiency in pp (green line) collisions at \sotev and for central (red dots) and peripheral (blue open square) \PbPb collisions at \sdtev. The drop for $\pt \leq 0.5\; \gevc$ is due to energy loss in the detector material and the shape at higher \pt is related to the loss of clusters in the dead zones of the TPC. The efficiency does not depend on the detector occupancy.}
+	\label{fig:reconstruction}
+\end{figure}
+
+The reconstructed TPC tracks are propagated to the SSD, the outermost layer of the ITS.
+At this point, the tracking algorithm in ITS proceeds with a procedure similar to that adopted
+for the TPC. 
+Starting from the second layer of SSD, the seeds are propagated inward, penalizing tracks
+for which a compatible cluster in the extrapolation is not found.
+Among the prolongation candidates of the TPC track is selected the one with the highest quality.
+This track is stored in the reconstructed event as ITS+TPC track.
+
+The second stage of the tracking algorithm is the backward refit of the ITS+TPC tracks using the
+Kalman filter.
+The track is backward propagated looking for matching with TRD tracklets. If the matching is
+successful, updates the track parameters using the TRD tracklet information. 
+During this process, at each step, the integrated track length and the expected time of flight
+for different particle species are computed and the related track parameters are updated.
+This information is used for a correct particle identification in the Time Of Flight detector
+(Section: \ref{sec:PID}).
+Then an attempt to extrapolate the track and match it to one of the TOF clusters is performed.
+The track length integration and time of flight calculation are stopped at this stage.
+Finally a further extrapolation is performed to match the track with other external central
+barrel detectors as HMPID, PHOS and EMCal.
+
+The final stage of the track reconstruction, consists in propagating all the tracks from the TRD
+back to the innermost ITS layer. 
+In each detector (TRD, TPC and ITS) the tracks are refitted using the information of all attached
+clusters.
+If the refit process goes well the track \textit{refit flag} is switched on.
+At this stage the track’s position, direction, inverse curvature and its associate covariance 
+matrix are determined.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{gfx/rec_eff}
+	\caption{Panel (a): \pt resolution for standalone TPC (black and red markers) and ITS+TPC (blue and green open squares) tracks with and without constraint to primary vertex in \pPb collisions. Panel (b): Vertex resolution in the transverse plane using the SPD clusters only (open markers) or the full track information (full markers).}
+	\label{fig:rec_vert}
+\end{figure}
+
+Following the described process the ALICE apparatus can reconstruct track with resolution
+between 1\% and 10\% in the momentum range from 0.1 to 100 \gevc. 
+Figure \ref{fig:rec_vert}a shows the 1/\pt resolution for standalone TPC and ITS+TPC tracks which
+is related to the \pt resolution by the formula:
+\begin{equation}
+    \frac{\sigma_{\pt}}{\pt} = \frac{\sigma_{1/\pt}}{1/\pt}.
+\end{equation}
+The effect of constraining the tracks to the primary vertex is shown as well and considering,
+for instance, TPC standalone tracks the resolution is reduced from 6\% to 2\% at low \pt by 
+this requirements.
+
+%
+\subsection{Vertexing} \label{sec:vertexing}
+
+\subsubsection{Primary vertex reconstruction}
+A first estimation of the interaction vertex is obtained by using the clusters on the two layers of 
+SPD. The algorithm matches the clusters on the SPD layers inside a fixed azimuthal window,
+building a set of segments, called tracklets.
+Then the space point which minimize the distance from all the tracklets is computed and represents
+the interaction vertex estimation.
+At least two tracklets are required for a 3D reconstruction of the primary vertex position.
+This estimation is very fast, but the most precise determination of the primary vertex position is 
+obtained by using the full reconstructed track information (Figure \ref{fig:rec_vert}b).
+The full reconstructed tracks, obtained at the end of the tracking procedure, are propagated to the
+nominal beam line and the tracks too far from it are excluded from the vertex computation.
+
+\subsubsection{Secondary vertex reconstruction}
+Once the tracks and the primary vertex have been reconstructed, the event reconstruction procedure
+searches for secondary vertices from particle decays.
+The reconstruction of the secondary vertexes from decays of neutral particles and with a V-shaped track 
+topology of the daughters is performed with the $V^{0}$ finder algorithm.
+The basic principle of the $V^{0}$ finder algorithm is the matching of two tracks with opposite sign,
+which are close in the space and presumably come from the decay of one mother particle.
+The combined tracks and the resulting mother momentum are requested to pass quality selection criteria
+before being tagged as $V^{0}$ candidate.
+The $V^{0}$ finder algorithm is implemented in the ALICE software and performed with two different
+procedures, the offline and the on-the-fly.
+
+%
+\subsection{Particle Identification} \label{sec:PID}
+
+One of the main feature of the ALICE experiment is the Particle Identification capability with high
+resolution. To achieve this performances the information provided by different detectors are combined.
+For the charged hadron identification the ITS, the TPC, the TOF and the HMPID are used.
+The ITS and the TPC provide information on the specific energy loss of the tracked charged particles.
+The TOF detector measures the time of flight and the HMPID, a ring-imaging Cerenkov detector,
+measuring the Cerenkov angle, gives the $\beta = v / c\ $ of the particle.
+Those detectors can be used all together but, most common, the particle identification is performed
+combining the information provided by just few detector.
+The choice of which detector to use in a particular analysis is dictated by the subject of the analysis.
+
+\subsubsection{TPC particle identification} 
+
+In the TPC particles are identified by measuring their specific energy loss in the detector gas.
+Up to 159 padrows measure the charge generated in the gas by the passing particle in the ionization
+process. This charge is related to the particle energy loss by the value of the detector electric
+field and by gain factors linked to the detector features. 
+The resulting \dedx is obtained as the truncated mean of the single padrow measurement.
+
+Particle identification is performed by measuring simultaneously the specific energy loss \dedx 
+and the momentum of each particle traversing the detector gas.
+The energy loss as a function of the momentum in TPC has been parametrized with a function originally
+proposed by the ALEPH collaboration \cite{aleph}:
+\begin{equation} \label{eq:aleph}
+    f(\beta \gamma) = \frac{P_{1}}{\beta^{P_{4}}} \left( P_{2} - \beta^{P_{4}}
+    - \ln \left( P_{3} + \frac{1}{(\beta \gamma)^{P_{5}}} \right) \right),
+\end{equation} 
+where $\beta$ is the particle velocity, $\gamma$ is the Lorentz factor and $P_{1-5}$ are the fit
+parameters, obtained from a fit to the experimental data.
+Alternatively the response functions have been parametrized using splines as shown in Figure
+\ref{fig:pid_tpc}a which are provided by the ALICE analysis framework.
+
+Finally, particles are identified following the $\mathrm{n}\sigma$ method. This method consists in
+selecting a fiducial band around the expected energy loss -- given by the equation \ref{eq:aleph}
+or by the splines -- for the particle of interest.
+For each track, the distance from from the expected energy loss is computed in terms of 
+number of $\sigma$, where $\sigma$ is the \dedx resolution obtained with a Gaussian fit to the 
+energy loss distribution at each momentum interval.
+The \dedx resolution is about 5.2\% in pp collisions and 6\% in \PbPb collisions.
+A clear identification of the particle species, with the TPC, is possible up to $p \sim 1 \gevc$,
+since at higher momenta the specific energy loss of different particle species are superimposed.
+ 
