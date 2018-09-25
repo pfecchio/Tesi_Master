@@ -39,7 +39,7 @@
 \newcommand{\thesisFirstSupervisorDepartment}{I.N.F.N. Torino}
 
 \newcommand{\thesisSecondSupervisor}{Prof. Stefania Bufalino}
-\newcommand{\thesisSecondSupervisorUniversity}{\protect{Universit\`a degli Studi di Torino}}
+\newcommand{\thesisSecondSupervisorUniversity}{\protect{Politecnico di Torino}}
 \newcommand{\thesisSecondSupervisorDepartment}{I.N.F.N. Torino}
 
 \newcommand{\thesisUniversity}{\protect{Universit\`a degli Studi di Torino}}
@@ -59,6 +59,7 @@
 \usepackage{relsize}
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{multirow}
 \usepackage[demo]{graphicx}
 \usepackage{subcaption}
 
@@ -77,6 +78,7 @@
 \newcommand{\pip}       {\ensuremath{\pi^{+}}\xspace}
 \newcommand{\pim}       {\ensuremath{\pi^{-}}\xspace}
 \newcommand{\ds}        {\ensuremath{d^*}\xspace}
+\newcommand{\dsbar}     {\ensuremath{\bar{d^*}}\xspace}
 \newcommand{\dst}       {\ensuremath{{d}^{*}(2380)}\xspace}
 \newcommand{\dstdecay}  {\ensuremath{{d}^{*}(2380) \rightarrow {d}\ +\pi^{+}+ \pi^{-}}\xspace} % controllare che gli spazi vadano bene
 % \newcommand{\dstdecayc}{\ensuremath{{d}^{*}(2380) \rightarrow {d}\pi^{+}\pi^{-}}\xspace}
@@ -96,6 +98,8 @@
 
 \newcommand{\Lagr}{\mathcal{L}}
 \newcommand{\boldm}[1] {\mathversion{bold}#1\mathversion{normal}}
+
+\def\code#1{\texttt{#1}}
 
 \DeclareMathOperator{\Tr}{Tr}
 
@@ -168,7 +172,8 @@
 \pagestyle{maincontentstyle} 	% fancy header and footer
 
 % \input{content/ch1-HENP}		% INCLUDE: introduction on HENP
-\input{content/ch2-ALICE}		% INCLUDE: ALICE chapter
+% \input{content/ch2-ALICE}		% INCLUDE: ALICE chapter
+\input{content/ch4-ANALYSIS}	% INCLUDE: ALICE chapter
 
 \cleardoublepage
 

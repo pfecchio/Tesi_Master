@@ -3,10 +3,7 @@
 \chapter{The ALICE experiment}
 \label{sec:3}
 
-\cleanchapterquote{To see a World in a Grain of Sand \\
-                   And a Heaven in a Wild Flower \\ 
-                   Hold Infinity in the palm of your hand \\
-                   And Eternity in an hour}{William Blake}{(Auguries of Innocence)}
+\cleanchapterquote{Alice had begun to think that very few things indeed were really impossible.}{Lewis Carrol}{(Alice's Adventures in Wonderland)}
 
 The Large Hadron Collider (LHC) is the biggest and more powerful particle collider in the world.
 It consists of a 27 km ring of superconducting magnets and accelerating structures able to
@@ -161,7 +158,7 @@ For ultra-relativistic objects, the \textit{pseudo-rapidity} numerically converg
 
 \begingroup
 \setlength{\tabcolsep}{6pt} % Default value: 6pt
-\renewcommand{\arraystretch}{1.2} % Default value: 1
+\renewcommand{\arraystretch}{1.5} % Default value: 1
 \begin{table}[!tp]\small
 \centering
 	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc}
@@ -287,7 +284,7 @@ The SSD, together with the SDD, provide also the measurement of the energy loss 
 in their sensitive volume, extending the ALICE PID capabilities in the \pt region below 200 \mevc.
 
 \begingroup
-\renewcommand{\arraystretch}{1.2} % Default value: 1
+\renewcommand{\arraystretch}{1.5} % Default value: 1
 \begin{table}
 \centering
 \begin{tabular}{lccc}
@@ -378,7 +375,7 @@ centrality in p–Pb and Pb–Pb collisions.
 %
 \section{Trigger and Data Acquisition} \label{sec:data_flow}
 
-The trigger system in ALICE is managed by the Central Trigger Processor (CPT) \cite{alice_trigger} 
+The trigger system in ALICE is managed by the Central Trigger Processor (CTP) \cite{alice_trigger} 
 which collects and synchronizes all the trigger inputs coming from all the triggering detectors 
 with the information on the LHC filling scheme providing a trigger signal to the readout detectors
 in case of fulfilled trigger conditions. 
@@ -448,7 +445,7 @@ real data taking and reconstruction.
 \subsection{Event Reconstruction} \label{sec:event_rec}
 
 The ALICE event reconstruction flow starts from the raw data, collected or simulated, and is 
-schematically shown in Figure \ref{fig:reconstruction}. 
+schematically shown in Figure \ref{fig:reco_flow}. 
 
 In the first step of the event reconstruction the detector raw data are converted into clusters, 
 through a set of algorithms which perform the reconstruction for each detector separately.
@@ -480,7 +477,7 @@ strange hadrons.
     \centering
     \includegraphics[width=0.9\textwidth]{gfx/reconstruction}
 	\caption{Vertex and tracks reconstruction procedure in ALICE \cite{alice:Perf2014}.}
-	\label{fig:reconstruction}
+	\label{fig:rec_flow}
 \end{figure}
 
 %
