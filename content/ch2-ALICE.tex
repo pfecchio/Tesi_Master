@@ -398,7 +398,7 @@ through optical connections, the Detector Data Links (DDLs).
 LDCs is a farm of computers which build \textit{subevents} from the event fragments they receive from
 the front-end electronics and then sends \textit{subevents} to the Global Data Collectors (GDCs).
 The GDC compose the full event including information from the HLT.
-In the HLT level a fast reconstruction of the data -- including clusterisation and track reconstruction --
+At the HLT level a fast reconstruction of the data -- including clusterisation and track reconstruction --
 is performed, allowing further selections that are not possible in the hardware triggers.
 When the event building in the GDC is completed, the data are buffered in a local disk pool waiting 
 to be transferred to the CERN computing centre, where they will be registered on tape.
@@ -410,24 +410,23 @@ to be transferred to the CERN computing centre, where they will be registered on
 The offline analysis framework is fundamental for any High Energy Physics experiment.
 The huge amount of data collected by detectors requires a proper infrastructure able to process and 
 analyse the reconstructed events.
-Beyond that, modern experiments need a large number of Monte Carlo simulations, for the development of
-the detectors, for performance studies, but also as a basis for physics analysis.
+Beyond that, modern experiments need a large number of Monte Carlo (MC) simulations, for the development of
+the detectors, for performance studies, and also as a basis for physics analyses.
 
-The infrastructure realised by the CERN in order to menage the LHC data flow is the Worldwide 
-LHC Computing Grid (WLCG). The mission is precisely is to provide global 
-computing resources to store, distribute and analyse the $\sim$50-70 Petabytes of data expected every
-year of operations from the LHC experiments.
+The infrastructure realised at CERN in order to menage the LHC data flow is the Worldwide 
+LHC Computing Grid (WLCG). The mission of that project is to provide global 
+computing resources to store, distribute and analyse the $\sim$50-70 Petabytes of data expected for each
+year of operations of the LHC experiments.
 
-The ALICE collaboration uses the WLCG resources for its simulations, event reconstruction and physics
-analysis. In the following section more details about this aspects of the ALICE operations will be 
+The ALICE collaboration uses the WLCG resources for running MC simulations, event reconstruction and physics
+analyses. In the following section more details about this aspects of the ALICE operations will be 
 provided.
 
 %
 \subsection{Monte Carlo simulations} \label{sec:montecarlo}
 
 The first step of Monte-Carlo simulations is the event generation. 
-The ALICE simulation tools include generators for all the interaction topologies provided for its
-physics program: pp, pA and heavy ion collisions.
+The ALICE simulation tools include generators suited for the different collision systems available at the LHC: proton-proton (pp), proton-ion (pA) and heavy ion (AA) collisions.
 The event generator gives the set of all stable and weakly decaying particles produced in the collision,
 with their starting kinematic parameters. The strongly decaying particles -- as the \dst dibaryon studied
 in this analysis -- are usually handled at the generator level.
