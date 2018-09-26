@@ -436,14 +436,14 @@ experiment, whose geometry and material budget are precisely described in the AL
 Three different transport codes are available in the simulation framework: GEANT3, GEANT4 and FLUKA.
 These tools provide the information on the behaviour of the transported particles through the sensitive
 part of the detector, giving the particle energy loss. 
-This information converted in detectors electronics signal through the simulation of each detector
+This information is then converted in detectors electronics signal through the simulation of each detector
 response. Finally, the digitalised signal is stored in the same detector raw data format used in the 
 real data taking and reconstruction.
 
 %
 \subsection{Event Reconstruction} \label{sec:event_rec}
 
-The ALICE event reconstruction flow starts from the raw data, collected or simulated, and is 
+The ALICE event reconstruction flow starts from the raw data, collected or simulated, and its flow is 
 schematically shown in Figure \ref{fig:rec_flow}. 
 
 In the first step of the event reconstruction the detector raw data are converted into clusters, 
@@ -455,13 +455,12 @@ tracked particle.
 
 The second step of the reconstruction is a preliminary estimation of the position of the primary
 vertex using clusters in the SPD, the closest detectors to the interaction point.
-The first estimate of the primary vertex is fundamental to speed-up the tracking algorithm searching
-good candidate tracks, even if the final estimation of the position of the interaction vertex
+The first estimate of the primary vertex is fundamental to speed-up the tracking algorithm in the phase dedicated to the search of good candidate tracks, even if the final estimation of the interaction vertex position 
 needs the full track information.
 
-Subsequently, the Kalman filter technique \cite{kalman} is used for performing track finding and
-fitting in TPC and ITS. 
-The main tracking detector, in ALICE, is the Time Projection Chamber. Therefore track are reconstructed 
+Subsequently, the Kalman filter technique \cite{kalman} is used to perform track finding and
+fitting in the TPC and the ITS. 
+The main tracking detector, in ALICE, is the Time Projection Chamber and therefore tracks are reconstructed 
 starting from the TPC, then they are prolonged in the ITS looking for matches with the ITS 
 reconstructed tracks. 
 The found tracks are backward propagated searching, also, for a possible match in the other central
@@ -482,8 +481,7 @@ strange hadrons.
 %
 \subsection{ALICE analysis framework} \label{sec:anal_frame}
 
-The ALICE software infrastructure, that allows the access to the collected and simulated data 
-available everywhere on the grid, is the Alien (ALICE Environment) \cite{alien} grid middleware.
+The ALICE software infrastructure that allows  the whole Collaboration to access the collected and simulated data on the grid, is the Alien (ALICE Environment) \cite{alien} grid middleware.
 Through the Alien user interface it is possible to launch the analysis tasks singularly on ALICE data. 
 When more users are interested in analyzing the same data sample, is possible to use an optimized
 access pattern, called \textit{analysis train}, which allows to run together all the tasks
