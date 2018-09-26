@@ -130,9 +130,6 @@ The signal observed by the WASA-at-COSY collaboration, as discussed in section \
 mass of 2380 \mevcs and a width of $\sim$ 70 \mevcs. Therefore, Figure \ref{fig:valid} shows that the
 injected signal has the correct features of the \dst.
 
-The momentum spectrum of the pions and deuterons originating from the \ds decay has been checked.
-This spectra are reported in Figure \ref{fig:momentum_spec}. 
-
 %
 %
 \section{Event and track selection} \label{sec:4.2}
@@ -336,7 +333,6 @@ transverse momentum spectrum in the $0 \leq \pt \leq 8\;\gevc$ interval.
 This study is performed in order to have a more realistic spectrum both for the \ds and for the decay 
 products.
 
-
 Assuming the same \pt spectrum of the deuteron for the \ds, it is possible to obtain the \ds 
 transverse momentum spectrum with a rejection sampling. The deuteron spectrum in \pPb collisions is
 described by the Blast Wave (BW) distribution, which is based on the phenomenological model for
@@ -381,14 +377,35 @@ analysis.
 
 The rejection sampling has been applied to the \ds generated in the Monte Carlo, obtaining a 
 plausible \pt spectrum for the \ds and its decay product. In Figure \ref{fig:bw_spectrum} the
-resulting \pt spectrum is shown both before (blue line) and after (magenta line) the reconstruction
-process.
+resulting \pt spectrum for the \ds is shown both before (blue line) and after (magenta line) the reconstruction
+process. In Figure ~\ref{fig:BW_spec_prod} the expected momentum spectra of the pions 
+(Panel ~\ref{fig:pi_spectrum}) and the deuterons (Panel ~\ref{fig:deu_spectrum}) originating from the \ds
+decay are reported.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{gfx/genrecBW}
 	\caption{Spectrum for both generated (blue line) and reconstructed (magenta line) \ds obtained with Blast Wave rejection sampling.}
 	\label{fig:bw_spectrum}
+\end{figure}
+
+\begin{figure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/pi_spectrum}
+  \caption{}
+  \label{fig:pi_spectrum}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/deu_spectrum}
+  \caption{}
+  \label{fig:deu_spectrum}
+\end{subfigure}
+\caption{Expected transverse momentum spectrum for the \ds decay product derived with the rejection sampling: pions in panel (a) and deuterons in panel (b).}
+\label{fig:BW_spec_prod}
 \end{figure}
 
 %
