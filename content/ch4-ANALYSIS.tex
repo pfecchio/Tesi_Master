@@ -553,17 +553,191 @@ problem.
 
 For the measurement of the \dstdecay the main sources of backgrounds are the pions. 
 
+%
 \subsection{Partial Event Mixing model} \label{sec:pem}
 
-The partial event mixing model (PEM) 
+The partial event mixing model (PEM) tries to reproduce both correlated and uncorrelated backgrounds
+combining between them pion pairs from the same event with deuterons from another.
+In principle this ensure to break the correlation between \textit{\ds candidates} because not all three
+particles are taken from the same event.
+At the same time, it should correctly describe the correlations between pions because they are taken from the 
+same event.
+Events are classified by the position of the vertex along the $z$ axis ($z_{vertex}$) only. Classification 
+by particle multiplicity of the event was tested, but has not been used because it’s not effective.
+Different $z_{vertex}$ classifications has been studied, the final choice is a $10\ $ class of $1\;$ cm
+classification in the $-10 < z_{vertex} < 10$ cm interval.
 
+For each event, every pion pairs is combined with 5 different deuterons from 5 different events
+with $z_{vertex}$ in the same class.
+The model is compared with the \minv distribution \ -- outside the region of interest -- \ in 3
+different intervals of the transverse momentum of the \textit{\ds candidates}:
+\begin{itemize}
+    \item 0 -- 1 \ \gevc
+    \item 1 -- 2 \ \gevc
+    \item 2 -- 3 \ \gevc
+\end{itemize}
+Since the \ds production is expected to be negligible for $\pt > 3$ \gevc the comparison between the
+model and the \minv has been performed only in this intervals.
 
+\begin{figure}
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/01}
+  \caption{}
+  \label{fig:pem01}
+\end{subfigure}%
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/12}
+  \caption{}
+  \label{fig:pem12}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/23}
+  \caption{}
+  \label{fig:pem23}
+\end{subfigure}
+\caption{PEM model compared with \minv in the three considered \pt intervals.}
+\label{fig:PEM}
+\end{figure}
+%plot da fare più grandi??
 
+The normalisation of the PEM model to the data has been done in the interval from 2.480 to
+2.620 \gevcs. Smaller intervals have been studied, but the final findings do not
+change in any meaningful way. The normalisation has not been performed in the region on the left 
+of RoI because the model does not well describe the data in that region.
 
+The PEM model can reproduce quite well the data in the region on the right of the RoI,
+particularly in the 0 -- 1 \gevc \pt bin (Fig. ~\ref{fig:pem01}). In this region the difference between
+data and model is < 2\%, but a trend is clearly visible in the ratio.
+This trend is bigger in 1 -- 2 \gevc and 2 -- 3 \gevc \pt bins (Figure ~\ref{fig:pem12}, 
+~\ref{fig:pem23} respectively).
+Instead the left sideband is not reproduced by this model in all three \pt bins.
 
+The background description provided by the PEM model is not satisfactory in the whole \pt range
+considered. One can think that the discrepancies from data are due to some deuteron-pion correlation
+that we are not considering.
 
+Therefore another component of the PEM model has been derived mixing $d-\pi$ pairs from the
+same event and other pion from another event.
+The resulting model is the weighted sum of the $\pi-\pi$ PEM with the $d-\pi$ PEM. 
+The relative weight of the 2 contribution was found fitting the model to the data outside the RoI
+with the relative weight as fit parameter.
+This new model improves the background description.
+In the first two \pt bin the data/model ratio is almost the same as in the case of the previous model,
+while in the last one (Fig. ~\ref{fig:pem_imp23}) the discrepancies in the left sideband are < 3\%.
+This value, compared with the previous 12\% of discrepancies shows that the new PEM
+model provides a better background description.
 
+\begin{figure}
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/PEMimp0}
+  \caption{}
+  \label{fig:pem_imp01}
+\end{subfigure}%
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/PEMimp1}
+  \caption{}
+  \label{fig:pem_imp12}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/PEMimp2}
+  \caption{}
+  \label{fig:pem_imp23}
+\end{subfigure}
+\caption{PEM model improved with the $d-\pi$ component compared with \minv in the three considered \pt intervals.}
+\label{fig:PEMimp}
+\end{figure}
 
+%
+\subsection{Template + Event Mixing model} \label{sec:tem}
+
+The Template + Evnt Mixing model tries to reproduce the correlated backgrounds with a Monte Carlo based template
+for each background component, while the uncorrelated background is described with a real classical event mixing
+with all three tracks from three different events.
+
+The templates are obtained combining deuterons from data \ -- to ensure that they have the correct momentum spectrum 
+-- \ with pion pairs from Monte Carlo data \ -- in order to have the information about pion mothers.
+In the Monte Carlo every reconstructed pion pairs has benn considered.
+Looking at the Monte Carlo truth of the pion mothers, the pion sources that provide pion pairs with mass, summed with
+deuteron mass, in 2.120 - 2.600 \gevcs range, has been estimated.
+Then for each source the template was obtained combining pion pairs \ -- with the same mother imposed -- \ 
+with deuterons from the data. 
+Basically each template is a \minv histogram with pion pairs from MC \ -- from the same mother and from the same source -- \ 
+and deuterons from data. 
+Each pion pairs was mixed with 50 different deuterons in the same $z_{vertex}$ class in order to increase the statistics
+of the templates.
+
+This process has been done for the three \pt intervals considered, obtaining different templates in each \pt bin.
+The remaining background, which should be now totally uncorrelated, is described with a real event mixing, obtained 
+combining all three tracks from data from three different events in the same $z_{vertex}$ class.
+Templates have been derived for sources with a contribution to the background at least of $10^{-4}$ of the total in each 
+\pt bin:
+\begin{itemize}
+  \item[] 0 -- 1 \gevc $\rightarrow \ \omega(782),\ \eta,\ \rm K_{0}^{S},\ \eta^{'}(958),\ \gamma $
+  \item[] 1 -- 2 \gevc $\rightarrow \ \omega(782),\ \eta,\ \rm K_{0}^{S},\ \eta^{'}(958),\ \gamma $
+  \item[] 2 -- 3 \gevc $\rightarrow \ \omega(782),\ \eta,\ \eta^{'}(958),\ \rm K_{0}^{S},\ \phi(1020),\ \gamma $
+\end{itemize}
+
+In each \pt bin the TEM model has been obtained as the weighted sum of the templates and the uncorrelated comonent,
+where the weights are the fractions with which each template contributes to the total background.
+The weights were estimated starting from the abundance of each background source considered in the MC production.
+Of course there is a degree of uncertainty on the MC abundances, therefore the models has been fitted to the data in each
+\pt bin with weights as fit parameters. The weights has been constrained to be in $\pm$10\% range of the MC estimated value.
+
+\begin{figure}
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/can0}
+  \caption{}
+  \label{fig:tem01}
+\end{subfigure}%
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/can1}
+  \caption{}
+  \label{fig:tem12}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/can2}
+  \caption{}
+  \label{fig:tem23}
+\end{subfigure}
+\caption{The TEM model (magenta line) is compared with \minv from data (blue line) in 0 - 1 \gevc transverse momentum interval. The other lines represent different templates that contribute to the TEM model.}
+\label{fig:tem01}
+\end{figure}
+
+The TEM model provides a better background description then PEM model. In the first \pt bin
+(Fig. ~\ref{fig:tem01}) the data/model ratio is flat in the right sideband, while in the left sideband discrepancies
+are around 3\%. In the second bin (Fig. ~\ref{fig:tem12}) the situation is a little worse with a linear trend
+in the data/model ratio visible in the right sideband \ -- differences from flat ratio < 2\% -- \ while in
+the left sideband the description is similar to that from the first bin. In the last considered bin
+(Fig. ~\ref{fig:tem23}) the description get worse, in the right sideband there is a linear trend similar to
+the one observed in the second bin, while in the left sideband discrepancies from flat ratio are
+around 8−10\%.
+
+The TEM model provides, not only a better background description, but also an estimation of
+the background sources and the shapes of their contribution to the total background.
+
+Except for the $K_{s}^{0}$ meson, the templates show a smooth shape, so it is expected that they do not give
+rise to suspicious structures in the RoI. The situation is different for the $K_{s}^{0}$ which template has 
+the kinematic limit just where the \ds is expected to be.
+This can be a problem, but we can set the weight of the $K_{s}^{0}$ template measuring his production in the
+$\pip+\pim$ invariant mass distribution.
 
 %
 %
@@ -596,3 +770,57 @@ According to the measurement performed by the ALICE collaboration the deuteron y
 Therefore the rate of expected \dstdecay in p–Pb inelastic collisions at \sctev is then 
 approximately $2.46\times10^{-5}$ with an uncertainty of $14\%\ $ due to the $T_{ch}$
 range assumed in the calculations.
+
+%
+%
+\section{Significance estimation} \label{sec:sig}
+
+Before to perform the background subtraction to look for the \ds signal, the statistical significance of the measurement 
+has been estimated.
+Three ingredients have been used to get the estimation of the significance: the expected signal shape, 
+a plausible background shape and normalisation and finally an the \ds yield.
+
+While the signal shape has been obtained by reconstructing true \ds candidates in the Monte Carlo ~\ref{sec:4.2.1},
+the background shape and normalisation was extracted by studying the like sign triplets in the data
+\ -- $\ds \rightarrow d+\pip+\pip$  and $\ds \rightarrow d+\pim+\pim$ and their respective charge conjugate). 
+As \ds yield has been considered the thermal model estimations presented in Section ~\ref{sec:ds_production} 
+and two additional extreme cases: 10\% and 10 times the thermal model yield.
+
+\begin{figure}
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/sig_0}
+  \caption{}
+  \label{fig:tem01}
+\end{subfigure}%
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/sig_1}
+  \caption{}
+  \label{fig:tem12}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=\linewidth]{gfx/sig_2}
+  \caption{}
+  \label{fig:tem23}
+\end{subfigure}
+\caption{Significance of the measurement as a function of transverse momentum compared for the TPC and the TPC+TOF$_{deuteron}$ PID configurations.} % descrivere le 3 figure.}
+\label{fig:tem01}
+\end{figure}
+
+The significance has been estimated by integrating signal and background in a 70 \mevcs wide region around the
+mass peak of the \ds. Figure ~\ref{fig:} shows the significance in various \pt bins for both the TPC and the
+TPC+TOF$_{deuteron}$ PID configurations.
+The transverse momentum binning has been shifted specifically for this study: in the 0 to 0.5 \pT region the number of reconstructed d∗ is negligible with respect to the combinatorial background.
+
+While in the first \pT bin the TPC only PID guarantees an optimal identification of pions and deuterons showing the 
+maximum of significance, starting from 1.5 \gev the TPC+TOF$_{deuteron}$ configuration reduces the combinatorial background
+and improves the significance. 
+The wide peak of the \ds makes its identification challenging for the experimental condition at the LHC and if the thermal
+model prediction is correct it is possible to set only an upper limit to the production cross section of \ds.
+
+
