@@ -193,7 +193,7 @@ respect to the deuteron mass hypothesis is considered a \textit{(anti-)deuteron 
 Only events with at least one \textit{(anti-)deuteron candidate} are stored.
 
 %
-\subsection{Track selection}
+\subsection{Track selection} \label{sec:track_sel_crit}
 
 In the second stage the filtered data are processed on local machines, in order to define
 the best possible track selections.
@@ -201,14 +201,14 @@ Having locally the whole data set of interesting events allows to process the da
 quickly and therefore to study and to test further track selections easily.
 In the following the final selections, established after many attempts, will presented.
 
-Since \dstdecay is a Strong decay only tracks coming from the primary vertex are 
+Since \dstdecay is a strong decay only tracks coming from the primary vertex are 
 considered in this analysis. Therefore a selection on the DCA \ -- defined in Section
 \ref{sec:vertexing} -- \ has been applied. 
 The other selections are related to track parameter which describe, somehow, the goodness of the
 reconstruction process of the track. 
 In order to use only the geometrical region where the ALICE experiment is able to perform a full
 tracking and to provide the best possible PID information, only tracks in the pseudorapidity 
-region $|\eta| < 0.9 $ are selected. This requirements is mainly related to the TPC acceptance,
+region $|\eta| < 0.9 $ are selected. This requirement is mainly related to the TPC acceptance,
 since it is the main used detector. 
 Moreover, to guarantee a track momentum resolution better than 5\% and a TPC \dedx resolution of
 6\%, the selected tracks are required to have at least 70 clusters in the TPC.
@@ -241,19 +241,19 @@ DCA$_{z}$					        &	$<$ 2 cm    	 \\
 \midrule
 \end{tabular}
 \caption{Summary of the track selections applied in the analyses of the 2016 data sample.}
-\label{table:tselection}
+\label{tab:tselection}
 \end{table}
 \endgroup
 
 The aforementioned track selection criteria are applied to all the analyses presented in this
-thesis and are summarized in Table \ref{tab:tracksel}
+thesis and are summarized in Table \ref{tab:tselection}
 
 %
 % 
 \section{Reconstruction of the \ds} \label{sec:ds_candidate}
 
 After the event and track selection there is nothing left but to determine the (\dsbar)\ds candidates.
-And this is done by selecting the daughter tracks of the two charged pions decay:
+This is done by selecting the daughter tracks of the two charged pions decay:
 \begin{equation}
     \dstdecay.
 \end{equation}
@@ -263,7 +263,9 @@ Therefore a (\dsbar)\ds candidate is a triplet of tracks identified as (anti-)de
 The determination of the particle species of the track is performed with a track-by-track
 selection on the $n\sigma$ variable as described in Section \ref{sec:PID}. One of the main
 challenges in this analysis is to be able to have a good identification of the deuteron in the 
-momentum range in which the \ds production is expected to be more abundant. But, at the same time,
+momentum range in which the \ds production is expected to be more abundant. % \ -- $m_{d} >> m_{\pi}\ $ implies that most of the \ds 
+% momentum is taken by the deuteron, therefore the deuteron. 
+But, at the same time,
 it is essential to have a high purity of the pions and deuterons samples.
 Therefore the choice of the detectors which are to be used for the PID is not trivial and should
 be investigated.
@@ -285,9 +287,9 @@ reach the TOF.
 
 Otherwise the identification of the pion in the TPC is limited by the contamination from kaons and
 protons an can be performed for tracks up to $p \sim 1\; \gevc$. Using the TOF for pions
-identification can improve the purity of the sample, but at the same time can dramatically reduce the
-reconstruction efficiency of the \ds decay, since the pions produced by the \ds are expected to be at
-low momentum as shown in Figure \ref{fig:momentum_spec}.
+identification can improve the purity of the sample, but at the same time can dramatically reduce
+the reconstruction efficiency of the \ds decay, since the pions produced by the \ds are expected to
+be at low momentum due to the kinematics of the decay.
 
 In order to determine which PID configuration ensures the best performances in the reconstruction
 of the \ds decay 3 PID configurations have been studied. The choice of the configuration used
@@ -377,10 +379,11 @@ analysis.
 
 The rejection sampling has been applied to the \ds generated in the Monte Carlo, obtaining a 
 plausible \pt spectrum for the \ds and its decay product. In Figure \ref{fig:bw_spectrum} the
-resulting \pt spectrum for the \ds is shown both before (blue line) and after (magenta line) the reconstruction
-process. In Figure ~\ref{fig:BW_spec_prod} the expected momentum spectra of the pions 
-(Panel ~\ref{fig:pi_spectrum}) and the deuterons (Panel ~\ref{fig:deu_spectrum}) originating from the \ds
-decay are reported.
+resulting \pt spectrum for the \ds is shown both before (blue line) and after (magenta line) the
+reconstruction process. 
+In Figure ~\ref{fig:BW_spec_prod} the expected momentum spectra of the pions 
+(Panel ~\ref{fig:pi_spectrum}) and the deuterons (Panel ~\ref{fig:deu_spectrum}) originating from
+the \ds decay are reported.
 
 \begin{figure}
     \centering
@@ -418,9 +421,9 @@ of the ALICE detectors.
 
 Furthermore, if the decay is visible, the measured raw yields are biased by inefficiencies in the
 ALICE detectors.
-For instance, the active area of the experiment is not hermetic by design or, sometimes, parts of the
-detectors might be switched off during some data taking periods due to technical problems, reducing
-the efficiency.
+For instance, the active area of the experiment is not hermetic by design or, sometimes, parts of
+the detectors might be switched off during some data taking periods due to technical problems,
+reducing the efficiency.
 The acceptance, instead, is only related to the geometric coverage of the detectors.
 
 It is possible to correct for the finite efficiency and acceptance using a MC simulation where the
@@ -435,11 +438,103 @@ the MC simulation and the efficiency$\times$acceptance can be computed as:
 where $\mathrm{N}_{\textit{gen}}$ is the number (\dsbar)\ds generated in the azimuthal region
 $0 \leq \phi < 2\pi$ and in the $|y| < 0.5$, while $\mathrm{N}_{\textit{rec}}$ is the number of 
 (\dsbar)\ds for which the decay products satisfies the selection criteria described in Section
-\ref{sec:}. % mettere la 
+\ref{sec:track_sel_crit}.
+
+Since anti-deuterons can be absorbed by detectors material, the efficiency for \dsbar is
+expected to be lower than \ds.
+Therefore the efficiency $\times$ acceptance is evaluated for \ds and \dsbar separately as a
+function of the transverse momentum for the three PID configurations. 
+The results are shown in Figure ~\ref{fig:effAM}.
+
+The TPC only configuration has the highest efficiency,
+but in the light of the considerations of Section ~\ref{sec:ds_candidate} has also a high 
+contamination of the deuteron sample.
+The TPC-TOF configuration has a very low efficiency, due to the high pions suppression 
+resulted from the use of TOF for their identification. 
+Instead the TPC+TOF$_{deuteron}$ configuration guarantees a good efficiency and should also ensures
+a better deuteron sample purity than the TPC configuration.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{gfx/eff3globalSLIM}
+	\caption{Reconstruction efficiency of the \ds (left panel) and \dsbar (right panel) decay as a function of the transverse momentum for the three considered PID configurations.}
+	\label{fig:effAM}
+\end{figure}
+
+A more accurate evaluation of the discrepancy between \ds and \dsbar efficiency has been done
+by computing the \ds/\dsbar efficiency ratios for all the PID configurations.
+In Figure ~\ref{fig:eff_ratioAM} the ratio computed for TPC+TOF$_{deuteron}$ is reported.
+
+\begin{figure} [!h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{gfx/eff_ratioAM1SLIM}
+	\caption{The efficiency $\times$ acceptance for both \ds and \dsbar is compared for the TPC+TOF$_{deuteron}$ configuration. The \ds/\dsbar efficiency ratio is also reported and shows a behaviour compatible with what expected from the anti-deuteron cross section with material.}
+	\label{fig:eff_ratioAM}
+\end{figure}
+
+The relative difference between \ds and \dsbar efficiency is higher than $15$ \% for 
+$\pt < 3\;\gevc$, instead at higher \pt is $\sim 6\ $\%. 
+These values are compatible with what is expected from the anti-deuteron cross section with material,
+that decreases at higher \pt.
+
+The determination of which the PID configuration shall be chosen,
+must be made considering the momentum region in which the \ds is expected to be produced more 
+abundantly.
+In the light of the study of the expected \ds momentum spectrum (Sec. ~\ref{sec:spectrum}), the 
+crucial region for the efficiency is the $0 - 2\;\gevc$ \pt interval.
+Therefore the TPC/TPC+TOF$_{deuteron}$ efficiency ratio has been computed and compared with the expected
+\ds transverse momentum spectrum.
+The Figure ~\ref{fig:eff_spec} shows the comparison between this two configurations and the expected \pt
+spectrum of the \ds.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{gfx/effspecSLIM}
+	\caption{The expected \pt distribution for the \ds derived in Section ~\ref{sec:spectrum} is superimposed to the efficiency computed for TPC and TPC+TOF$_{deuteron}$ PID configurations. The ratio between the efficiencies of the two configurations is also reported.}
+	\label{fig:eff_spec}
+\end{figure}
+
+Both the TPC and TPC+TOF$_{deuteron}$ configurations have low efficiencies ($< 0.02$) in the $0 - 1\;\gevc$
+interval. While in the $1 - 2\;\gevc$ interval the TPC configuration efficiency reach the value of 0.10.
+In the whole $0 - 2\;\gevc$ interval the TPC efficiency is 3-5 times higher than the TPC+TOF$_{deuteron}$.
 
 
+Nevertheless, the choice of which PID configuration should be used is still not trivial. 
+In order to observe the \ds signal is crucial to have a good signal/background ratio that depends
+both from the efficiency and the purity of considered sample.
+The usage of the TOF for the identification of the deuteron ensure a reduced contamination \ -- from 
+other particle species -- \ of the deuteron sample. 
+Therefore the TPC+TOF$_{deuteron}$ configuration could have better performance in terms of the 
+signal/background ratio, respect to the TPC configuration.
 
-% The aim af this stage is to select tracks which are \textit{candidate daughters} of
-% the \dst decay. Therefore, to be accepted, a track must be a good track \ -- in terms 
-% of the selections described in the following -- \ and must be identified as a charged 
-% pion or an (anti-)deuteron.
+%
+%
+\section{Production yield estimation} \label{sec:ds_production}
+
+In this section more details on the estimation of the expected production yield of the \ds in \pPb
+collisions at \sctev are provided.
+
+In the Statistical Hadronization Model framework, described in Section ~\ref{sec:1.4.1}, is possible 
+to estimate the expected production yield of the \ds. Following equation ~\ref{eq:particleyields1}
+the average particle yield for a species $i$ is related to the mass of the specie itself by the 
+following relation:
+\begin{equation} \label{eq:tm_prod1}
+    \langle N_{i} \rangle \propto g_{i} e^{\beta m_{i}},
+\end{equation}
+where $\beta$ is the inverse of the chemical freeze-out temperature ($\beta = 1/T_{ch}$) and 
+$g_{i}\ $ is the degree of degeneracy of the $i\ $ state. 
+Therefore, using Equation ~\ref{eq:tm_prod1} the \ds/d ratio can be expressed as:
+\begin{equation} \label{eq:tm_prod2}
+\frac{\langle N_{\ds} \rangle}{\langle N_d \rangle}=\frac{g_{\ds}}{g_d}e^{-\beta (m_{\ds} - m_d)}=\frac{7}{3}e^{-\beta (m_{\ds} - m_d)}.
+\end{equation}
+In the range of chemical freeze-out temperature that typically describe nuclei production in
+heavy ion collisions (between 155 and 170 MeV), the ratio is approximately $0.1$.
+In order to compute the expected abundance of \ds in the 2016 \pPb data, an additional 
+$0.22$ factor has to be applied to keep into account the branching ratio of the \dstdecay
+decay channel under study.
+
+According to the measurement performed by the ALICE collaboration the deuteron yield in
+\pPb collisions at \sctev is (valore e citazione).
+Therefore the rate of expected \dstdecay in p–Pb inelastic collisions at \sctev is then 
+approximately $2.46\times10^{-5}$ with an uncertainty of $14\%\ $ due to the $T_{ch}$
+range assumed in the calculations.
