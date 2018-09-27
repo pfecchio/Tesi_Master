@@ -27,7 +27,7 @@ Protons and heavy ions are brought to their collision energies through different
 	\label{fig:lhc}
 \end{figure}
 
-The protons injected in the LHC ring starts their path in the LINAC2, where ionized hydrogen
+The protons injected in the LHC ring start their path in the LINAC2, where ionized hydrogen
 atoms are accelerated up to 50 MeV. Then the beam is injected in the Proton Synchrotron Booster 
 (PSB), which accelerates protons up to 1.4 GeV and provides the beam bunches to the Proton 
 Synchrotron (PS). The Proton Synchrotron provides 25 GeV protons to the Super Proton Synchrotron
@@ -514,12 +514,12 @@ as well as the methods used for the particle identification.
 \subsection{Tracking} \label{sec:tarcking}
 
 The importance of the tracking process lies in its relation with the particle momentum
-measurement and with the vertexing (Section: \ref{sec:vertexing}).
+measurement and with the vertexing determination (Section: \ref{sec:vertexing}).
 
-The momentum of a charged particle travelling in magnetic field is related to the radius of curvature
-of the particle track. Therefore, measuring the radius of curvature, it is possible to measure the
+The momentum of a charged particle travelling in a magnetic field is related to the radius of curvature
+of the particle track. Therefore, by measuring the radius of curvature, one can determine the
 particle momentum.
-In particular, in colliders experiments, the interaction point is surrounded by cylindrical 
+In particular, in collider experiments, the interaction point is surrounded by cylindrical 
 position-sensitive detectors located in magnetic field -- usually parallel to the beam axis -- 
 which provide a measurement of the \textit{sagitta} of the track.
 The particle momentum is related to the sagitta by the following expression:
@@ -528,7 +528,7 @@ The particle momentum is related to the sagitta by the following expression:
 \end{equation}
 where $L$ is the lever arm length of the tracking detectors, $q$ is the charge of the particle and $B$
 the magnetic field.
-Therefore, the resolution on the particle momentum does not depend only on the magnetic field used,
+Therefore, the resolution on the particle momentum does not depend only on the magnetic field,
 but also on $L$ and, of course, on the resolution on the sagitta $\sigma_{s}$:
 \begin{equation}
     \frac{\sigma_{p}}{p} \propto p \frac{\sigma_{s}}{B\,L^{2}}.
@@ -538,16 +538,16 @@ magnetic field, the ALICE apparatus is able to reconstruct tracks over a wide mo
 
 The first stage of the tracking algorithm starts building the track seeds at a large radius of 
 the TPC.
-The seeds are propagated inward looking for other TPC cluster compatible with the track.
-Whenever a compatible cluster is found the track parameters are updated using a Kalman filter 
+The seeds are propagated inward looking for other TPC clusters compatible with the track.
+Whenever a compatible cluster is found, the track parameters are updated using a Kalman filter 
 \cite{kalman}. 
 Different seeds can reuse the same cluster, therefore it is not uncommon to have two or more
 tracks sharing some clusters. 
 If the fraction of shared clusters is above a predefined threshold (between 25\% and 50\%), a
-dedicated algorithm rejects the candidate tracks with the worst parameters quality.
+dedicated algorithm rejects the candidate tracks with the worst quality parameters.
 The tracks with at least 20 clusters (out of a maximum of 159) and that miss no more than 50\% 
 of the expected clusters are accepted and propagated to the inner radius of the TPC.
-Figure \ref{fig:reconstruction} shows the track reconstruction efficiency in the TPC.
+Figure \ref{fig:reconstruction} shows the track reconstruction efficiency of the TPC.
 
 \begin{figure}
     \centering
@@ -556,18 +556,18 @@ Figure \ref{fig:reconstruction} shows the track reconstruction efficiency in the
 	\label{fig:reconstruction}
 \end{figure}
 
-The reconstructed TPC tracks are propagated to the SSD, the outermost layer of the ITS.
+The reconstructed TPC tracks are then propagated to the SSD, the outermost layer of the ITS.
 At this point, the tracking algorithm in ITS proceeds with a procedure similar to that adopted
 for the TPC. 
 Starting from the second layer of SSD, the seeds are propagated inward, penalizing tracks
 for which a compatible cluster in the extrapolation is not found.
-Among the prolongation candidates of the TPC track is selected the one with the highest quality.
-This track is stored in the reconstructed event as ITS+TPC track.
+Among the prolongation candidates of the TPC track only the highest quality track candidate is selected.
+This track is finally stored in the reconstructed event as ITS+TPC track.
 
-The second stage of the tracking algorithm is the backward refit of the ITS+TPC tracks using the
+The second stage of the tracking algorithm is the backward refit of the ITS+TPC tracks performed by using the
 Kalman filter.
 The track is backward propagated looking for matching with TRD tracklets. If the matching is
-successful, updates the track parameters using the TRD tracklet information. 
+successful, the algorithm updates the track parameters using the TRD tracklet information. 
 During this process, at each step, the integrated track length and the expected time of flight
 for different particle species are computed and the related track parameters are updated.
 This information is used for a correct particle identification in the Time Of Flight detector
@@ -579,7 +579,7 @@ barrel detectors as HMPID, PHOS and EMCal.
 
 The final stage of the track reconstruction, consists in propagating all the tracks from the TRD
 back to the innermost ITS layer. 
-In each detector (TRD, TPC and ITS) the tracks are refitted using the information of all attached
+In each detector (TRD, TPC and ITS) the tracks are refitted by using the information of all attached
 clusters.
 If the refit process goes well the track \textit{refit flag} is switched on.
 At this stage the track’s position, direction, inverse curvature and its associate covariance 
@@ -600,8 +600,8 @@ is related to the \pt resolution by the formula:
     \frac{\sigma_{\pt}}{\pt} = \frac{\sigma_{1/\pt}}{1/\pt}.
 \end{equation}
 The effect of constraining the tracks to the primary vertex is shown as well and considering,
-for instance, TPC standalone tracks the resolution is reduced from 6\% to 2\% at low \pt by 
-this requirements.
+for instance, TPC standalone tracks the resolution is reduced from 6\% to 2\% at low \pt by applying
+this requirement.
 
 %
 \subsection{Vertexing} \label{sec:vertexing}
@@ -610,8 +610,8 @@ this requirements.
 A first estimation of the interaction vertex is obtained by using the clusters on the two layers of 
 SPD. The algorithm matches the clusters on the SPD layers inside a fixed azimuthal window,
 building a set of segments, called tracklets.
-Then the space point which minimise the distance from all the tracklets is computed and represents
-the interaction vertex estimation.
+Then the space point which minimises the distance from all the tracklets is computed and it corresponds to the estimation of
+the interaction vertex.
 At least two tracklets are required for a 3D reconstruction of the primary vertex position.
 This estimation is very fast, but the most precise determination of the primary vertex position is 
 obtained by using the full reconstructed track information (Figure \ref{fig:vertres}).
@@ -628,34 +628,33 @@ nominal beam line and the tracks too far from it are excluded from the vertex co
 \subsubsection{Secondary vertex reconstruction}
 Once the tracks and the primary vertex have been reconstructed, the event reconstruction procedure
 searches for secondary vertices from particle decays.
-The reconstruction of the secondary vertexes from decays of neutral particles and with a V-shaped track 
+The reconstruction of the secondary vertices from decays of neutral particles and with a V-shaped track 
 topology of the daughters is performed with the $V^{0}$ finder algorithm.
 The basic principle of the $V^{0}$ finder algorithm is the matching of two tracks with opposite sign,
 which are close in the space and presumably come from the decay of one mother particle.
-The combined tracks and the resulting mother momentum are requested to pass quality selection criteria
+The combined tracks and the resulting mother momentum are requested to pass quality and topology selection criteria
 before being tagged as $V^{0}$ candidate.
 The $V^{0}$ finder algorithm is implemented in the ALICE software and performed with two different
-procedures, the offline and the on-the-fly.
+procedures, the offline $V^{0}$ and the on-the-fly $V^{0}$.
 
 In the reconstruction process the Distance of Closest Approach (DCA) -- the minimum 
 distance of the track from the reconstructed vertex -- is computed for all the reconstructed
 track in the beam line direction (DCA$_{z}$) and in the transverse plane (DCA$_{xy}$).
-This two parameters are stored together with the track.
-In the offline analysis these parameters are used to reject tracks that don't come from the 
+These two parameters are stored together with the track to be then used in the offline data analyses to reject tracks that do not come from the 
 primary vertex.
 
 %
 \subsection{Particle Identification} \label{sec:PID}
 
-One of the main feature of the ALICE experiment is the Particle Identification capability with high
-resolution. To achieve this performances the information provided by different detectors are combined.
+One of the main feature of the ALICE experiment is the capability of performing a Particle Identification with high
+resolution. To achieve these performances the information provided by different detectors are combined.
 For the charged hadron identification the ITS, the TPC, the TOF and the HMPID are used.
 The ITS and the TPC provide information on the specific energy loss of the tracked charged particles.
-The TOF detector measures the time of flight and the HMPID, a ring-imaging Cerenkov detector,
-measuring the Cerenkov angle, gives the $\beta = v / c\ $ of the particle.
-Those detectors can be used all together but, most common, the particle identification is performed
-combining the information provided by just few detector.
-The choice of which detector to use in a particular analysis is dictated by the subject of the analysis.
+The TOF detector measures the time of flight and the HMPID is a ring-imaging Cerenkov detector that
+measures the Cerenkov angle to determine the $\beta = v / c\ $ of the particle.
+Those detectors can be used all together but, usually, the particle identification is performed
+combining the information provided by few of them.
+The choice of the detectors to be used for the PID depends on the physics channel studied in a particular analysis.
 
 \subsubsection{TPC particle identification} \label{sec:TPC_PID}
 
@@ -667,7 +666,7 @@ The choice of which detector to use in a particular analysis is dictated by the 
 \end{figure}
 
 In the TPC particles are identified by measuring their specific energy loss in the detector gas.
-Up to 159 padrows measure the charge generated in the gas by the passing particle in the ionisation
+Up to 159 padrows measure the charge generated in the gas by the passing particle by means of the ionisation
 process. This charge is related to the particle energy loss by the value of the detector electric
 field and by gain factors linked to the detector features. 
 The resulting \dedx is obtained as the truncated mean of the single padrow measurement.
@@ -685,12 +684,12 @@ parameters, obtained from a fit to the experimental data.
 Alternatively the response functions have been parametrised using splines as shown in Figure
 \ref{fig:pid_tpc} which are provided by the ALICE analysis framework.
 
-Finally, particles are identified following the $n\sigma$ method.
+Finally, particles are identified adopting the $n\sigma$ method.
 This method consists in selecting a fiducial band around the expected signal for the particle of
 interest.
 For each track, the distance from the expected signal is computed in terms of 
 number of $\sigma$, where $\sigma$ is the signal resolution obtained with a Gaussian fit to the 
-signal distribution at each momentum interval:
+\dedx distribution in different momentum intervals:
 \begin{equation} \label{eq:nsigma}
     n\sigma = \frac{S_{measured} - S^{i}_{expected}}{\sigma^{i}_{expected}}.
 \end{equation}
@@ -715,10 +714,10 @@ since at higher momenta the specific energy loss of different particle species a
 
 \subsubsection{TOF particle identification} 
 
-The TOF detector, described in section \ref{sec:tof}, determine the mass of a particle measuring 
+The TOF detector, described in section \ref{sec:tof}, is used to determine the mass of a particle by measuring 
 the time of flight.
-Using the measured time of flight $t_{TOF}$ and the integrated track length $L$, determined in the 
-tracking process it is possible to compute the particle $\beta$ with the classical formula:
+As a matter of fact, the measured time of flight $t_{TOF}$ and the integrated track length $L$ are used to compute in the 
+tracking process the $\beta$ of the particle by adopting the classical formula:
 \begin{equation}
     \beta\,c = \frac{t_{TOF}}{L}.
 \end{equation}
@@ -727,7 +726,7 @@ in the tracking procedure.
 It is also visible the mismatch background, which is due to tracks incorrectly matched to TOF
 clusters. This background is an effect related to the TOF occupancy.
 
-The particle identification with TOF detector follows the $n\sigma$ method described in the 
+The particle identification with TOF detector is performed by using the $n\sigma$ method described in the 
 previous section (Sec. ~\ref{sec:TPC_PID}). In the specific case of the TOF, the measured and the 
 expected signal are represented by the measured and the expected time of flight of a specific
 particle specie.
