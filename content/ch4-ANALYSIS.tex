@@ -26,7 +26,7 @@ In this section more details are given on the strategy that was decided to use t
 The strategy is to perform a \textbf{blind analysis} for the invariant mass distribution
 (\minv) of the \dst \textit{candidates}. A \ds \textit{candidate} is a triplet composed 
 by the \ds decay products, or the related antiparticles, in the considered decay channel.
-Therefore, a region of interest, where the \ds signal is expected to be, has been defined:
+A region of interest, where the \ds signal is expected to be, has been defined:
 \begin{center}
 \textbf{Region of Interest (RoI)}\  $\rightarrow$ \  $(2.280  < $\ \minv$  < 2.480)\ $ \gevcs.
 \end{center}
@@ -506,6 +506,64 @@ The usage of the TOF for the identification of the deuteron ensure a reduced con
 other particle species -- \ of the deuteron sample. 
 Therefore the TPC+TOF$_{deuteron}$ configuration could have better performance in terms of the 
 signal/background ratio, respect to the TPC configuration.
+
+%
+%
+\section{Study of the background of the measurement} \label{sec:background}
+
+In order to perform the background subtraction described in Section ~\ref{sec:4.1} is necessary to have
+a model that satisfactorily reproduce the background of the measurement. 
+Therefore two different background models has been developed and tested. 
+In this section the models and their performances in describing the background will be discussed.
+
+In this work the main difficulty is to manage to describe and reproduce the backgrounds due to pions.
+In fact, in \pPb collisions many particle species are produced \cite{pkp_prod, neutralp, k0s_prod} 
+and most of them have a decay channel that include a charged pion.
+In particular neutral mesons, e.g. $\eta,\,\omega,\,K_{s}^{0}$ mesons, have a 
+\pip + \pim decay channel. Other pions, as well as deuterons, can be produced directly
+in the hadronization phase of the collision.
+All of these pions and deuterons contribute to the background of the measurement of the
+\dstdecay decay. In fact one can make a \textit{\ds candidate} (Sec. ~\ref{sec:ds_candidate})
+matching this particles not originating from a real \ds decay.
+
+The two models are both based on the event mixing technique.
+event mixing, basically, is a method used to reproduce uncorrelated background combining particles from
+different events, this ensures that there can’t be correlation between considered particles.
+This technique can be very effective, but it is necessary to be careful in mixing particles from 
+similar events.
+So it is very important to mix particles from events with comparable vertex and particle multiplicity 
+and to study the performance of this method with different classifications of similar events.
+event mixing can be very expensive in terms of memory usage, because it is necessary to store in memory
+lots of events that will later be combined with others.
+The tool used to store events has been specifically developed for providing an efficient memory usage.
+Different events classifications were studied for both models, in order to find the setup that 
+guarantees the best background description.
+
+
+
+
+Having lots of pions per event
+
+The two models developed to describe the \dsdecay background are based on different approaches to the
+problem.
+
+
+
+
+
+For the measurement of the \dstdecay the main sources of backgrounds are the pions. 
+
+\subsection{Partial Event Mixing model} \label{sec:pem}
+
+The partial event mixing model (PEM) 
+
+
+
+
+
+
+
+
 
 %
 %
