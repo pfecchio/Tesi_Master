@@ -7,7 +7,8 @@
 
 The Large Hadron Collider (LHC) is the biggest and most powerful particle collider in the world.
 It consists of a 27 km ring of superconducting magnets and accelerating structures able to
-provide proton-proton and Lead-Lead collisions at the highest energies ever reached in laboratory. At those energies the formation of the Quark Gluon Plasma is expected to happen.
+provide proton-proton and Lead-Lead collisions at the highest energies ever reached in laboratory.
+At those energies the formation of the Quark Gluon Plasma is expected to occur.
 While most of the LHC uptime is dedicated to the proton–proton physics that led to the discovery of 
 the Higgs Boson \cite{atlashiggs,cmshiggs} and of two charmed pentaquark states \cite{lhcbpenta}, 
 a significant part of the physics programme at the LHC is dedicated to heavy-ion physics and the 
@@ -41,14 +42,15 @@ These ions are selected and accelerated up to 4.2 MeV/u (energy per nucleon) bef
 a carbon foil, which strips most of them to Pb$^{54+}$. The Pb$^{54+}$ beam is accumulated, then
 accelerated to 72 MeV/u in the Low Energy Ion Ring (LEIR), which transfers them to the PS.
 The PS accelerates the beam to 5.9 GeV/u and sends it to the SPS after the beam has passed through a second foil where it is fully stripped to Pb$^{82+}$. 
-The SPS accelerates the beam to 177 GeV/u and then the beam is sent to the LHC, which accelerates it to 2.56 TeV/u.
+The SPS accelerates the beam to 177 GeV/u and then the beam is sent to the LHC, which accelerates it
+up to 5.02 TeV/u.
 
 The LHC ring is composed by 1232 dipole magnets and 392 quadrupole magnets, which respectively 
 guide and focus the counter–rotating beams in separate vacuum–filled pipes.
 When the beams are stable they are brought into collision in four interaction points corresponding
 to the experimental areas where the major LHC experiments are installed.
 The top centre–of–mass energy reached at the LHC in the collisions are 13 TeV and 5.02 TeV per 
-nucleon pair for pp and Pb--Pb collisions, respectively.
+nucleon pair for pp and \pPb collisions, respectively.
 
 Besides the centre–of–mass energy another crucial parameter for a collider is the luminosity delivered 
 to the experiments.
@@ -138,7 +140,7 @@ defined by the chirality of the coordinate system.
 For a more useful description of the apparatus and the physical quantities, two other coordinates
 are defined, which together with the $z$ axis described above, form a cylindrical coordinate system:
 the azimuthal angle $\phi$ increases counter-clockwise starting from $\phi = 0$ for $x$ axis looking
-towards the CMS side, and the polar angle $\theta$ increases from $z$ ($\theta=0$) to $-z$ 
+towards the Compact Muon Solenoid (CMS) side, and the polar angle $\theta$ increases from $z$ ($\theta=0$) to $-z$ 
 ($\theta=\pi$).
 Other two useful variables, widely used in this thesis, are the \textit{pseudo-rapidity} $\eta$:
 \begin{equation}
@@ -224,7 +226,8 @@ five tracking stations, four trigger stations and an iron absorber.
 
 \paragraph{Forward Detectors}
 Located in the forward-backward pseudorapidity regions and as close as possible to the beam line.
-Forward detectors include: the Forward Multiplicity Detector (FMD) made of silicon strips detectors, the Photon
+Forward detectors include: the Forward Multiplicity Detector (FMD) made of silicon strips detectors,
+the Photon
 Multiplicity Detector (PMD) and the Zero Degree Calorimeters (ZDC) consisting of two hadronic 
 calorimeters for protons and neutrons, plus one electromagnetic calorimeter. 
 In addition there are two trigger detectors located at each side of the interaction point:
@@ -308,10 +311,10 @@ Number of readout channels (k)          &      9835     &      133      &     26
 %
 \subsection{Time Projection Chamber} \label{sec:tpc}
 
-The Time Projection Chamber (TPC), illustrated in Figure \ref{fig:tpc}, is the main ALICE
-tracking detector with good two-track separation. It is also one of the main PID detectors as it
-provides the information about the specific energy loss of the particles in its volume in a large
-momentum range. 
+The Time Projection Chamber (TPC) ~\cite{alice_tpc}, illustrated in Figure \ref{fig:tpc}, 
+is the main ALICE tracking detector with good two-track separation. 
+It is also one of the main PID detectors as it provides the information about the specific energy 
+loss of the particles in its volume in a large momentum range. 
 
 \begin{figure}
     \captionsetup{justification=centering}
@@ -339,7 +342,7 @@ for the PID. The TPC radial position and acceptance are reported in Table \ref{t
 %
 \subsection{Time Of Flight detector} \label{sec:tof}
 
-The Time of Flight detector (TOF) has a cylindrical geometry and consists of a large area array of 
+The Time of Flight detector (TOF) ~\cite{alice_tof} has a cylindrical geometry and consists of a large area array of 
 Multi-gap Resistive-Plate Chambers (MRPC).
 With a sensitive area of 7.4 × 120 cm$^2$ each and an intrinsic resolution of about $\sim\;$ 40 ps 
 \cite{alicemulti}. TOF is used to identify charged particles and light nuclei in the momentum interval 
@@ -355,8 +358,8 @@ well as from the TOF.
 %
 \subsection{T0 detector} \label{sec:t0}
 
-The T0 detector consists of two arrays of Cherenkov counters placed on both sides of the interaction point 
-along the $z$ axis (Table \ref{tab:alice}).
+The T0 detector ~\cite{alice_t0} consists of two arrays of Cherenkov counters placed on both 
+sides of the interaction point along the $z$ axis (Table \ref{tab:alice}).
 It is mainly used to determine the event collision time ($t_{0}$) with a resolution below 50 ps
 and  independently from track and vertex reconstruction. 
 The T0 information provides also the Level 0 trigger when the position of the vertex falls in
@@ -365,9 +368,9 @@ appropriate intervals.
 %
 \subsection{V0 detector} \label{sec:v0}
 
-The V0 is a small angle detector consisting of two arrays (V0A and V0C) of 64 scintillators counters 
-distributed in 8 rings and they are installed on both sides of the ALICE interaction point 
-(Table \ref{tab:alice}). 
+The V0 ~\cite{alice_v0} is a small angle detector consisting of two arrays (V0A and V0C) of 64 
+scintillators counters distributed in 8 rings and they are installed on both sides of the ALICE
+interaction point (Table \ref{tab:alice}). 
 The V0 detectors are used to define the minimum bias (MB) trigger in ALICE and to determine the
 centrality in p–Pb and Pb–Pb collisions.
 
@@ -414,8 +417,8 @@ Beyond that, modern experiments need a large number of Monte Carlo (MC) simulati
 the detectors, for performance studies, and also as a basis for physics analyses.
 
 The infrastructure realised at CERN in order to menage the LHC data flow is the Worldwide 
-LHC Computing Grid (WLCG). The mission of that project is to provide global 
-computing resources to store, distribute and analyse the $\sim$50-70 Petabytes of data expected for each
+LHC Computing Grid (WLCG). The mission of this project is to provide global 
+computin3 resources to store, distribute and analyse the $\sim$50-70 Petabytes of data expected for each
 year of operations of the LHC experiments.
 
 The ALICE collaboration uses the WLCG resources for running MC simulations, event reconstruction and physics
@@ -426,14 +429,16 @@ provided.
 \subsection{Monte Carlo simulations} \label{sec:montecarlo}
 
 The first step of Monte-Carlo simulations is the event generation. 
-The ALICE simulation tools include generators suited for the different collision systems available at the LHC: proton-proton (pp), proton-ion (pA) and heavy ion (AA) collisions.
+The ALICE simulation tools include generators suited for the different collision systems available at the
+LHC: proton-proton (pp), proton-ion (pA) and heavy ion (AA) collisions.
 The event generator gives the set of all stable and weakly decaying particles produced in the collision,
 with their starting kinematic parameters. The strongly decaying particles -- as the \dst dibaryon studied
 in this analysis -- are usually handled at the generator level.
-Then, the generated kinematic parameters are propagated, using a transport framework, through the
+Then, the generated kinematic parameters are propagated, using a transport code, through the
 experiment, whose geometry and material budget are precisely described in the ALICE software.
 
-Three different transport codes are available in the simulation framework: GEANT3, GEANT4 and FLUKA.
+Three different transport codes are available in the simulation framework: GEANT3 ~\cite{geant3},
+GEANT4 ~\cite{geant4}, and FLUKA ~\cite{fluka1,fluka2}.
 These tools provide the information on the behaviour of the transported particles through the sensitive
 part of the detector, giving the particle energy loss. 
 This information is then converted in detectors electronics signal through the simulation of each detector
@@ -455,8 +460,9 @@ tracked particle.
 
 The second step of the reconstruction is a preliminary estimation of the position of the primary
 vertex using clusters in the SPD, the closest detectors to the interaction point.
-The first estimate of the primary vertex is fundamental to speed-up the tracking algorithm in the phase dedicated to the search of good candidate tracks, even if the final estimation of the interaction vertex position 
-needs the full track information.
+The first estimate of the primary vertex is fundamental to speed-up the tracking algorithm in the 
+phase dedicated to the search of good candidate tracks, even if the final estimation of the 
+interaction vertex position needs the full track information.
 
 Subsequently, the Kalman filter technique \cite{kalman} is used to perform track finding and
 fitting in the TPC and the ITS. 
@@ -481,18 +487,19 @@ strange hadrons.
 %
 \subsection{ALICE analysis framework} \label{sec:anal_frame}
 
-The ALICE software infrastructure that allows  the whole Collaboration to access the collected and simulated data on the grid, is the Alien (ALICE Environment) \cite{alien} grid middleware.
-Through the Alien user interface it is possible to launch the analysis tasks singularly on ALICE data. 
+The ALICE software infrastructure that allows the whole Collaboration to access the collected and
+simulated data on the grid, is the Alien (ALICE Environment) \cite{alien} grid middleware.
+Through the Alien user interface it is possible to launch the analysis tasks on ALICE data. 
 When more users are interested in analyzing the same data sample, one can use an optimized
 access pattern, called \textit{analysis train}, which allows to run together all the tasks
 of those users in the same job.
-This procedure defines a standard analysis flow in the ALICE experiment and it ensures the reproducibility of the
-analyses.
+This procedure defines a standard analysis flow in the ALICE experiment and it ensures the
+reproducibility of the analyses.
 
 The data collected by the ALICE experiment are stored in binary files using the ROOT framework data 
 format.
-The ALICE software environment, called \textit{AliRoot}, was introduced in 1998 and it is based on the ROOT framework
-\cite{root}.
+The ALICE software environment, called \textit{AliRoot}, was introduced in 1998 and it is based on 
+the ROOT framework \cite{root}.
 The analysis related code -- containing all the software used in physics analyses -- is collected
 in a part of the ALICE offline framework denominated \textit{AliPhysics}.
 The reconstructed events are stored in two different formats: the Event Summary Data (ESD) format, 
@@ -588,7 +595,7 @@ matrix are determined.
 \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{gfx/ptresolution}
-	\caption{Resolution on the 1/\pt parameter as a function of 1/\pt in \pPb collisions. The resolution is quoted for TPC tracks with (red dots) and without (black squares) vertex constraint and for ITS+TPC tracks with (green square) and without (blue square) vertex constraint. The resolution is quoted for 1/\pt because this can be extracted directly from the covariance matrix of the Kalman Filter fit.}
+	\caption{Resolution on the 1/\pt parameter as a function of 1/\pt in \pPb collisions at \sctev. The resolution is quoted for TPC tracks with (red dots) and without (black squares) vertex constraint and for ITS+TPC tracks with (green square) and without (blue square) vertex constraint. The resolution is quoted for 1/\pt because this can be extracted directly from the covariance matrix of the Kalman Filter fit.}
 	\label{fig:vertres}
 \end{figure}
 
@@ -621,7 +628,7 @@ nominal beam line and the tracks too far from it are excluded from the vertex co
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{gfx/vertexres}
-	\caption{Resolution on the primary vertex position using the SPD clusters (open markers) and the full track informations (full markers) as a function of the charged particle multiplicity of the event in pp collisions at  \cite{alicemulti}.}
+	\caption{Resolution on the primary vertex position using the SPD clusters (open markers) and the full track informations (full markers) as a function of the charged particle multiplicity of the event in pp collisions at $\sqrt{s} = 7 \mathrm{TeV}$ \cite{alicemulti}.}
 	\label{fig:vertres}
 \end{figure}
 
@@ -685,8 +692,8 @@ Alternatively the response functions have been parametrised using splines as sho
 \ref{fig:pid_tpc} which are provided by the ALICE analysis framework.
 
 Finally, particles are identified adopting the $n\sigma$ method.
-This method consists in selecting a fiducial band around the expected signal for the particle of
-interest.
+This method consists in selecting a fiducial band around the expected signal \ -- \dede in the case of
+the  particle identification with the TPC -- \ for the particle of interest.
 For each track, the distance from the expected signal is computed in terms of 
 number of $\sigma$, where $\sigma$ is the signal resolution obtained with a Gaussian fit to the 
 \dedx distribution in different momentum intervals:
@@ -714,10 +721,10 @@ since at higher momenta the specific energy loss of different particle species a
 
 \subsubsection{TOF particle identification} 
 
-The TOF detector, described in section \ref{sec:tof}, is used to determine the mass of a particle by measuring 
-the time of flight.
-As a matter of fact, the measured time of flight $t_{TOF}$ and the integrated track length $L$ are used to compute in the 
-tracking process the $\beta$ of the particle by adopting the classical formula:
+The TOF detector, described in section \ref{sec:tof}, is used to determine the mass of a particle by
+measuring the time of flight.
+As a matter of fact, the measured time of flight $t_{TOF}$ and the integrated track length $L$ are used
+to compute in the tracking process the $\beta$ of the particle by adopting the classical formula:
 \begin{equation}
     \beta\,c = \frac{t_{TOF}}{L}.
 \end{equation}
@@ -734,24 +741,3 @@ particle specie.
 Thanks to its excellent time resolution the TOF detector provides the information for PID in the
 intermediate momentum range, up to 2.5 \gevc for pions and kaons, 4 \gevc for protons and 5 \gevc
 for deuterons.
-
-
-% \begin{figure}
-% \begin{subfigure}{.5\textwidth}
-%   \centering
-%   \captionsetup{justification=centering}
-%   \includegraphics[width=\linewidth]{gfx/pid_tpc_gen}
-%   \caption{}
-%   \label{fig:pid_tpc}
-% \end{subfigure}%
-% \begin{subfigure}{.5\textwidth}
-%   \centering
-%   \captionsetup{justification=centering}
-%   \includegraphics[width=\linewidth]{gfx/pid_tof}
-%   \caption{}
-%   \label{fig:pid_tof}
-% \end{subfigure}
-% \caption{Panel (a): specific energy loss as a function of the rigidity for particles traversing the TPC gas in \pPb collisions at \sctev. The black lines represent the expected detector response for different particles. Panel (b): measured $\beta$ of the particles in \pPb collisions at \sctev as a function of the track momentum.}
-% \label{fig:pid_per}
-% \end{figure}
- 

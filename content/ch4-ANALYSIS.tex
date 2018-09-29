@@ -1,7 +1,6 @@
 % !TEX root = ../main.tex
 %
-\chapter{Analysis}
-\label{sec:4}
+\chapter{Analysis} \label{sec:4}
 
 \cleanchapterquote{To see a World in a Grain of Sand \\
                    And a Heaven in a Wild Flower \\ 
@@ -498,7 +497,6 @@ Both the TPC and TPC+TOF$_{deuteron}$ configurations have low efficiencies ($< 0
 interval. While in the $1 - 2\;\gevc$ interval the TPC configuration efficiency reach the value of 0.10.
 In the whole $0 - 2\;\gevc$ interval the TPC efficiency is 3-5 times higher than the TPC+TOF$_{deuteron}$.
 
-
 Nevertheless, the choice of which PID configuration should be used is still not trivial. 
 In order to observe the \ds signal is crucial to have a good signal/background ratio that depends
 both from the efficiency and the purity of considered sample.
@@ -514,7 +512,7 @@ signal/background ratio, respect to the TPC configuration.
 In order to perform the background subtraction described in Section ~\ref{sec:4.1} is necessary to have
 a model that satisfactorily reproduce the background of the measurement. 
 Therefore two different background models has been developed and tested. 
-In this section the models and their performances in describing the background will be discussed.
+In this section the models and their performances in describing the background are discussed.
 
 In this work the main difficulty is to manage to describe and reproduce the backgrounds due to pions.
 In fact, in \pPb collisions many particle species are produced \cite{pkp_prod, neutralp, k0s_prod} 
@@ -527,31 +525,18 @@ All of these pions and deuterons contribute to the background of the measurement
 matching this particles not originating from a real \ds decay.
 
 The two models are both based on the event mixing technique.
-event mixing, basically, is a method used to reproduce uncorrelated background combining particles from
-different events, this ensures that there can’t be correlation between considered particles.
+Event mixing, basically, is a method used to reproduce uncorrelated background combining particles from
+different events, this ensures that there can not be correlation between considered particles.
 This technique can be very effective, but it is necessary to be careful in mixing particles from 
 similar events.
 So it is very important to mix particles from events with comparable vertex and particle multiplicity 
 and to study the performance of this method with different classifications of similar events.
-event mixing can be very expensive in terms of memory usage, because it is necessary to store in memory
+
+Event mixing can be very expensive in terms of memory usage, because it is necessary to store
 lots of events that will later be combined with others.
 The tool used to store events has been specifically developed for providing an efficient memory usage.
 Different events classifications were studied for both models, in order to find the setup that 
 guarantees the best background description.
-
-
-
-
-Having lots of pions per event
-
-The two models developed to describe the \dsdecay background are based on different approaches to the
-problem.
-
-
-
-
-
-For the measurement of the \dstdecay the main sources of backgrounds are the pions. 
 
 %
 \subsection{Partial Event Mixing model} \label{sec:pem}
@@ -728,7 +713,7 @@ in the data/model ratio visible in the right sideband \ -- differences from flat
 the left sideband the description is similar to that from the first bin. In the last considered bin
 (Fig. ~\ref{fig:tem23}) the description get worse, in the right sideband there is a linear trend similar to
 the one observed in the second bin, while in the left sideband discrepancies from flat ratio are
-around 8−10\%.
+around 8-10\%.
 
 The TEM model provides, not only a better background description, but also an estimation of
 the background sources and the shapes of their contribution to the total background.
@@ -765,11 +750,10 @@ In order to compute the expected abundance of \ds in the 2016 \pPb data, an addi
 $0.22$ factor has to be applied to keep into account the branching ratio of the \dstdecay
 decay channel under study.
 
-According to the measurement performed by the ALICE collaboration the deuteron yield in
-\pPb collisions at \sctev is (valore e citazione).
-Therefore the rate of expected \dstdecay in p–Pb inelastic collisions at \sctev is then 
+The rate of expected \dstdecay in p–Pb inelastic collisions at \sctev is then 
 approximately $2.46\times10^{-5}$ with an uncertainty of $14\%\ $ due to the $T_{ch}$
-range assumed in the calculations.
+range assumed in the calculations. The value of the deuteron yield used to compute the \ds/d
+ratio has been measured by the ALICE collaboration ~\cite{deuteron_in_progress}.
 
 %
 %
