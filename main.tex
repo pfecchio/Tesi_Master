@@ -77,6 +77,7 @@
 
 \newcommand{\pip}       {\ensuremath{\pi^{+}}\xspace}
 \newcommand{\pim}       {\ensuremath{\pi^{-}}\xspace}
+\newcommand{\piz}       {\ensuremath{\pi^{0}}\xspace}
 \newcommand{\ds}        {\ensuremath{d^*}\xspace}
 \newcommand{\dsbar}     {\ensuremath{\bar{d^*}}\xspace}
 \newcommand{\dst}       {\ensuremath{{d}^{*}(2380)}\xspace}
@@ -110,6 +111,11 @@
 % **************************************************
 \usepackage[utf8]{inputenc}		% defines file's character encoding
 \usepackage[english]{babel}		% babel system, adjust the language of the content
+\usepackage[dvipsnames]{xcolor}
+\usepackage{cleveref}
+\usepackage{xcolor}
+
+\definecolor{bluetheme}{cmyk}{1, .50, .10, .01}
 
 \usepackage[					% clean thesis style
 	figuresep=colon,%
@@ -129,11 +135,14 @@
 	pdfsubject={\thesisSubject},% 	- subject (PDF meta)
 	pdfauthor={\thesisName},	% 	- author (PDF meta)
 	plainpages=false,			% 	-
-	colorlinks=false,			% 	- colorize links?
 	pdfborder={0 0 0},			% 	-
 	breaklinks=true,			% 	- allow line break inside links
 	bookmarksnumbered=true,		%
-	bookmarksopen=true			%
+	bookmarksopen=true, 		%
+	linkcolor  = bluetheme!\myshade!black,
+    citecolor  = bluetheme!\myshade!black,
+    urlcolor   = bluetheme!\myshade!black,
+    colorlinks = true
 }
 
 % **************************************************
@@ -173,10 +182,10 @@
 \setcounter{page}{1}			% set page counter
 \pagestyle{maincontentstyle} 	% fancy header and footer
 
-\input{content/ch1-HENP}		% INCLUDE: introduction on HENP
-% \input{content/ch2-DIBARYONS}   % INCLUDE: dibaryon physics
-\input{content/ch3-ALICE}		% INCLUDE: ALICE chapter
-\input{content/ch4-ANALYSIS}	% INCLUDE: analysis 
+% \input{content/ch1-HENP}		% INCLUDE: introduction on HENP
+\input{content/ch2-DIBARYONS}   % INCLUDE: dibaryon physics
+% \input{content/ch3-ALICE}		% INCLUDE: ALICE chapter
+% \input{content/ch4-ANALYSIS}	% INCLUDE: analysis 
 
 \cleardoublepage
 
