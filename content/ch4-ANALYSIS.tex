@@ -1,6 +1,6 @@
 % !TEX root = ../main.tex
 %
-\chapter{Analysis} \label{sec:4}
+\chapter{Search of the \dst dibaryon} \label{sec:4}
 
 \cleanchapterquote{To see a World in a Grain of Sand \\
                    And a Heaven in a Wild Flower \\ 
@@ -10,33 +10,31 @@
 In this chapter the details on data sample and the analysis technique used for the search of the \dst
 dibaryon and the related antiparticle, will be presented. 
 The \dst has been searched in the \dstdecay decay channel, since this is expected to be the
-most relevant channel \ -- the expected branching ratio is around 23\% -- \ detectable by the
-ALICE apparatus.
-
-From now on, the \dst dibaryon will be identified as \ds as well as \dst, while the deuteron
-will be also called $d$.
+most relevant channel detectable by the ALICE apparatus \ -- the expected branching ratio is
+around 23\% (Tab.~\ref{tab:br}).
 
 %
 %
 \section{Analysis strategy} \label{sec:4.1}
 
 In this section more details are given on the strategy that was decided to use to search the
-\dst dibaryon. 
+\dst dibaryon in \pPb collisions at \sctev. 
 The strategy is to perform a \textbf{blind analysis} for the invariant mass distribution
-(\minv) of the \dst \textit{candidates}. A \ds \textit{candidate} is a triplet composed 
-by the \ds decay products, or the related antiparticles, in the considered decay channel.
+(\minv) of the \ds \textit{candidates}. A \ds \textit{candidate} is a triplet composed 
+by the \ds decay products in the considered decay channel 
+\ -- therefore $d$, \pip, \pim or the related antiparticles.
 A region of interest, where the \ds signal is expected to be, has been defined:
 \begin{center}
 \textbf{Region of Interest (RoI)}\  $\rightarrow$ \  $(2.280  < $\ \minv$  < 2.480)\ $ \gevcs.
 \end{center}
 The RoI, will not be considered while studying the selections.
-When the selections are satisfactorily optimized the RoI will be \textit{unblinded} and a
+When the selections are satisfactorily optimised the RoI will be \textit{unblinded} and a
 background subtraction will be performed to look for the signal.
 
-The idea behind the blind analysis is to optimize the selections and to develop a model
+The idea behind the blind analysis is to optimise the selections and to develop a model
 able to describe the background of the measurement without introducing any bias. 
 
-The predicted physics properties of the \dst are summarized in the Table~\ref{tab:dst_prop}. 
+The predicted physics properties of the \dst (Sec.~\ref{sec:2}) are summarised in the Table~\ref{tab:dst_prop}. 
 Considering these values, the chosen RoI ensures that the signal \ -- if it exists and it is visible
 -- \ is basically in that mass interval.
 \begingroup
@@ -62,19 +60,20 @@ $d\; \pi^{+} \pi^{-}\ $ B.R.	 & 23(2)\ \%		    \\
 \section{Data and Monte Carlo sample} \label{sec:4.2}
 
 The analysis presented in this thesis is based on the \pPb collisions at \sctev 
-collected in 2016. 
+collected in 2016 by the ALICE experiment at the LHC. 
 
 The sample of collected data consists of nearly $5.5\times10^{8}$ minimum bias events.
 In order to increase the number of collected events during this data taking period, two
 different minimum bias trigger has been adopted.
 The first trigger, called \code{CENT}, basically is a minimum bias trigger for the central barrel
-detectors. The SDD detector has a greater busy time than other detectors \ -- around three times
+detectors. But SDD detector has a greater busy time than other detectors \ -- around three times
 than SSD -- \ which limits the rate of collected events. 
-In order to increase the rate of collected events, the second trigger, called \code{FAST}, allows
+In order to increase the rate of collected events a second trigger, called \code{FAST}, allows
 to detect events coming in the SDD busy time by excluding the SDD by the acquisition.
-The data flow and triggers management is performed by the ALICE CTP (Sec.~\ref{sec:data_flow}).
+The management of the data flow and this two triggers is performed by the ALICE 
+CTP (Sec.~\ref{sec:data_flow}).
 
-In the \textit{off-line} event reconstruction the whole data set analyzed in this work has been
+In the \textit{off-line} event reconstruction, the whole data set analyzed in this work has been
 reconstructed excluding the SDD information from the process, in order to made compatible
 the data acquired with the two different triggers.
 
@@ -96,7 +95,7 @@ The injected \dst are made decay by the generator through the \dstdecay channel.
 
 The other possible decay of the \dst have not been considered since are not relevant or not
 detectable \ -- because of the presence of neutral particle in the final state -- \ by ALICE.
-Since the considered decay occurs through Strong interaction, the decay takes place basically in the 
+Since the considered decay occurs through strong interaction, the decay takes place in the 
 interaction vertex. Therefore the decay products are generated starting from the interaction vertex
 together with the others collision products.
 
@@ -108,10 +107,10 @@ detectors in the runs used for the analysis.
 \subsection{Monte Carlo validation} \label{sec:4.2.1}
 
 As mentioned above, the EPOS-LHC event generator does not include the \dst dibaryon, therefore it has
-been injected on top of \pPb collision. 
+been injected on top of \pPb Monte Carlo generated collision. 
 The first thing done in this thesis is the validation of the injection process through
 the analysis of the resulting events.
-This validation ensure that the injected dibaryonic states have the correct physics properties
+This validation ensure that the injected dibaryonic state has the correct physics properties
 expected for the \dst.
 
 This validation has been done checking the shape of the invariant mass distribution of \dst decay 
@@ -120,12 +119,12 @@ mother has been considered, in order to avoid background.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{gfx/valid}
+    \includegraphics[width=0.8\textwidth]{gfx/valid}
 	\caption{Invariant mass distribution of the \dst decay product, obtained using the generated tracks. The distribution shows the correct shape. The mean and the \textit{rms} of the distribution are compatible with the predicted properties of the \dst.}
 	\label{fig:valid}
 \end{figure}
 
-The signal observed by the WASA-at-COSY collaboration, as discussed in section~\ref{sec:wasa}, has
+The signal observed by the WASA-at-COSY collaboration, as discussed in section~\ref{sec:2.2.2}, has
 mass of 2380 \mevcs and a width of $\sim$ 70 \mevcs. Therefore, Figure~\ref{fig:valid} shows that the
 injected signal has the correct features of the \dst.
 
@@ -197,7 +196,7 @@ In the second stage the filtered data are processed on local machines, in order 
 the best possible track selections.
 Having locally the whole data set of interesting events allows to process the data very 
 quickly and therefore to study and to test further track selections easily.
-In the following the final selections, established after many attempts, will presented.
+In the following the final selections, established after many attempts, are presented.
 
 Since \dstdecay is a strong decay only tracks coming from the primary vertex are 
 considered in this analysis. Therefore a selection on the DCA \ -- defined in 
@@ -213,8 +212,11 @@ Moreover, to guarantee a track momentum resolution better than 5\% and a TPC \de
 Then the selected tracks are required to overcome successfully the ITS and the TPC refit process
 \ -- described in Section~\ref{sec:tarcking}.
 In addition, the $\chi^{2}$ per TPC clusters is computed in the track fitting procedure and is
-required to be less than 4, while the \textit{Golden $\chi^{2}$} \ -- defined as blah blah blah -- 
-\ is required to be less than 36.
+required to be less than 4, while the \textit{Golden $\chi^{2}$} \ -- defined as the $\chi^{2}$
+between the TPC track constrained to the primary vertex and the global track -- 
+\ is required to be less than 36. The selection on the \textit{Golden $\chi^{2}$} value
+rejects bad quality primary tracks and also a large fraction of secondary tracks originating from
+decay or interaction vertices displaced from the primary vertex.
 Finally, further selection is applied on the \code{kKink} parameter in order to reject
 particles coming from beam line interactions.
 
@@ -244,7 +246,7 @@ DCA$_{z}$					        &	$<$ 2 cm    	 \\
 \endgroup
 
 The aforementioned track selection criteria are applied to all the analyses presented in this
-thesis and are summarized in Table~\ref{tab:tselection}
+thesis and are summarized in Table~\ref{tab:tselection}.
 
 %
 % 
@@ -310,7 +312,7 @@ Table~\ref{tab:pid_config}.
 \begin{table}
 \centering
 \begin{tabular}{ccc}
-    & \multicolumn{2}{c}{\textbf{PID selections}}  \\%& \multicolumn{2}{c}{\textbf{Selections for TOF}}\\
+    \multicolumn{3}{c}{\textbf{PID selections}}  \\%& \multicolumn{2}{c}{\textbf{Selections for TOF}}\\
 \toprule
 Species & Selection for TPC & Selection for TOF   \\
 \hline
@@ -375,6 +377,13 @@ The parameters values, used in this analysis and summarized in Table~\ref{tab:bw
 were obtained by fitting the measured deuterons spectrum with the BW distribution in previous
 analysis.
 
+\begin{figure} [htb]
+    \centering
+    \includegraphics[width=0.7\textwidth]{gfx/genrecBW}
+	\caption{Spectrum for both generated (blue line) and reconstructed (magenta line) \ds obtained with Blast Wave rejection sampling.}
+	\label{fig:bw_spectrum}
+\end{figure}
+
 The rejection sampling has been applied to the \ds generated in the Monte Carlo, obtaining a 
 plausible \pt spectrum for the \ds and its decay product. In Figure~\ref{fig:bw_spectrum} the
 resulting \pt spectrum for the \ds is shown both before (blue line) and after (magenta line) the
@@ -383,14 +392,7 @@ In Figure~\ref{fig:BW_spec_prod} the expected momentum spectra of the pions
 (Panel~\ref{fig:pi_spectrum}) and the deuterons (Panel~\ref{fig:deu_spectrum}) originating from
 the \ds decay are reported.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{gfx/genrecBW}
-	\caption{Spectrum for both generated (blue line) and reconstructed (magenta line) \ds obtained with Blast Wave rejection sampling.}
-	\label{fig:bw_spectrum}
-\end{figure}
-
-\begin{figure}
+\begin{figure}[htb]
 \begin{subfigure}{.5\textwidth}
   \centering
   \captionsetup{justification=centering}
@@ -737,7 +739,7 @@ In this section more details on the estimation of the expected production yield 
 collisions at \sctev are provided.
 
 In the Statistical Hadronization Model framework, described in Section~\ref{sec:1.4.1}, is possible 
-to estimate the expected production yield of the \ds. Following equation~\ref{eq:particleyields1}
+to estimate the expected production yield of the \ds. Following equation~\eqref{eq:particleyields1}
 the average particle yield for a species $i$ is related to the mass of the specie itself by the 
 following relation:
 \begin{equation} \label{eq:tm_prod1}
@@ -745,7 +747,7 @@ following relation:
 \end{equation}
 where $\beta$ is the inverse of the chemical freeze-out temperature ($\beta = 1/T_{ch}$) and 
 $g_{i}\ $ is the degree of degeneracy of the $i\ $ state. 
-Therefore, using Equation~\ref{eq:tm_prod1} the \ds/d ratio can be expressed as:
+Therefore, using Equation~\eqref{eq:tm_prod1} the \ds/d ratio can be expressed as:
 \begin{equation} \label{eq:tm_prod2}
 \frac{\langle N_{\ds} \rangle}{\langle N_d \rangle}=\frac{g_{\ds}}{g_d}e^{-\beta (m_{\ds} - m_d)}=\frac{7}{3}e^{-\beta (m_{\ds} - m_d)}.
 \end{equation}
@@ -772,8 +774,9 @@ a plausible background shape and normalisation and finally an the \ds yield.
 While the signal shape has been obtained by reconstructing true \ds candidates in the Monte Carlo~\ref{sec:4.2.1},
 the background shape and normalisation was extracted by studying the like sign triplets in the data
 \ -- $\ds \rightarrow d+\pip+\pip$  and $\ds \rightarrow d+\pim+\pim$ and their respective charge conjugate). 
-As \ds yield has been considered the thermal model estimations presented in Section~\ref{sec:ds_production} 
-and two additional extreme cases: 10\% and 10 times the thermal model yield.
+As \ds yield has been considered the thermal model estimations presented in Section~\ref{sec:ds_production}.
+
+%and two additional extreme cases: 10\% and 10 times the thermal model yield. questa cosa messa poi nelle conclusioni
 
 \begin{figure}
 \begin{subfigure}{.33\textwidth}
