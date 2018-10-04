@@ -338,7 +338,7 @@ products.
 Assuming the same \pt spectrum of the deuteron for the \ds, it is possible to obtain the \ds 
 transverse momentum spectrum with a rejection sampling. The deuteron spectrum in \pPb collisions is
 described by the Blast Wave (BW) distribution, which is based on the phenomenological model for
-hadronic matter production in heavy ion collisions, published in~\cite{blastwave}.
+hadronic matter production in heavy ion collisions, published in Ref.~\cite{blastwave}.
 The distribution is written as:
 \begin{equation}
     \frac{1}{\pt} \frac{d\,N}{d\,\pt} \propto \int_{0}^{R} r\,dr\,m_{\mathrm{T}} I_{0}
@@ -354,9 +354,12 @@ In the previous equations $m_{\mathrm{T}} = \sqrt{\pt^{2} + m^{2}}$ is the trans
 $I_{0}$ and $K_{1}$ the modified Bessel functions, $r$ is the radial distance on the transverse plane,
 $T_{kin}$ is the kinetic freeze-out temperature, $\beta_{s}$  the surface velocity of the expanding 
 medium and $n$ is the exponent of the velocity profile.
+The parameters values, used in this analysis and summarized in Table~\ref{tab:bw_param}
+were obtained by fitting the measured deuterons spectrum with the BW distribution in previous
+analysis.
 \begingroup
 \renewcommand{\arraystretch}{1.5} % Default value: 1
-\begin{table}
+\begin{table} [htb]
 \centering
 \begin{tabular}{lc}
 \multicolumn{2}{c}{\textbf{Blast wave parameters}} \\
@@ -373,9 +376,6 @@ $\beta_{s}$     &   0.710369         \\
 \label{tab:bw_param}
 \end{table}
 \endgroup
-The parameters values, used in this analysis and summarized in Table~\ref{tab:bw_param}
-were obtained by fitting the measured deuterons spectrum with the BW distribution in previous
-analysis.
 
 \begin{figure} [htb]
     \centering
@@ -419,7 +419,7 @@ One of the fundamental steps of the analysis presented in this thesis is to eval
 \dstdecay is detectable by the ALICE apparatus, considering reconstruction efficiency and acceptance
 of the ALICE detectors. 
 
-Furthermore, if the decay is visible, the measured raw yields are biased by inefficiencies in the
+Furthermore, if the decay is visible, the measured yields are biased by inefficiencies in the
 ALICE detectors.
 For instance, the active area of the experiment is not hermetic by design or, sometimes, parts of
 the detectors might be switched off during some data taking periods due to technical problems,
@@ -442,17 +442,19 @@ Section~\ref{sec:track_sel_crit}.
 
 Since anti-deuterons can be absorbed by detectors material, the efficiency for \dsbar is
 expected to be lower than \ds.
-Therefore the efficiency $\times$ acceptance is evaluated for \ds and \dsbar separately as a
+Therefore the $Efficiency \times Acceptance$ is evaluated for \ds and \dsbar separately as a
 function of the transverse momentum for the three PID configurations. 
 The results are shown in Figure~\ref{fig:effAM}.
 
 The TPC only configuration has the highest efficiency,
 but in the light of the considerations of Section~\ref{sec:ds_candidate} has also a high 
-contamination of the deuteron sample.
+contamination of the deuteron sample at high momentum.
 The TPC-TOF configuration has a very low efficiency, due to the high pions suppression 
 resulted from the use of TOF for their identification. 
 Instead the TPC+TOF$_{deuteron}$ configuration guarantees a good efficiency and should also ensures
 a better deuteron sample purity than the TPC configuration.
+
+The choice of the PID configuration, thus, will be done after the study of the significance of the measurement ensured by the two different configurations.
 
 \begin{figure}
     \centering
@@ -618,7 +620,7 @@ while in the last one (Fig.~\ref{fig:pem_imp23}) the discrepancies in the left s
 This value, compared with the previous 12\% of discrepancies shows that the new PEM
 model provides a better background description.
 
-\begin{figure}
+\begin{figure} [htb]
 \begin{subfigure}{.33\textwidth}
   \centering
   \captionsetup{justification=centering}
@@ -687,7 +689,7 @@ to the data in each
 \pt bin with weights as fit parameters. The weights has been constrained to be in $\pm$10\% range of 
 the MC estimated value.
 
-\begin{figure}
+\begin{figure} [htb]
 \begin{subfigure}{.33\textwidth}
   \centering
   \captionsetup{justification=centering}
@@ -733,10 +735,20 @@ in the $\pip+\pim$ invariant mass distribution.
 
 %
 %
-\section{Production yield estimation} \label{sec:ds_production}
+\section{Significance of the measurement} \label{sec:significance}
 
-In this section more details on the estimation of the expected production yield of the \ds in \pPb
-collisions at \sctev are provided.
+Before to perform the background subtraction to look for the \ds signal, the statistical significance
+of the measurement has been estimated.
+Three ingredients are needed to get the estimation of the significance: the expected signal shape, 
+a plausible background shape and normalisation and finally an the \ds yield.
+
+In the previous sections the expected signal shape (Sec.~\ref{}) and the background shape (Sec~\ref{})
+have been discussed. 
+In this section the estimation of the expected \ds yield in \pPb collisions at \sctev \ -- based on the
+Statistical Hadronization Model -- \ and finally, the estimation of the significance, is presented.
+
+%
+\subsection{Production yield estimation} \label{sec:ds_production}
 
 In the Statistical Hadronization Model framework, described in Section~\ref{sec:1.4.1}, is possible 
 to estimate the expected production yield of the \ds. Following equation~\eqref{eq:particleyields1}
@@ -763,56 +775,48 @@ range assumed in the calculations. The value of the deuteron yield used to compu
 ratio has been measured by the ALICE collaboration~\cite{deuteron_in_progress}.
 
 %
-%
-\section{Significance estimation} \label{sec:sig}
-
-Before to perform the background subtraction to look for the \ds signal, the statistical significance
-of the measurement has been estimated.
-Three ingredients have been used to get the estimation of the significance: the expected signal shape, 
-a plausible background shape and normalisation and finally an the \ds yield.
+\subsection{Significance estimation} \label{sec:sig_sub}
 
 While the signal shape has been obtained by reconstructing true \ds candidates in the Monte Carlo~\ref{sec:4.2.1},
 the background shape and normalisation was extracted by studying the like sign triplets in the data
 \ -- $\ds \rightarrow d+\pip+\pip$  and $\ds \rightarrow d+\pim+\pim$ and their respective charge conjugate). 
 As \ds yield has been considered the thermal model estimations presented in Section~\ref{sec:ds_production}.
 
-%and two additional extreme cases: 10\% and 10 times the thermal model yield. questa cosa messa poi nelle conclusioni
-
-\begin{figure}
-\begin{subfigure}{.33\textwidth}
-  \centering
-  \captionsetup{justification=centering}
-  \includegraphics[width=\linewidth]{gfx/sig_0}
-  \caption{}
-  \label{fig:tem01}
-\end{subfigure}%
-\begin{subfigure}{.33\textwidth}
-  \centering
-  \captionsetup{justification=centering}
-  \includegraphics[width=\linewidth]{gfx/sig_1}
-  \caption{}
-  \label{fig:tem12}
-\end{subfigure}
-\begin{subfigure}{.33\textwidth}
-  \centering
-  \captionsetup{justification=centering}
-  \includegraphics[width=\linewidth]{gfx/sig_2}
-  \caption{}
-  \label{fig:tem23}
-\end{subfigure}
-\caption{Significance of the measurement as a function of transverse momentum compared for the TPC and the TPC+TOF$_{deuteron}$ PID configurations.} % descrivere le 3 figure.}
-\label{fig:tem01}
+\begin{figure} [htb]
+\centering
+\includegraphics[width=0.7\linewidth]{gfx/sigcomp}
+\caption{Significance of the measurement as a function of transverse momentum compared for the TPC and the TPC+TOF$_{deuteron}$ PID configurations.}
+\label{fig:significance}
 \end{figure}
 
-% The significance has been estimated by integrating signal and background in a 70 \mevcs wide region around the
-% mass peak of the \ds. Figure~\ref{fig:} shows the significance in various \pt bins for both the TPC and the
-% TPC+TOF$_{deuteron}$ PID configurations.
-% The transverse momentum binning has been shifted specifically for this study: in the 0 to 0.5 \pT region the number of reconstructed d∗ is negligible with respect to the combinatorial background.
+The significance has been estimated by integrating signal and background in a 70 \mevcs wide region around the
+expected mass peak of the \ds. 
+Figure~\ref{fig:significance} shows the significance in various \pt bins for both the TPC and the
+TPC+TOF$_{deuteron}$ PID configurations.
+The first transverse momentum bin has been missed because the number of expected \ds correctly reconstructed 
+in this interval is negligible with respect to the background.
 
-% While in the first \pT bin the TPC only PID guarantees an optimal identification of pions and deuterons showing the 
-% maximum of significance, starting from 1.5 \gev the TPC+TOF$_{deuteron}$ configuration reduces the combinatorial background
-% and improves the significance. 
-% The wide peak of the \ds makes its identification challenging for the experimental condition at the LHC and if the thermal
-% model prediction is correct it is possible to set only an upper limit to the production cross section of \ds.
+While in the $0.5 \leq \pt \leq 2.0\ \gevc$ interval the TPC only PID guarantees an optimal identification of 
+pions and deuterons showing the maximum of significance, starting from  $2.0\ \gevc$ the TPC+TOF$_{deuteron}$ 
+configuration reduces the combinatorial background and improves the significance. 
+The wide peak of the \ds makes its identification challenging for the experimental condition at the LHC and 
+if the thermal model prediction is correct it is possible to set only an upper limit to the production yield
+of \ds.
+
+In the light of this study of the significance, the optimal choice of the PID configuration is to use the TPC
+configuration for \ds candidate up to $2.0\ \gevc$ of transverse momentum, while to use the the TPC+TOF$_{deuteron}$
+fot \ds candidate with transverse momentum $\geq 2.0\ \gevc$.
+
+%
+%
+\section{Background subtraction} \label{sec:backsub}
+
+After the estimation of the significance and a detailed study of the background of the measurement,
+in this section the background subtraction, performed to look for the \ds signal is presented.
+
+The background subtraction has been performed \textit{unblinding} the RoI and 
+
+
+
 
 
