@@ -62,6 +62,7 @@
 \usepackage{multirow}
 \usepackage[demo]{graphicx}
 \usepackage{subcaption}
+\usepackage[toc,page]{appendix}
 
 % **************************************************
 % Custom COMMAND
@@ -165,16 +166,16 @@
 % \input{content/titlepages}		% INCLUDE: all titlepages
 % \cleardoublepage
 
-\pagestyle{plain}				% display just page numbers
+% \pagestyle{plain}				% display just page numbers
 % \input{content/abstract}		% INCLUDE: the abstracts (english and german)
 % \cleardoublepage
-%
+
 % \input{content/acknowledgement} % INCLUDE: acknowledgement
 % \cleardoublepage
-%
-% \setcounter{tocdepth}{2}		% define depth of toc
-% \tableofcontents				% display table of contents
-% \cleardoublepage
+
+\setcounter{tocdepth}{2}		% define depth of toc
+\tableofcontents				% display table of contents
+\cleardoublepage
 
 % --------------------------
 % Body matter
@@ -183,10 +184,11 @@
 \setcounter{page}{1}			% set page counter
 \pagestyle{maincontentstyle} 	% fancy header and footer
 
-% \input{content/ch1-HENP}		% INCLUDE: introduction on HENP
-% \input{content/ch2-DIBARYONS}   % INCLUDE: dibaryon physics
-% \input{content/ch3-ALICE}		% INCLUDE: ALICE chapter
-\input{content/ch4-ANALYSIS}	% INCLUDE: analysis 
+% \input{content/ch1-HENP}	  	% INCLUDE: introduction on HENP
+% \input{content/ch2-DIBARYONS} % INCLUDE: dibaryon physics
+% \input{content/ch3-ALICE}	  	% INCLUDE: ALICE chapter
+\input{content/ch4-ANALYSIS}  	% INCLUDE: analysis 
+\input{content/appendix}
 
 \cleardoublepage
 
@@ -198,15 +200,15 @@
 \renewcommand{\bibfont}{\normalfont\small}
 \setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
 \printbibliography
-% \printbibliography[heading=subbibliography,title={Webseiten},type=online,prefixnumbers={@}]
+\printbibliography[heading=subbibliography,title={Webseiten},type=online,prefixnumbers={@}]
 }
 \cleardoublepage
 
 % \listoffigures
-\cleardoublepage
+% \cleardoublepage
 
 % \listoftables
-\cleardoublepage
+% \cleardoublepage
 
 % **************************************************
 % End of Document CONTENT
