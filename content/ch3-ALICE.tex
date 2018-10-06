@@ -7,7 +7,8 @@
 
 The Large Hadron Collider (LHC) is the biggest and most powerful particle collider in the world.
 It consists of a 27 km ring of superconducting magnets and accelerating structures able to
-provide proton-proton and Lead-Lead collisions at the highest energies ever reached in laboratory.
+provide proton-proton and nucleus-nucleus collisions \ -- tipically \pPb and \PbPb, but also
+Xe-Xe -- \ at the highest energies ever reached in laboratory.
 At those energies the formation of the Quark Gluon Plasma is expected to occur.
 While most of the LHC uptime is dedicated to the proton–proton physics that led to the discovery of 
 the Higgs Boson~\cite{atlashiggs,cmshiggs} and of two charmed pentaquark states~\cite{lhcbpenta}, 
@@ -19,7 +20,7 @@ characterization of the Quark Gluon Plasma.
 The Large Hadron Collider is the last element of the accelerator complex at CERN 
 (Fig.~\ref{fig:lhc}), a sequence of machines that accelerate particles to increasingly higher
 energies.
-Each element in this chain boosts the energy of a particles beam, before injecting it into the next
+Each element in this chain boosts the energy of a particle beam, before injecting it into the next
 machine. Protons and heavy ions are brought to their collision energies through different
 acceleration chains.
 
@@ -120,9 +121,9 @@ The main goal of the ALICE experiment is the study of the QCD matter created in 
 ion collisions, hence the detector has been designed and optimised~\cite{alicedesign1,alicedesign2}
 for this purpose.
 A heavy ion experiment must have an efficient tracking system with a large acceptance and a good
-particle identification (PID) capabilities in a wide momentum range, especially at low momentum.
+particle identification (PID) capability in a wide momentum range, especially at low momentum.
 Furthermore, it has to work in an environment characterized by a large charged particle multiplicity.
-At the time of ALICE design, the charged particles multiplicity per rapidity unit in central Pb–Pb 
+At the time of ALICE design, the charged particle multiplicity per rapidity unit in central Pb–Pb 
 collisions was predicted to range between 2000 and 8000~\cite{alicemulti}, and for this reason
 detectors with high granularity and low material budget have been 
 developed~\cite{alicedesign1,alicedesign2}.
@@ -142,10 +143,10 @@ the $y$ axis is perpendicular to the accelerator plane and points upward.
 As a consequence the $z$ axis is parallel to the beam direction and its positive direction is 
 defined by the chirality of the coordinate system. 
 For a more useful description of the apparatus and the physical quantities, two other coordinates
-are defined, which together with the $z$ axis described above, form a cylindrical coordinate system:
-the azimuthal angle $\phi$ increases counter-clockwise starting from $\phi = 0$ for $x$ axis looking
-towards the Compact Muon Solenoid (CMS) side, and the polar angle $\theta$ increases from $z$ ($\theta=0$) to $-z$ 
-($\theta=\pi$).
+are defined, which together with the $z$ axis described above, form a coordinate system:
+the azimuthal angle $\phi$ increases counter-clockwise starting from $\phi = 0$ from $x$ axis with the
+observer standing at positive $z$ and looking in the Compact Muon Solenoid (CMS) direction, and the polar
+angle $\theta$ increases from $z$ ($\theta=0$) to $-z$ ($\theta=\pi$).
 Other two useful variables, widely used in this thesis, are the \textit{pseudo-rapidity} $\eta$:
 \begin{equation}
     \eta = \frac{1}{2} \ln \frac{|p| + p_{z}}{|p| - p_{z}} =
@@ -266,7 +267,7 @@ provided.
 SPD are the two innermost layers of the ITS and are
 used for the determination of the primary vertex position as well as for the measurement of
 the impact parameter of secondary tracks.
-Furthermore, SPD, provides a quick trigger signal which contributes to the Level 0 trigger of 
+Furthermore, the SPD, provides a quick trigger signal that contributes to the Level 0 trigger of 
 the experiment.
 
 \paragraph{Silicon drift detectors} 
@@ -283,7 +284,7 @@ nearest layers to the TPC.
 The main task of the ITS is the reconstruction of primary and secondary vertices, and the tracking
 of the low \pt particles.
 The first objective is achieved with a resolution better than 100 $\mu$m, while for the second the
-ITS extends the tracking of the low \pt particles down to $\pt = 80 \; \mevc$, thanks to its high
+ITS extends the tracking of low \pt particles down to $\pt = 80 \; \mevc$, thanks to its high
 spatial resolution (Tab.~\ref{tab:its}) and low material budget.
 The total material budget of the ITS, keeping into account also the support structures and the 
 thermal shields, is 7.18 \% X/X0.
@@ -404,8 +405,8 @@ and to the High Level Trigger (HLT).
 
 The data fulfilling all the trigger requirements, are sent to the Local Data Concentrators (LDCs)
 through optical connections, the Detector Data Links (DDLs).
-LDCs is a farm of computers which build \textit{subevents} from the event fragments they receive from
-the front-end electronics and then sends \textit{subevents} to the Global Data Collectors (GDCs).
+LDCs are a farm of computers which build \textit{subevents} from the event fragments they receive from
+the front-end electronics and then send \textit{subevents} to the Global Data Collectors (GDCs).
 The GDC compose the full event including information from the HLT.
 At the HLT level a fast reconstruction of the data \ -- including clusterisation and track
 reconstruction -- \ is performed, allowing further selections that are not possible in the hardware
@@ -423,9 +424,9 @@ analyse the reconstructed events.
 Beyond that, modern experiments need a large number of Monte Carlo (MC) simulations, for the
 development of the detectors, for performance studies, and also as a basis for physics analyses.
 
-The infrastructure realised at CERN in order to menage the LHC data flow is the Worldwide 
+The infrastructure realised at CERN in order to manage the LHC data flow is the Worldwide 
 LHC Computing Grid (WLCG). The mission of this project is to provide global 
-computin3 resources to store, distribute and analyse the $\sim$50-70 Petabytes of data expected for 
+computing resources to store, distribute and analyse the $\sim$50-70 Petabytes of data expected for 
 each year of operations of the LHC experiments.
 
 The ALICE collaboration uses the WLCG resources for running MC simulations, event reconstruction and
@@ -448,8 +449,7 @@ experiment, whose geometry and material budget are precisely described in the AL
 Three different transport codes are available in the simulation framework: GEANT3~\cite{geant3},
 GEANT4~\cite{geant4}, and FLUKA~\cite{fluka1,fluka2}.
 These tools provide the information on the behaviour of the transported particles through the sensitive
-part of the detector, giving the particle energy loss. 
-This information is then converted in detectors electronics signal through the simulation of each
+part of the detector, giving the particle energy loss, that is then converted in a electronic signal through the simulation of each
 detector response.
 Finally, the digitalised signal is stored in the same detector raw data format used in the 
 real data taking and reconstruction.
@@ -461,8 +461,8 @@ The ALICE event reconstruction flow starts from the raw data, collected or simul
 schematically shown in Figure~\ref{fig:rec_flow}. 
 
 In the first step of the event reconstruction the detector raw data are converted into clusters, 
-through a set of algorithms which perform the reconstruction for each detector separately.
-All clusters are characterized by positions, signal amplitude and time.
+through a set of algorithms that perform the reconstruction for each detector separately.
+All clusters are characterised by position, signal amplitude and time.
 Other information, like the energy lost by the particle, the time of flight or the Cherenkov 
 angle are attached to the clusters in the PID detectors allowing the identification of the 
 tracked particle.
@@ -499,9 +499,8 @@ strange hadrons.
 The ALICE software infrastructure that allows the whole Collaboration to access the collected and
 simulated data on the grid, is the Alien (ALICE Environment)~\cite{alien} grid middleware.
 Through the Alien user interface it is possible to launch the analysis tasks on ALICE data. 
-When more users are interested in analyzing the same data sample, one can use an optimized
-access pattern, called \textit{analysis train}, which allows to run together all the tasks
-of those users in the same job.
+When more users are interested in analyzing the same data sample, they can use an optimized
+access pattern, called \textit{analysis train}, which allows running together all their tasks in a single job.
 This procedure defines a standard analysis flow in the ALICE experiment and it ensures the
 reproducibility of the analyses.
 
@@ -517,20 +516,20 @@ that is mainly used for calibration and detector performance studies, and the An
 
 %
 %
-\section{ALICE performances} \label{sec:ali_perf}
+\section{ALICE performance} \label{sec:ali_perf}
 
 The ALICE experiment was specifically designed for the demanding experimental environment created in 
 \PbPb collisions. 
 One of the most challenging task, in these conditions, is the precise reconstruction of both momentum
 and origin of the produced particles.
-In this section the tracking and vertexing performances of the ALICE experiment will be presented,
+In this section the tracking and vertexing performance of the ALICE experiment will be presented,
 as well as the methods used for the particle identification.
 
 %
 \subsection{Tracking} \label{sec:tarcking}
 
 The importance of the tracking process lies in its relation with the particle momentum
-measurement and with the vertexing determination (Sec.~\ref{sec:vertexing}).
+measurement and with the vertex determination (Sec.~\ref{sec:vertexing}).
 
 The momentum of a charged particle travelling in a magnetic field is related to the radius of curvature
 of the particle track. Therefore, by measuring the radius of curvature, one can determine the
