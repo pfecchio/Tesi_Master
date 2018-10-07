@@ -583,9 +583,9 @@ change in any meaningful way. The normalisation has not been performed in the re
 of RoI because the model does not well describe the data in that region.
 
 The PEM model can reproduce quite well the data in the region on the right of the RoI,
-particularly for $\pt < 1.0 \gevc$. In this region the difference between
+particularly for $\pt < 1.0\ \gevc$. In this region the difference between
 data and model is < 2\%, but a trend is clearly visible in the ratio.
-This trend is bigger for $\pt > 2.0 \gevc$.
+This trend is bigger for $\pt > 2.0\ \gevc$.
 Instead the left sideband is not well reproduced by this model in all the considered \pt 
 intervals. Figure~\ref{fig:pem05-1} shows the comparison between data \ -- with the region 
 of interest blinded -- \ and the model in the \pt interval in which the description is
@@ -603,21 +603,21 @@ The data/model ratio is reported for both cases.
 The background description provided by the PEM model is not satisfactory in the whole \pt range
 considered.
 One can think that the discrepancies from data are due to some deuteron-pion correlation
-that we are not considering.
+that are not considered.
 
 Therefore other two components of the PEM model have been derived mixing $d-\pip$ and
 $d-\pim$ pairs from the same event and other pion from another event.
 The resulting model is the weighted sum of the $\pi-\pi$, the $d-\pip$ and the $d-\pim$ components
 of the PEM model.
 The relative weights of the 3 contributions was found fitting the model to the data outside the RoI
-with the relative weights as fit parameters, with the sum of the weights constrained to be one.
+with the relative weights as fit parameters and the sum of the weights constrained to be one.
 This new model improves the background description.
-In low \pt region \ -- $/pt < 1.5 \gevc$ -- \ the data/model ratio is almost the same as in the case
-of the previous model, while for higher \pt the discrepancies in the left sideband are < 4\%.
-This value, compared with the previous 12\% of discrepancies shows that the new PEM
+In low \pt region \ -- $\pt < 1.5\ \gevc$ -- \ the data/model ratio is almost the same as in the case
+of the previous model, while for higher \pt the discrepancies in the left sideband are < 5\%.
+This value, compared with the previous 10\% of discrepancies shows that the new PEM
 model provides a better background description: as an example 
 Figures~\ref{fig:pemimp05-1} and~\ref{fig:pemimp2-2.5} show the data-model comparison in the same 
-transverse momentum intervals reported in Figures~\ref{fig:pem05-1} and~\ref{fig:pem2-2.5}.
+transverse momentum intervals reported in Figures~\ref{fig:pem05-1} and~\ref{fig:pemimp2-2.5}.
 
 \begin{figure} [htb]
     \centering
@@ -628,7 +628,7 @@ transverse momentum intervals reported in Figures~\ref{fig:pem05-1} and~\ref{fig
 \begin{figure} [htb]
     \centering
     \includegraphics[width=0.75\textwidth]{gfx/appendix/impem/can_blindPEMimp4}
-    \caption{Improved PEM model compared with \minv, in the $2.0 < \pt \leq 2.5$ \gevc interval, outside the region of interest. In the lower pad the data/model ratio is reported. In this \pt interval the new model improve the performances of the previous model, reducing the relative data-model discrepancies of a factor $\sim 3$.}
+    \caption{Improved PEM model compared with \minv, in the $2.0 < \pt \leq 2.5$ \gevc interval, outside the region of interest. In the lower pad the data/model ratio is reported. In this \pt interval the new model improve the performances of the previous model, reducing the relative data-model discrepancies of a factor $\sim 2$.}
 	\label{fig:pemimp2-2.5}
 \end{figure}
 
@@ -645,7 +645,7 @@ real classical event mixing with all three tracks from three different events.
 The templates are obtained combining deuterons from data \ -- to ensure that they have the correct
 momentum spectrum -- \ with pion pairs from Monte Carlo data \ -- in order to have the information
 about pion mothers.
-In the Monte Carlo every reconstructed pion pairs has benn considered.
+In the Monte Carlo every reconstructed pion pairs has been considered.
 Looking at the Monte Carlo truth of the pion mothers, the pion sources that provide pion pairs with 
 mass, summed with deuteron mass, in 2.120 - 2.600 \gevcs range, has been estimated.
 Then for each source the template was obtained combining pion pairs \ -- with the same mother imposed
@@ -801,10 +801,66 @@ fot \ds candidate with transverse momentum $\geq 2.0\ \gevc$.
 \section{Background subtraction} \label{sec:backsub}
 
 After the estimation of the significance and a detailed study of the background of the measurement,
-in this section the background subtraction, performed to look for the \ds signal is presented.
+the region of interest has been \textit{unblinded} to look for the \ds signal.
+Firstly, the the improved PEM model \ -- described in Section~\ref{sec:pem} -- \ has been compared
+with the data in the region of interest, and the data/model ratio has been computed.
 
-The background subtraction has been performed \textit{unblinding} the RoI and 
+\begin{figure} [htb]
+    \centering
+    \includegraphics[width=0.75\textwidth]{gfx/appendix/backsub/can_unblind1}
+    \caption{Improved PEM model compared with \minv, in the $0.5 < \pt \leq 1.0$ \gevc interval. In the lower pad the data/model ratio is reported.}
+    \label{fig:unbl05-1}
+\end{figure}
 
+The data/model ratio is not flat in the region of interest, however, this was expected because of the 
+data-model discrepancies observed outside the RoI (Sec:~\ref{sec:pem}).
+Nevertheless, the data/model ratio does not show any shape around $2.380\ \gevcs$ that can be referred 
+to the \ds signal.
+
+\begin{figure} [htb]
+    \centering
+    \includegraphics[width=0.75\textwidth]{gfx/appendix/backsub/can_unblind5}
+    \caption{Improved PEM model compared with \minv, in the $2.5 < \pt \leq 3.0$ \gevc interval. In the lower pad the data/model ratio is reported.}
+	\label{fig:unbl2.5-3}
+\end{figure}
+
+Figure~\ref{fig:unbl05-1} shows the comparison between data and model, in the region of interest,
+in the transverse momentum interval in which the maximum of the production of the \ds is expected.
+While Figure~\ref{fig:unbl2.5-3} shows the \pt interval in which the background description,
+provided by the improved PEM model, is worst.
+The data-model discrepancies reach a maximum of 5\% in the region of interest, which is in accordance 
+with the maximum of 4\% outside the RoI shown in Figure~\ref{fig:pemimp2.5-3}.
+The full list of figures related to this study is available in Appendix~\ref{app:bs1}.
+
+Since there is no evidence of the presence of the \ds signal in the region of interest, it is possible
+to assume that the data-model discrepancies are due to a background component that is not described by 
+the model.
+Therefore a gaussian component has been included in the improved PEM model in order to
+reproduce the residual background.
+The new background model \ -- i.e. improved PEM + gaussian component -- \ has been fitted to the data
+outside the region of interest, in order to determine the gaussian parameters.
+Then the model has been normalized to the data with the following normalizing constant:
+\begin{equation}
+    C = \frac{\int_{2.160}^{2.280}\mathrm{Data}(\minv) d\minv + \int_{2.480}^{2.620}\mathrm{Data}(\minv) d\minv}{\int_{2.160}^{2.280}\mathrm{Model}(\minv) d\minv + \int_{2.480}^{2.620}\mathrm{Model}(\minv) d\minv},
+\end{equation}
+% non è essenziale mettere la formula del fattore di normalizzazione, ma cosí è chiaro che cosa ho usato
+% per normalizzare il modello ai dati
+that ensure to not consider the signal region in the normalisation.
+Finally the normalized model has been subtracted from the data. Figure 
+
+\begin{figure} [htb]
+    \centering
+    \includegraphics[width=\textwidth]{gfx/appendix/backsub/canvas1}
+    \caption{Improved PEM model compared with \minv, in the $0.5 < \pt \leq 1.0$ \gevc interval. In the lower pad the data/model ratio is reported.}
+    \label{fig:bs1}
+\end{figure}
+
+\begin{figure} [htb]
+    \centering
+    \includegraphics[width=\textwidth]{gfx/appendix/backsub/canvas5}
+    \caption{Improved PEM model compared with \minv, in the $0.5 < \pt \leq 1.0$ \gevc interval. In the lower pad the data/model ratio is reported.}
+    \label{fig:bs5}
+\end{figure}
 
 
 
