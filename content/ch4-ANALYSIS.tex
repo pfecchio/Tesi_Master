@@ -67,9 +67,8 @@ different minimum bias triggers have been adopted during this data taking period
 The first trigger, called \code{CENT}, is a minimum bias trigger for the central barrel
 detectors. The SDD detector has a high busy time if compared to that of other detectors \ -- around three times
 than SSD -- \ which limits the rate of the collected events. 
-In order to increase that rate a second trigger, called \code{FAST}, allows
-to detect events coming in the SDD busy time window by excluding the SDD from the data acquisition.
-The management of the data flow and this two triggers is performed by the ALICE 
+In order to increase that rate, a second trigger, called \code{FAST}, allows the detection of events coming in the SDD busy time window by excluding the SDD from the data acquisition.
+The management of the data flow and these two triggers is performed by the ALICE 
 CTP (Sec.~\ref{sec:data_flow}).
 
 In the \textit{off-line} event reconstruction, the whole data set analyzed in this work has been
@@ -83,7 +82,7 @@ efficiency of its decay.
 The second one is a sample of $\sim 4.6 \times 10^{7}$ \pPb events and it has been used to study 
 the background sources of the measurement.
 
-The Monte Carlo productions are based on the EPOS-LHC generator~\cite{epos_lhc} which is an event 
+The Monte Carlo productions are based on the EPOS-LHC generator~\cite{epos_lhc}, which is an event 
 generator for minimum bias hadronic interactions, used for both heavy ion interactions and cosmic 
 ray air shower simulations.
 Since the EPOS-LHC does not include any (anti-)dibaryon, an \textit{ad-hoc} generator was used to
@@ -91,13 +90,13 @@ inject \ds and \dsbar, on top of each EPOS-LHC event, in the first Monte Carlo s
 In each generated event ten \dst and ten $\ensuremath{\bar{{d}^{*}}(2380)}$, 
 are injected with a flat distribution in transverse momentum \ -- in the $0 \leq \pt \leq 8\;\gevc$ interval
 -- \ as well as in the azimuthal angle $\phi$ and in rapidity.
-The injected \dst are forced decay by the generator through the \dstdecay channel. 
+The injected \dst are forced to decay by the generator through the \dstdecay channel. 
 
-The other possible decay of the \dst have not been considered since they are not relevant or not
+The other possible decay of the \dst have not been considered since they are either not relevant or not
 detectable \ -- because of the presence of neutral particle in the final state -- \ by ALICE.
 Since the considered decay occurs through strong interaction, the decay takes place in the primary
 interaction vertex. Therefore the decay products are generated starting from the primary interaction vertex
-together with the others collision products.
+together with the other collision products.
 
 The transport code used for the generation of the detector response \ -- as described
 in Section~\ref{sec:} -- \ is GEANT3~\cite{geant3}. 
@@ -110,12 +109,12 @@ As mentioned above, the EPOS-LHC event generator does not include the \dst dibar
 been injected on top of the \pPb collisions generated in the Monte Carlo. 
 The first step of the search presented in this thesis is the validation of the injection
 schema used in the MC through the quality assurance (QA in the following) of the generated MC events.
-This validation procedure ensures that the injected dibaryonic state are characterized by the 
+This validation procedure ensures that the injected dibaryonic states are characterized by the 
 physics properties expected for the \dst.
 
 The QA of the Monte Carlo events has been done by checking the shape of the invariant mass distribution
 of \dst decay products and using the generated tracks. Only tracks from a \dst and belonging to the
-same parent particle has been considered, in order to reduce background. 
+same parent particle have been considered, in order to reduce the background. 
 
 \begin{figure}
     \centering
@@ -135,18 +134,17 @@ for the \dst.
 
 In this analysis, the events are analysed with the \code{CODEX} framework\footnote{The \code{CODEX} 
 framework is part of the \code{AliPhysics} software (Sec.~\ref{sec:anal_frame}) and it is 
-specifically developed in order to provide analysis tools for the ALICE analysis related to nuclei
-production.} that allows to select events on the basis of the presence of specific particles of 
-interest (PoI) in the event and to store them in a compressed format. Basically, it works as an
-\textit{off-line} trigger.
-% Such compressed data can be stored and analysed on local machines, providing an easier and faster
-% analysis chain.
+specifically developed to provide analysis tools for the ALICE analysis related to nuclei
+production.} that allows the selection of events on the basis of the presence of specific particles 
+of interest (PoI) in the event and to store them in a compressed format.
+Basically, it works as an \textit{off-line} trigger.
+Such compressed data can be stored and analysed on local machines, providing an easier and faster
+analysis chain.
 
-Using the \code{CODEX} framework the event and track selection takes part in two different stages.
-In the first stage the \code{CODEX} analyse the considered data sample on the WLCG (Sec.~\ref{sec:offline})
-selecting events in which at least one PoI has been reconstructed.
+Using the \code{CODEX} framework, the event and track selection takes part in two different stages.
+In the first stage the \code{CODEX} analyses the considered data sample on the
+WLCG (Sec.~\ref{sec:offline}) selecting events in which at least one PoI has been reconstructed.
 The selected events are filtered by the \code{CODEX} in order to store only
-
 
 In the second stage the filtered data are analysed on local machines and further track
 selections are applied.
@@ -161,7 +159,7 @@ A selection for the pile-up rejection is applied to exclude events with more tha
 while selection based on the resolution and the position of the primary vertex guarantees the goodness of the
 reconstructed vertex.
 This last selection, basically rejects events for which the position of the vertex reconstructed with full
-tracks differs to much from the position of the vertex determined with SPD only.
+tracks differs too much from the position of the vertex determined with SPD only.
 More details on the two algorithms used to determine the vertex are given in Section~\ref{sec:vertexing}.
 The selections applied to the primary vertex in this step of the analysis are summarised in
 Table~\ref{tab:cod_sel1}.
@@ -193,16 +191,16 @@ order of magnitude, making the data sample manageable on local machines.
 The selection of the \textit{(anti-)deuteron candidate} is based on the $n\sigma\ $ technique, described
 in Section~\ref{sec:PID}.
 The \textit{(anti-)deuteron candidate} is defined as a track with $n\sigma_{TPC} < 5$ and 
-$n\sigma_{TOF} < 10$ respect to the deuteron mass hypothesis. The requirement on the $n\sigma_{TOF}$ is
-applied only for tracks with $\pt > 1.5\; \gevc$ 
-Only events with at least one \textit{(anti-)deuteron candidate} are stored.
+$n\sigma_{TOF} < 10$ with respect to the deuteron mass hypothesis. The requirement on the $n\sigma_{TOF}$
+is applied only for tracks with $\pt > 1.5\; \gevc$, since the identification efficiency of the
+(anti-)deuteron is higher using the TPC only for tracks with $\pt < 1.5\; \gevc$.
 
 %
 \subsection{Track selection} \label{sec:track_sel_crit}
 
-At the end of the event selection, the filtered data are processed on local machines, in order to define
-the best possible track selections.
-The possibility to analyse on local computing resources the whole data set of interesting events, allows 
+At the end of the event selection, the filtered data are processed on local machines to
+define the best set of track selections.
+The possibility to analyse on local computing resources the whole data set of interesting events, allows us
 to process the data very 
 quickly and therefore to study and to easily test further track selections.
 In the following the final selections, determined after a fine tuning and a detailed study, are presented.
@@ -211,13 +209,13 @@ Since \dstdecay is a strong decay only tracks coming from the primary vertex are
 considered in this analysis. Therefore a selection on the DCA \ -- defined in 
 Section~\ref{sec:vertexing} -- \ has been applied. 
 In order to use only the geometrical region where the ALICE experiment is able to perform a full
-tracking and to provide the best possible PID information, only tracks in the pseudorapidity 
+tracking and to provide a PID with high resolution, only tracks in the pseudorapidity 
 region $|\eta| < 0.9 $ are selected. This requirement is mainly related to the TPC acceptance,
 since it is the main detector used in the present analysis. 
 Moreover, to guarantee a track momentum resolution better than 5\% and a TPC \dedx resolution of
 6\%, the selected tracks are required to have at least 70 clusters in the TPC and to overcome successfully the ITS and the TPC refit process
 \ -- described in Section~\ref{sec:tarcking}.
-In addition, the $\chi^{2}$ per TPC clusters is computed in the track fitting procedure and is
+In addition, the $\chi^{2}$ for TPC clusters is computed in the track fitting procedure and is
 required to be less than 4, while the \textit{Golden $\chi^{2}$} \ -- defined as the $\chi^{2}$
 between the TPC track constrained to the primary vertex and the global track -- 
 \ is required to be less than 36. The selection on the \textit{Golden $\chi^{2}$} value
@@ -288,7 +286,7 @@ tracks up to $p \sim 1.2\; \gevc$, due to the finite resolution on the specific 
 the TPC and the contamination from electrons and positrons (Fig.~\ref{fig:tpc_pid_this}).
 Using the TOF detector an unambiguous identification of the (anti-)deuteron is feasible for
 tracks with momentum up to $p \sim 2\; \gevc$ and a good identification is still doable for tracks up to $p \sim 6\; \gevc$.
-Therefore combining TPC and TOF information can improve the performance in terms of PID for particle with enough momentum to 
+Therefore combining TPC and TOF information can improve the performance in terms of PID for particles with enough momentum to 
 reach the TOF.
 
 Otherwise the identification of the pion in the TPC is limited by the contamination from kaons and
@@ -297,9 +295,9 @@ identification can improve the purity of the sample, but at the same time can dr
 the reconstruction efficiency of the \ds decay, since the pions produced by the \ds are expected to
 be at low momentum due to the kinematics of the decay.
 
-In order to determine which PID configuration ensures the best performances in the reconstruction
+In order to determine which PID configuration ensures the best performance in the reconstruction
 of the \ds decay, three PID approaches have been studied and are detailed in the following. The choice of the configuration used
-for the search of the \ds will be determined on the basis of the best performances reached in the reconstruction of the decay
+for the search of the \ds will be determined on the basis of the best performance reached in the reconstruction of the decay
 and taking into account which configuration maximises the signal/background ratio.
 
 \paragraph{PID configurations:}
@@ -360,9 +358,9 @@ In the previous equations $m_{\mathrm{T}} = \sqrt{\pt^{2} + m^{2}}$ is the trans
 $I_{0}$ and $K_{1}$ the modified Bessel functions, $r$ is the radial distance on the transverse plane,
 $T_{kin}$ is the kinetic freeze-out temperature, $\beta_{s}$  the surface velocity of the expanding 
 medium and $n$ is the exponent of the velocity profile.
-The parameters values, used in this analysis and summarised in Table~\ref{tab:bw_param}
+The parameter values, used in this analysis and summarised in Table~\ref{tab:bw_param}
 were obtained by fitting the measured deuterons spectrum with the BW distribution in previous
-analysis.
+analysis. % citare da dove vengono questi parametri
 \begingroup
 \renewcommand{\arraystretch}{1.5} % Default value: 1
 \begin{table} [htb]
@@ -372,7 +370,7 @@ analysis.
 \toprule
 Parameter       &   Value            \\
 \midrule
-$m$			        &	  1.8756 \gevcs    \\
+$m$			    &	1.8756 \gevcs    \\
 $n$             &   1.97208          \\
 $T_{kin}$       &   0.128583         \\
 $\beta_{s}$     &   0.710369         \\
@@ -391,7 +389,7 @@ $\beta_{s}$     &   0.710369         \\
 \end{figure}
 
 The rejection sampling has been applied to the \ds generated in the Monte Carlo, obtaining a 
-plausible \pt spectrum for the \ds and its decay product. In Figure~\ref{fig:bw_spectrum} the
+plausible \pt spectrum for the \ds and its decay products. In Figure~\ref{fig:bw_spectrum} the
 resulting \pt spectrum for the \ds is shown both before (blue line) and after (magenta line) the
 reconstruction process. 
 In Figure~\ref{fig:BW_spec_prod} the expected momentum spectra of the pions 
@@ -413,7 +411,7 @@ the \ds decay are reported.
   \caption{}
   \label{fig:deu_spectrum}
 \end{subfigure}
-\caption{Expected transverse momentum spectrum for the \ds decay product derived with the rejection sampling: pions in panel (a) and deuterons in panel (b).}
+\caption{Expected transverse momentum spectrum for the \ds decay products derived with the rejection sampling: pions in panel (a) and deuterons in panel (b).}
 \label{fig:BW_spec_prod}
 \end{figure}
 
@@ -422,7 +420,7 @@ the \ds decay are reported.
 \section{Reconstruction efficiency of the \ds decay}~\label{sec:eff}
 
 One of the fundamental steps of the analysis presented in this thesis is to evaluate if the
-\dstdecay is detectable by the ALICE apparatus, considering reconstruction efficiency and acceptance
+\dstdecay is detectable by the ALICE apparatus, considering the reconstruction efficiency and the acceptance
 of the ALICE detectors. 
 
 Furthermore, if the decay is visible, the measured yields are biased by inefficiencies in the
@@ -435,18 +433,18 @@ The acceptance, instead, is only related to the geometric coverage of the detect
 It is possible to correct for the finite efficiency and acceptance using a MC simulation where the
 full geometry and the real data taking conditions are reproduced. The MC production used for this
 analysis has been described in Section~\ref{sec:4.2}. 
-The number of particles crossing the detectors and their kinematics observables are known when using
+The number of particles crossing the detectors and their kinematic observables are known when using
 the MC simulation and the efficiency$\times$acceptance can be computed as:
 \begin{equation}
     Efficiency \times Acceptance\ (\pt) = \frac{\mathrm{N}_{\textit{rec}}(\pt)}
     {\mathrm{N}_{\textit{gen}}(\pt)},
 \end{equation}
 where $\mathrm{N}_{\textit{gen}}$ is the number (\dsbar)\ds generated in the azimuthal region
-$0 \leq \phi < 2\pi$ and in the $|y| < 0.5$, while $\mathrm{N}_{\textit{rec}}$ is the number of 
-(\dsbar)\ds for which the decay products satisfies the selection criteria described in 
+$0 \leq \phi < 2\pi$ for $|y| < 0.5$, while $\mathrm{N}_{\textit{rec}}$ is the number of 
+(\dsbar)\ds for which the decay products satisfy the selection criteria described in 
 Section~\ref{sec:track_sel_crit}.
 
-Since anti-deuterons can be absorbed by detectors material, the efficiency for \dsbar is
+Since anti-deuterons can be absorbed by detector material, the efficiency for \dsbar is
 expected to be lower than \ds.
 Therefore the $Efficiency \times Acceptance$ is evaluated for \ds and \dsbar separately as a
 function of the transverse momentum for the three PID configurations. 
@@ -480,12 +478,12 @@ In Figure~\ref{fig:eff_ratioAM} the ratio computed for TPC+TOF$_{deuteron}$ is r
 	\label{fig:eff_ratioAM}
 \end{figure}
 
-The relative difference between \ds and \dsbar efficiency is higher than $15$ \% for 
-$\pt < 3\;\gevc$, instead at higher \pt is $\sim 6\ $\%. 
+The relative difference between \ds and \dsbar efficiency is higher than $10$ \% and reaches 
+a maximum value of $25$ \% for $\pt < 3\;\gevc$, instead at higher \pt is $\sim 6\ $\%. 
 These values are compatible with what is expected from the anti-deuteron cross section with material,
 that decreases at higher \pt.
 
-The determination of which the PID configuration shall be chosen,
+The determination of which PID configuration shall be chosen
 must be made considering the momentum region in which the \ds is expected to be produced more 
 abundantly.
 In the light of the study of the expected \ds momentum spectrum (Sec.~\ref{sec:spectrum}), the 
@@ -503,70 +501,72 @@ spectrum of the \ds.
 \end{figure}
 
 Both the TPC and TPC+TOF$_{deuteron}$ configurations have low efficiencies ($< 0.02$) in the $0 - 1\;\gevc$
-interval. While in the $1 - 2\;\gevc$ interval the TPC configuration efficiency reach the value of 0.10.
-In the whole $0 - 2\;\gevc$ interval the TPC efficiency is 3-5 times higher than the TPC+TOF$_{deuteron}$.
+interval. While in the $1 - 2\;\gevc$ interval the TPC configuration efficiency reaches the value of 0.10.
+In the whole $0 - 2\;\gevc$ interval the TPC efficiency is 3-5 times higher than the obtained with TPC+TOF$_{deuteron}$.
 
 Nevertheless, the choice of which PID configuration should be used is still not trivial. 
-In order to observe the \ds signal is crucial to have a good signal/background ratio that depends
-both from the efficiency and the purity of considered sample.
-The usage of the TOF for the identification of the deuteron ensure a reduced contamination \ -- from 
+In order to observe the \ds signal, it is crucial to have a good signal/background ratio that depends
+both on the efficiency and on the purity of considered sample.
+The usage of the TOF for the identification of the deuteron ensures a reduced contamination \ -- from 
 other particle species -- \ of the deuteron sample. 
-Therefore the TPC+TOF$_{deuteron}$ configuration could have better performance in terms of the 
+Therefore the TPC+TOF$_{deuteron}$ configuration should have better performance in terms of the 
 signal/background ratio, respect to the TPC configuration.
 
 %
 %
 \section{Study of the background of the measurement} \label{sec:background}
 
-In order to perform the background subtraction described in Section~\ref{sec:4.1} is necessary to have
-a model that satisfactorily reproduce the background of the measurement. 
-Therefore two different background models has been developed and tested. 
-In this section the models and their performances in describing the background are discussed.
+In order to perform the background subtraction described in Section~\ref{sec:4.1} it is necessary to have
+a model that satisfactorily reproduces the background of the measurement. 
+Therefore two different background models have been developed and tested. 
+In this section the models and their performance in describing the background are discussed.
 
-In this work the main difficulty is to manage to describe and reproduce the backgrounds due to pions.
-In fact, in \pPb collisions many particle species are produced~\cite{pkp_prod, neutralp, k0s_prod} 
+In this work the main difficulty is to manage to describe and reproduce the background due to pions.
+Indeed, in \pPb collisions many particle species are produced~\cite{pkp_prod, neutralp, k0s_prod} 
 and most of them have a decay channel that include a charged pion.
 In particular neutral mesons, e.g. $\eta,\,\omega,\,K_{s}^{0}$ mesons, have a 
 \pip + \pim decay channel. Other pions, as well as deuterons, can be produced directly
 in the hadronization phase of the collision.
 All of these pions and deuterons contribute to the background of the measurement of the
 \dstdecay decay. In fact one can make a \textit{\ds candidate} (Sec.~\ref{sec:ds_candidate})
-matching this particles not originating from a real \ds decay.
+matching particles not originating from a real \ds decay.
 
 The two models are both based on the event mixing technique.
 Event mixing, basically, is a method used to reproduce uncorrelated background combining particles from
-different events, this ensures that there can not be correlation between considered particles.
+different events, this ensures that there can not be correlation between the considered particles.
 This technique can be very effective, but it is necessary to be careful in mixing particles from 
 similar events.
-So it is very important to mix particles from events with comparable vertex and particle multiplicity 
+So it is very important to mix particles from events with comparable vertices and particle multiplicity 
 and to study the performance of this method with different classifications of similar events.
 
 Event mixing can be very expensive in terms of memory usage, because it is necessary to store
 lots of events that will later be combined with others.
-The tool used to store events has been specifically developed for providing an efficient memory usage.
-Different events classifications were studied for both models, in order to find the setup that 
+The tool used to store events is part of the \code{CODEX} framework and has been specifically 
+developed for providing an efficient memory usage.
+Different event classifications were studied for both models, in order to find the setup that 
 guarantees the best background description.
 
 %
 \subsection{Partial Event Mixing model} \label{sec:pem}
 
-The partial event mixing model (PEM) tries to reproduce both correlated and uncorrelated backgrounds
-combining between them pion pairs from the same event with deuterons from another.
-In principle this ensure to break the correlation between \textit{\ds candidates} because not all three
-particles are taken from the same event.
+In order to reproduce both correlated and uncorrelated backgrounds a model has been developed combining pion 
+pairs from one event with deuterons from another. In the following this model will be referred as the 
+partial event mixing model (PEM).
+In principle this model ensures to break the correlation between \textit{\ds candidates} because at least one
+out of three particles is taken from a different event.
 At the same time, it should correctly describe the correlations between pions because they are taken 
 from the same event.
 Events are classified by the position of the vertex along the $z$ axis ($z_{vertex}$) only.
-Classification by particle multiplicity of the event was tested, but has not been used because it’s 
-not effective.
-Different $z_{vertex}$ classifications has been studied, the final choice is a $10\ $ class of $2\;$ cm
+Classification in terms of particle multiplicity of the event was tested, but has not been used because
+does not improve the background description.
+Different $z_{vertex}$ classifications have been studied and the final choice is a $10\ $ class of $2\;$ cm
 classification in the $-10 < z_{vertex} < 10$ cm interval.
 For each event, every pion pairs is combined with 5 different deuterons from 5 different events
 with $z_{vertex}$ in the same class.
 
 The model is compared with the \minv distribution \ -- outside the region of interest -- \ in
 0.5 \gevc intervals of the transverse momentum of the \textit{\ds candidates}. 
-Since the \ds production is expected to be negligible for $\pt > 5$ \gevc the comparison between the
+Since the \ds production is expected to be negligible for $\pt > 5$ \gevc , the comparison between the
 model and the \minv has been performed only for \textit{\ds candidates} with transverse momentum under
 this value.
 
@@ -609,14 +609,13 @@ Therefore other two components of the PEM model have been derived mixing $d-\pip
 $d-\pim$ pairs from the same event and other pion from another event.
 The resulting model is the weighted sum of the $\pi-\pi$, the $d-\pip$ and the $d-\pim$ components
 of the PEM model.
-The relative weight of the 3 contribution was found fitting the model to the data outside the RoI
-with the relative weight as fit parameter, with the sum of the weights constrained to be one.
+The relative weights of the 3 contributions was found fitting the model to the data outside the RoI
+with the relative weights as fit parameters, with the sum of the weights constrained to be one.
 This new model improves the background description.
 In low \pt region \ -- $/pt < 1.5 \gevc$ -- \ the data/model ratio is almost the same as in the case
 of the previous model, while for higher \pt the discrepancies in the left sideband are < 4\%.
 This value, compared with the previous 12\% of discrepancies shows that the new PEM
-model provides a better background description.
-As an example of the improved background description of the new PEM model 
+model provides a better background description: as an example 
 Figures~\ref{fig:pemimp05-1} and~\ref{fig:pemimp2-2.5} show the data-model comparison in the same 
 transverse momentum intervals reported in Figures~\ref{fig:pem05-1} and~\ref{fig:pem2-2.5}.
 
