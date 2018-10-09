@@ -163,12 +163,12 @@
 % --------------------------
 \pagenumbering{roman}			% roman page numbing (invisible for empty page style)
 \pagestyle{empty}				% no header or footers
-% \input{content/titlepages}		% INCLUDE: all titlepages
-% \cleardoublepage
+\input{content/titlepages}		% INCLUDE: all titlepages
+\cleardoublepage
 
-% \pagestyle{plain}				% display just page numbers
-% \input{content/abstract}		% INCLUDE: the abstracts (english and german)
-% \cleardoublepage
+\pagestyle{plain}				% display just page numbers
+\input{content/abstract}		% INCLUDE: the abstracts (english and german)
+\cleardoublepage
 
 % \input{content/acknowledgement} % INCLUDE: acknowledgement
 % \cleardoublepage
@@ -184,11 +184,12 @@
 \setcounter{page}{1}			% set page counter
 \pagestyle{maincontentstyle} 	% fancy header and footer
 
-\input{content/ch1-HENP}	  	% INCLUDE: introduction on HENP
-\input{content/ch2-DIBARYONS} % INCLUDE: dibaryon physics
-\input{content/ch3-ALICE}	  	% INCLUDE: ALICE chapter
-\input{content/ch4-ANALYSIS}  	% INCLUDE: analysis 
-\input{content/appendix}
+% \input{content/ch1-HENP}	  	% INCLUDE: introduction on HENP
+% \input{content/ch2-DIBARYONS}   % INCLUDE: dibaryon physics
+% \input{content/ch3-ALICE}	  	% INCLUDE: ALICE chapter
+% \input{content/ch4-ANALYSIS}  	% INCLUDE: analysis 
+\input{content/ch5-CONCLUSIONS} % INCLUDE: conclusions chapter
+% \input{content/appendix}        % INCLUDE: appendix
 
 \cleardoublepage
 

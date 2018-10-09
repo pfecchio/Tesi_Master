@@ -9,7 +9,7 @@
 
 In this chapter the details on the data sample and the analysis technique used for the search of the \dst
 dibaryon and the related antiparticle, will be presented. 
-The \dst has been searched in the \dstdecay decay channel, since this is expected to be the
+The \dst was searched in the \dstdecay decay channel, since this is expected to be the
 most relevant channel detectable by the ALICE apparatus \ -- the expected branching ratio is
 around 23\% (Tab.~\ref{tab:dst_prop}).
 
@@ -19,17 +19,18 @@ around 23\% (Tab.~\ref{tab:dst_prop}).
 
 This section is dedicated to the detailed description of the strategy adopted in the search of
 \dst dibaryon in \pPb collisions at \sctev. 
-The data analysis has been performed adopting a \textbf{blind analysis} for the invariant mass distribution
+The data analysis was performed adopting a \textbf{blind analysis} for the invariant mass distribution
 (\minv) of the \ds \textit{candidates}. A \ds \textit{candidate} is a four-vector obtained summing the 
 four-momentum of the \ds decay products \ -- therefore $d$, \pip, \pim or the related antiparticles since the
 considered decay channel is \dstdecay.
 A region of interest in the \minv invariant mass distribution, where the \ds signal is expected to be,
-has been defined as follows:
+was defined as follows:
 \begin{center}
 \textbf{Region of Interest (RoI)}\  $\rightarrow$ \  $(2.280  < $\ \minv$  < 2.480)\ $ \gevcs.
 \end{center}
-The study of the selection criteria has been conducted without taking into account the RoI. At the end of the selections optimisation the ROI has been \textit{unblinded} and a
-background subtraction has been performed to look for the signal.
+The study of the selection criteria was conducted without taking into account the RoI. At the end of the 
+selections optimisation the RoI was \textit{unblinded} and a background subtraction was performed 
+to look for the signal.
 
 The idea behind the blind analysis is to optimise the selections and to develop a model
 able to describe the background that affects the measurement without introducing any bias. 
@@ -63,7 +64,7 @@ The experimental results presented in this thesis are based on the analysis of t
 
 The data sample  consists of nearly $5.5\times10^{8}$ minimum bias events.
 In order to increase the number of collected events, two
-different minimum bias triggers have been adopted during this data taking period.
+different minimum bias triggers were adopted during this data taking period.
 The first trigger, called \code{CENT}, is a minimum bias trigger for the central barrel
 detectors. The SDD detector has a high busy time if compared to that of other detectors \ -- around three times
 than SSD -- \ which limits the rate of the collected events. 
@@ -71,15 +72,15 @@ In order to increase that rate, a second trigger, called \code{FAST}, allows the
 The management of the data flow and these two triggers is performed by the ALICE 
 CTP (Sec.~\ref{sec:data_flow}).
 
-In the \textit{off-line} event reconstruction, the whole data set analyzed in this work has been
+In the \textit{off-line} event reconstruction, the whole data set analysed in this work was
 reconstructed excluding the SDD information from the process, in order to made compatible
 the data acquired with the two different triggers.
 
-For this analysis two different Monte Carlo productions have been used.
+For this analysis two different Monte Carlo productions were used.
 The first one is a sample of $\sim 5 \times 10^{5}$ \pPb events with injected exotic bound states
-and it has been used to study the signal shape and momentum distribution of the \ds, and the reconstruction
+and it was used to study the signal shape and momentum distribution of the \ds, and the reconstruction
 efficiency of its decay.
-The second one is a sample of $\sim 4.6 \times 10^{7}$ \pPb events and it has been used to study 
+The second one is a sample of $\sim 4.6 \times 10^{7}$ \pPb events and it was used to study 
 the background sources of the measurement.
 
 The Monte Carlo productions are based on the EPOS-LHC generator~\cite{epos_lhc}, which is an event 
@@ -92,14 +93,14 @@ are injected with a flat distribution in transverse momentum \ -- in the $0 \leq
 -- \ as well as in the azimuthal angle $\phi$ and in rapidity.
 The injected \dst are forced to decay by the generator through the \dstdecay channel. 
 
-The other possible decay of the \dst have not been considered since they are either not relevant or not
+The others possible decay of the \dst were not considered since they are either not relevant or not
 detectable \ -- because of the presence of neutral particle in the final state -- \ by ALICE.
 Since the considered decay occurs through strong interaction, the decay takes place in the primary
 interaction vertex. Therefore the decay products are generated starting from the primary interaction vertex
 together with the other collision products.
 
 The transport code used for the generation of the detector response \ -- as described
-in Section~\ref{sec:} -- \ is GEANT3~\cite{geant3}. 
+in Section~\ref{sec:montecarlo} -- \ is GEANT3~\cite{geant3}. 
 The data taking conditions are taken account in the MC by reproducing the configuration of the different 
 detectors present during the data taking and hence in the runs used for the data analysis.
 
@@ -112,9 +113,9 @@ schema used in the MC through the quality assurance (QA in the following) of the
 This validation procedure ensures that the injected dibaryonic states are characterized by the 
 physics properties expected for the \dst.
 
-The QA of the Monte Carlo events has been done by checking the shape of the invariant mass distribution
+The QA of the Monte Carlo events was done by checking the shape of the invariant mass distribution
 of \dst decay products and using the generated tracks. Only tracks from a \dst and belonging to the
-same parent particle have been considered, in order to reduce the background. 
+same parent particle were considered, in order to reduce the background. 
 
 \begin{figure}
     \centering
@@ -138,14 +139,14 @@ specifically developed to provide analysis tools for the ALICE analysis related 
 production.} that allows the selection of events on the basis of the presence of specific particles 
 of interest (PoI) in the event and to store them in a compressed format.
 Basically, it works as an \textit{off-line} trigger.
+In the compression process the size of the track is reduced by a factor $\sim\;50$.
 Such compressed data can be stored and analysed on local machines, providing an easier and faster
 analysis chain.
 
 Using the \code{CODEX} framework, the event and track selection takes part in two different stages.
 In the first stage the \code{CODEX} analyses the considered data sample on the
-WLCG (Sec.~\ref{sec:offline}) selecting events in which at least one PoI has been reconstructed.
-The selected events are filtered by the \code{CODEX} in order to store only
-
+WLCG (Sec.~\ref{sec:offline}) selecting events in which at least one PoI was reconstructed.
+The selected events are filtered by the \code{CODEX} in order to reduce the size of the stored events.
 In the second stage the filtered data are analysed on local machines and further track
 selections are applied.
 In the following sections more details on the event and track selection are provided.
@@ -156,8 +157,8 @@ In the following sections more details on the event and track selection are prov
 In the \code{CODEX} filtering the event selection is performed in two steps.
 In the first step the events are selected using standard ALICE requirements applied for \pPb collisions.
 A selection for the pile-up rejection is applied to exclude events with more than one primary vertex,
-while selection based on the resolution and the position of the primary vertex guarantees the goodness of the
-reconstructed vertex.
+while selection based on the resolution and the position of the primary vertex guarantees the goodness
+of the reconstructed vertex.
 This last selection, basically rejects events for which the position of the vertex reconstructed with full
 tracks differs too much from the position of the vertex determined with SPD only.
 More details on the two algorithms used to determine the vertex are given in Section~\ref{sec:vertexing}.
@@ -207,7 +208,7 @@ In the following the final selections, determined after a fine tuning and a deta
 
 Since \dstdecay is a strong decay only tracks coming from the primary vertex are 
 considered in this analysis. Therefore a selection on the DCA \ -- defined in 
-Section~\ref{sec:vertexing} -- \ has been applied. 
+Section~\ref{sec:vertexing} -- \ was applied. 
 In order to use only the geometrical region where the ALICE experiment is able to perform a full
 tracking and to provide a PID with high resolution, only tracks in the pseudorapidity 
 region $|\eta| < 0.9 $ are selected. This requirement is mainly related to the TPC acceptance,
@@ -221,8 +222,7 @@ between the TPC track constrained to the primary vertex and the global track --
 \ is required to be less than 36. The selection on the \textit{Golden $\chi^{2}$} value
 rejects bad quality primary tracks and also a large fraction of secondary tracks originating from
 decay or interaction vertices displaced from the primary vertex.
-Finally, a further selection is applied on the \code{kKink} parameter in order to reject
-particles coming from beam line interactions.
+Finally, a further selection is applied in order to reject leptonic weak decay topologies of the tracks. %
 
 \begingroup
 \renewcommand{\arraystretch}{1.5} % Default value: 1
@@ -239,7 +239,7 @@ $\chi^{2}$ per TPC clusters		    &	$<$ 4		     \\
 Golden $\chi^{2}$                   &   $<$ 36           \\
 TPC refit					        &	\code{true}		 \\
 ITS refit						    &	\code{true}		 \\
-Kink daughters			       		& 	rejected		 \\
+weak decay topologies			    & 	rejected		 \\
 DCA$_{xy}$					        &	$<$ $(0.0105+0.0350) / \ensuremath{\pt}^{1.1}$  cm \\
 DCA$_{z}$					        &	$<$ 2 cm    	 \\
 \midrule
@@ -267,16 +267,14 @@ Therefore a (\dsbar)\ds candidate is a triplet of tracks identified as (anti-)de
 The determination of the particle species of the track is performed with a track-by-track
 selection on the $n\sigma$ variable as described in Section \ref{sec:PID}. One of the main
 challenges in this analysis is to be able to have a good identification of the deuteron in the 
-momentum range in which the \ds production is expected to be more abundant. % \ -- $m_{d} >> m_{\pi}\ $ implies that most of the \ds 
-% momentum is taken by the deuteron, therefore the deuteron. 
-At the same time,
-it is essential to have samples of pions and deuterons with high purity.
+momentum range in which the \ds production is expected to be more abundant.
+At the same time, it is essential to have samples of pions and deuterons with high purity.
 Therefore the choice of the detectors to be used for the PID is not trivial and needs to
 be investigated.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{gfx/pid_tpc}
+    \includegraphics[width=0.9\textwidth]{gfx/pid_tpc}
 	\caption{Specific energy loss in the TPC active volume as a function of the particle rigidity in \pPb collisions for the 2016 data sample. The solid lines represent the expected TPC response for pion (black) and deuteron (red).}
 	\label{fig:tpc_pid_this}
 \end{figure}
@@ -296,7 +294,7 @@ the reconstruction efficiency of the \ds decay, since the pions produced by the 
 be at low momentum due to the kinematics of the decay.
 
 In order to determine which PID configuration ensures the best performance in the reconstruction
-of the \ds decay, three PID approaches have been studied and are detailed in the following. The choice of the configuration used
+of the \ds decay, three PID approaches were studied and are detailed in the following. The choice of the configuration used
 for the search of the \ds will be determined on the basis of the best performance reached in the reconstruction of the decay
 and taking into account which configuration maximises the signal/background ratio.
 
@@ -334,16 +332,19 @@ $d$   & $\mid n \sigma_{TPC}\mid\; \leq 3.$  & $\mid n \sigma_{TOF}\mid\; \leq 3
 %
 \section{Spectrum shape estimation} \label{sec:spectrum}
 
-As reported in Section~\ref{sec:4.2}, in the Monte Carlo productions the \dst was injected with flat
-transverse momentum spectrum in the $0 \leq \pt \leq 8\;\gevc$ interval. 
-This study is performed in order to have a more realistic spectrum both for the \ds and for the decay 
-products.
+As reported in Section~\ref{sec:4.2}, in the Monte Carlo productions the \dst was injected assuming 
+a flat distribution of the \ds transverse momentum in the $0 \leq \pt \leq 8\;\gevc$ interval. 
+The study of the \pt spectrum shape is performed in order to have a more realistic spectrum injected
+in the MC for both the \ds and its decay products.
 
-Assuming the same \pt spectrum of the deuteron for the \ds, it is possible to obtain the \ds 
-transverse momentum spectrum with a rejection sampling. The deuteron spectrum in \pPb collisions is
-described by the Blast Wave (BW) distribution, which is based on the phenomenological model for
-hadronic matter production in heavy ion collisions, published in Ref.~\cite{blastwave}.
-The distribution is written as:
+The deuteron spectrum in \pPb collisions is described by the Blast Wave (BW) distribution, which is based
+on the phenomenological model for hadronic matter production in heavy ion collisions, published in
+Ref.~\cite{blastwave}. Since the \ds has a mass comparable with the deuteron mass, it is reasonable
+to assume that the Blast Wave distribution can satisfactorily describe also the \ds spectrum.
+Therefore, starting from the BW distribution used in the analysis of the deuteron production in \pPb collisions, it is possible to
+obtain an estimation of the momentum spectrum for the \ds with a rejection sampling as a function of
+the \pt.
+The BW distribution can be written as:
 \begin{equation}
     \frac{1}{\pt} \frac{d\,N}{d\,\pt} \propto \int_{0}^{R} r\,dr\,m_{\mathrm{T}} I_{0}
     \left( \frac{\pt \sinh\rho}{T_{kin}} \right) K_{1} \left( \frac{m_{\mathrm{T}} \cosh\rho}
@@ -359,8 +360,8 @@ $I_{0}$ and $K_{1}$ the modified Bessel functions, $r$ is the radial distance on
 $T_{kin}$ is the kinetic freeze-out temperature, $\beta_{s}$  the surface velocity of the expanding 
 medium and $n$ is the exponent of the velocity profile.
 The parameter values, used in this analysis and summarised in Table~\ref{tab:bw_param}
-were obtained by fitting the measured deuterons spectrum with the BW distribution in previous
-analysis. % citare da dove vengono questi parametri
+were obtained by fitting the measured deuterons spectrum with the BW distribution in a previous
+analysis~\cite{deuteron_in_progress}. 
 \begingroup
 \renewcommand{\arraystretch}{1.5} % Default value: 1
 \begin{table} [htb]
@@ -376,21 +377,21 @@ $T_{kin}$       &   0.128583         \\
 $\beta_{s}$     &   0.710369         \\
 \midrule
 \end{tabular}
-\caption{Values of the parameters of the Blast Wave distribution used, in this analysis, as a basis fo the rejection method implemented to obtain a realistic spectrum for the \ds in the Monte Carlo.}
+\caption{Values of the parameters of the Blast Wave distribution used, in this analysis, as a basis of the rejection method implemented to obtain a realistic spectrum for the \ds to be used in the Monte Carlo.}
 \label{tab:bw_param}
 \end{table}
 \endgroup
 
 \begin{figure} [htb]
     \centering
-    \includegraphics[width=0.7\textwidth]{gfx/genrecBW}
-	\caption{Spectrum for both generated (blue line) and reconstructed (magenta line) \ds obtained with Blast Wave rejection sampling.}
+    \includegraphics[width=0.6\textwidth]{gfx/genrecBW}
+	\caption{Spectrum for both generated (blue line) and reconstructed (magenta line) \dsbar and \ds obtained with Blast Wave rejection sampling.}
 	\label{fig:bw_spectrum}
 \end{figure}
 
-The rejection sampling has been applied to the \ds generated in the Monte Carlo, obtaining a 
-plausible \pt spectrum for the \ds and its decay products. In Figure~\ref{fig:bw_spectrum} the
-resulting \pt spectrum for the \ds is shown both before (blue line) and after (magenta line) the
+The rejection sampling was applied to the \ds generated in the Monte Carlo, obtaining a 
+plausible \pt spectrum for (\dsbar-)\ds and the decay products. In Figure~\ref{fig:bw_spectrum} the
+resulting \pt spectrum for the (\dsbar-)\ds is shown both before (blue line) and after (magenta line) the
 reconstruction process. 
 In Figure~\ref{fig:BW_spec_prod} the expected momentum spectra of the pions 
 (Panel~\ref{fig:pi_spectrum}) and the deuterons (Panel~\ref{fig:deu_spectrum}) originating from
@@ -423,94 +424,98 @@ One of the fundamental steps of the analysis presented in this thesis is to eval
 \dstdecay is detectable by the ALICE apparatus, considering the reconstruction efficiency and the acceptance
 of the ALICE detectors. 
 
-Furthermore, if the decay is visible, the measured yields are biased by inefficiencies in the
-ALICE detectors.
+Furthermore, even if the decay can be reconstructed, the measured yields are biased by
+inefficiencies in the ALICE detectors.
 For instance, the active area of the experiment is not hermetic by design or, sometimes, parts of
 the detectors might be switched off during some data taking periods due to technical problems,
-reducing the efficiency.
+thus reducing the efficiency.
 The acceptance, instead, is only related to the geometric coverage of the detectors.
 
-It is possible to correct for the finite efficiency and acceptance using a MC simulation where the
+The correction due to the finite efficiency and acceptance is calculated by using a MC simulation where the
 full geometry and the real data taking conditions are reproduced. The MC production used for this
-analysis has been described in Section~\ref{sec:4.2}. 
+analysis is described in Section~\ref{sec:4.2}. 
 The number of particles crossing the detectors and their kinematic observables are known when using
 the MC simulation and the efficiency$\times$acceptance can be computed as:
 \begin{equation}
     Efficiency \times Acceptance\ (\pt) = \frac{\mathrm{N}_{\textit{rec}}(\pt)}
     {\mathrm{N}_{\textit{gen}}(\pt)},
 \end{equation}
-where $\mathrm{N}_{\textit{gen}}$ is the number (\dsbar)\ds generated in the azimuthal region
+where $\mathrm{N}_{\textit{gen}}$ is the number of generated (\dsbar)\ds in the azimuthal region
 $0 \leq \phi < 2\pi$ for $|y| < 0.5$, while $\mathrm{N}_{\textit{rec}}$ is the number of 
-(\dsbar)\ds for which the decay products satisfy the selection criteria described in 
-Section~\ref{sec:track_sel_crit}.
+(\dsbar)\ds for which the decay products satisfy the selection criteria adopted in the analysis 
+of the real data and described in Section~\ref{sec:track_sel_crit}.
+$\mathrm{N}_{\textit{gen}}$ and $\mathrm{N}_{\textit{rec}}$ were computed as function of the transverse 
+momentum.
 
 Since anti-deuterons can be absorbed by detector material, the efficiency for \dsbar is
 expected to be lower than \ds.
 Therefore the $Efficiency \times Acceptance$ is evaluated for \ds and \dsbar separately as a
-function of the transverse momentum for the three PID configurations. 
+function of the transverse momentum for the three PID configurations~\ref{sec:ds_candidate}. 
 The results are shown in Figure~\ref{fig:effAM}.
 
 The TPC only configuration has the highest efficiency,
-but in the light of the considerations of Section~\ref{sec:ds_candidate} has also a high 
-contamination of the deuteron sample at high momentum.
-The TPC-TOF configuration has a very low efficiency, due to the high pions suppression 
-resulted from the use of TOF for their identification. 
-Instead the TPC+TOF$_{deuteron}$ configuration guarantees a good efficiency and should also ensures
-a better deuteron sample purity than the TPC configuration.
+but in view of the considerations reported in Section~\ref{sec:ds_candidate} this corresponds 
+also to a configuration with a high contamination of the deuteron sample at high momentum.
+The TPC-TOF configuration has a very low efficiency, due to the high suppression of pions
+resulting from the use of the TOF detector for their identification. 
+Finally, the TPC+TOF$_{deuteron}$ configuration guarantees a good efficiency and it should 
+also ensure a deuteron sample with higher purity than the TPC configuration.
 
-The choice of the PID configuration, thus, will be done after the study of the significance of the measurement ensured by the two different configurations.
+Taking into account the aforementioned details, the choice of the final PID configuration will
+be done when the study of the significance of the measurement by using the configurations
+TPC and the TPC+TOF$_{deuteron}$ were finalised.
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/eff3globalSLIM}
-	\caption{Reconstruction efficiency of the \ds (left panel) and \dsbar (right panel) decay as a function of the transverse momentum for the three considered PID configurations.}
+	\caption{Reconstruction efficiency $\times$ acceptance of ALICE for the \ds (left panel) and \dsbar (right panel) decay as a function of the transverse momentum. The different colours refer to the three considered PID configurations as reported in the legend.}
 	\label{fig:effAM}
 \end{figure}
 
-A more accurate evaluation of the discrepancy between \ds and \dsbar efficiency has been done
+A more accurate evaluation of the discrepancy between \ds and \dsbar efficiency was performed
 by computing the \ds/\dsbar efficiency ratios for all the PID configurations.
 In Figure~\ref{fig:eff_ratioAM} the ratio computed for TPC+TOF$_{deuteron}$ is reported.
 
 \begin{figure} [!h]
     \centering
     \includegraphics[width=0.8\textwidth]{gfx/eff_ratioAM1SLIM}
-	\caption{The efficiency $\times$ acceptance for both \ds and \dsbar is compared for the TPC+TOF$_{deuteron}$ configuration. The \ds/\dsbar efficiency ratio is also reported and shows a behaviour compatible with what expected from the anti-deuteron cross section with material.}
+	\caption{The efficiency $\times$ acceptance for both \ds and \dsbar is compared for the TPC+TOF$_{deuteron}$ configuration is shown in the upper panel. The \ds/\dsbar efficiency ratio is also reported in the bottom panel and shows a behaviour compatible with what expected from the anti-deuteron cross section with material.}
 	\label{fig:eff_ratioAM}
 \end{figure}
 
 The relative difference between \ds and \dsbar efficiency is higher than $10$ \% and reaches 
 a maximum value of $25$ \% for $\pt < 3\;\gevc$, instead at higher \pt is $\sim 6\ $\%. 
-These values are compatible with what is expected from the anti-deuteron cross section with material,
-that decreases at higher \pt.
+These values are compatible with what is expected from the anti-deuteron cross section with
+material, that decreases at higher \pt.
 
-The determination of which PID configuration shall be chosen
+The determination of which PID configuration shall be chosen,
 must be made considering the momentum region in which the \ds is expected to be produced more 
 abundantly.
-In the light of the study of the expected \ds momentum spectrum (Sec.~\ref{sec:spectrum}), the 
+Taking advantage of the study of the expected \ds momentum spectrum (Sec.~\ref{sec:spectrum}), the 
 crucial region for the efficiency is the $0 - 2\;\gevc$ \pt interval.
-Therefore the TPC/TPC+TOF$_{deuteron}$ efficiency ratio has been computed and compared with the expected
+Therefore the TPC/TPC+TOF$_{deuteron}$ efficiency ratio was computed and compared with the expected
 \ds transverse momentum spectrum.
-The Figure~\ref{fig:eff_spec} shows the comparison between this two configurations and the expected \pt
+Figure~\ref{fig:eff_spec} shows the comparison between these two configurations and the expected \pt
 spectrum of the \ds.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{gfx/effspecSLIM}
-	\caption{The expected \pt distribution for the \ds derived in Section ~\ref{sec:spectrum} is superimposed to the efficiency computed for TPC and TPC+TOF$_{deuteron}$ PID configurations. The ratio between the efficiencies of the two configurations is also reported.}
+	\caption{Upper panel: expected \pt distribution for the \ds (fuchsia) derived in Section ~\ref{sec:spectrum} is superimposed to the efficiency computed for TPC and TPC+TOF$_{deuteron}$ PID configurations. The ratio between the efficiencies of the two configurations is also reported in the bottom panel.}
 	\label{fig:eff_spec}
 \end{figure}
 
-Both the TPC and TPC+TOF$_{deuteron}$ configurations have low efficiencies ($< 0.02$) in the $0 - 1\;\gevc$
+Both the TPC and TPC+TOF$_{deuteron}$ configurations have low efficiency$\times$ acceptance ($< 0.02$) in the $0 - 1\;\gevc$
 interval. While in the $1 - 2\;\gevc$ interval the TPC configuration efficiency reaches the value of 0.10.
-In the whole $0 - 2\;\gevc$ interval the TPC efficiency is 3-5 times higher than the obtained with TPC+TOF$_{deuteron}$.
+In the whole $0 - 2\;\gevc$ interval the TPC efficiency is 3-5 times higher than the one obtained
+with the  TPC+TOF$_{deuteron}$ configuration.
 
-Nevertheless, the choice of which PID configuration should be used is still not trivial. 
 In order to observe the \ds signal, it is crucial to have a good signal/background ratio that depends
 both on the efficiency and on the purity of considered sample.
 The usage of the TOF for the identification of the deuteron ensures a reduced contamination \ -- from 
-other particle species -- \ of the deuteron sample. 
+other particle species -- \ of the deuteron sample used in the present analysis. 
 Therefore the TPC+TOF$_{deuteron}$ configuration should have better performance in terms of the 
-signal/background ratio, respect to the TPC configuration.
+signal/background ratio, with respect to the TPC configuration.
 
 %
 %
@@ -518,57 +523,65 @@ signal/background ratio, respect to the TPC configuration.
 
 In order to perform the background subtraction described in Section~\ref{sec:4.1} it is necessary to have
 a model that satisfactorily reproduces the background of the measurement. 
-Therefore two different background models have been developed and tested. 
+To this purpose two different background models were developed and tested. 
 In this section the models and their performance in describing the background are discussed.
 
-In this work the main difficulty is to manage to describe and reproduce the background due to pions.
+In this work the main difficulty is to determine a model able to describe and reproduce the background 
+contribution to the invariant mass spectrum due to pions.
 Indeed, in \pPb collisions many particle species are produced~\cite{pkp_prod, neutralp, k0s_prod} 
 and most of them have a decay channel that include a charged pion.
 In particular neutral mesons, e.g. $\eta,\,\omega,\,K_{s}^{0}$ mesons, have a 
 \pip + \pim decay channel. Other pions, as well as deuterons, can be produced directly
 in the hadronization phase of the collision.
 All of these pions and deuterons contribute to the background of the measurement of the
-\dstdecay decay. In fact one can make a \textit{\ds candidate} (Sec.~\ref{sec:ds_candidate})
+\dstdecay decay. In fact, selecting tracks as described in Sections~\ref{sec:ds_candidate}
+is possible to obtain a \textit{\ds candidate} (Sec.~\ref{sec:ds_candidate})
 matching particles not originating from a real \ds decay.
 
-The two models are both based on the event mixing technique.
+The two models employed in the present analysis for the background estimation are both based on the event mixing technique.
 Event mixing, basically, is a method used to reproduce uncorrelated background combining particles from
-different events, this ensures that there can not be correlation between the considered particles.
+different events. This approach ensures that there can not be correlation between the considered particles.
 This technique can be very effective, but it is necessary to be careful in mixing particles from 
-similar events.
-So it is very important to mix particles from events with comparable vertices and particle multiplicity 
-and to study the performance of this method with different classifications of similar events.
+different events.
+In order to correctly reproduce the background is necessary to select the particles from "similar"
+events.
+Obviously, "similar" events is a relative concept, but does not exist any theory that suggests
+the correct way to perform the event mixing.
+Therefore, usually, the events are considered similar, on the basis of some event features,
+for example the number of the charged particles produced in the event or the primary vertex position.
+Then the events are classified in accordance with these event characteristics and the particles 
+are mixed only with other particles belonging to the same class.
 
 Event mixing can be very expensive in terms of memory usage, because it is necessary to store
-lots of events that will later be combined with others.
-The tool used to store events is part of the \code{CODEX} framework and has been specifically 
-developed for providing an efficient memory usage.
+a huge number of events that will later be combined with others.
+The tool used to store events is part of the \code{CODEX} framework and was specifically 
+developed to provide an efficient memory usage.
 Different event classifications were studied for both models, in order to find the setup that 
 guarantees the best background description.
 
 %
 \subsection{Partial Event Mixing model} \label{sec:pem}
 
-In order to reproduce both correlated and uncorrelated backgrounds a model has been developed combining pion 
-pairs from one event with deuterons from another. In the following this model will be referred as the 
-partial event mixing model (PEM).
-In principle this model ensures to break the correlation between \textit{\ds candidates} because at least one
-out of three particles is taken from a different event.
+In order to reproduce both correlated and uncorrelated backgrounds, a model was developed combining pion 
+pairs from one event with deuterons taken from another event. In the following this model will be referred to as 
+Partial Event Mixing model (PEM).
+In principle this model ensures to break the correlation between \textit{\ds candidates} because at
+least one out of three particles is taken from a different event.
 At the same time, it should correctly describe the correlations between pions because they are taken 
 from the same event.
+
 Events are classified by the position of the vertex along the $z$ axis ($z_{vertex}$) only.
 Classification in terms of particle multiplicity of the event was tested, but has not been used because
 does not improve the background description.
-Different $z_{vertex}$ classifications have been studied and the final choice is a $10\ $ class of $2\;$ cm
-classification in the $-10 < z_{vertex} < 10$ cm interval.
-For each event, every pion pairs is combined with 5 different deuterons from 5 different events
-with $z_{vertex}$ in the same class.
+Different $z_{vertex}$ classifications were studied and the final choice is to classify the events
+in $10\ $ classes of $2\;$ cm in the $-10 < z_{vertex} < 10$ cm interval.
+For each event, every pion pair is combined with 5 different deuterons from 5 different events
+with $z_{vertex}$ belonging to the same class.
 
-The model is compared with the \minv distribution \ -- outside the region of interest -- \ in
-0.5 \gevc intervals of the transverse momentum of the \textit{\ds candidates}. 
+Considering \pt intervals of 0.5 \gevc for the transverse momentum, the model is compared with the \minv distribution
+outside the region of interest.
 Since the \ds production is expected to be negligible for $\pt > 5$ \gevc , the comparison between the
-model and the \minv has been performed only for \textit{\ds candidates} with transverse momentum under
-this value.
+model and the \minv was performed only for \textit{\ds candidates} with transverse momentum lower than this value.
 
 \begin{figure} [htb]
     \centering
@@ -577,21 +590,23 @@ this value.
     \label{fig:pem05-1}
 \end{figure}
 
-The normalisation of the PEM model to the data has been done in the interval from 2.480 to
-2.600 \gevcs. Smaller intervals have been studied, but the final findings do not
+The normalisation of the PEM model to the data was done in the interval from 2.480 to
+2.600 \gevcs. Smaller intervals were studied, but the final findings do not
 change in any meaningful way. The normalisation has not been performed in the region on the left 
-of RoI because the model does not well describe the data in that region.
+of RoI because the model does not describe the data in that region.
 
 The PEM model can reproduce quite well the data in the region on the right of the RoI,
-particularly for $\pt < 1.0\ \gevc$. In this region the difference between
-data and model is < 2\%, but a trend is clearly visible in the ratio.
-This trend is bigger for $\pt > 2.0\ \gevc$.
+particularly for $\pt < 1.0\ \gevc$ (Fig.~\ref{fig:pem05-1}). In this region the difference between
+data and model is < 2\%, but a structure is clearly visible in the ratio.
+This structure is bigger for $\pt > 2.0\ \gevc$.
 Instead the left sideband is not well reproduced by this model in all the considered \pt 
 intervals. Figure~\ref{fig:pem05-1} shows the comparison between data \ -- with the region 
 of interest blinded -- \ and the model in the \pt interval in which the description is
-good. While Figure~\ref{fig:pem2-2.5} shows, as an example, the data-model comparison in the
-$2.0 < \pt \leq 2.5\ \gevc$ interval in which the description is not satisfactory.
-The data/model ratio is reported for both cases.
+good and the \ds production peak is expected.
+Figure~\ref{fig:pem2-2.5} shows, as an example, the data-model comparison in the
+$2.0 < \pt \leq 2.5\ \gevc$ interval in which the description is not satisfactory, since 
+the discrepancies are > 5\%.
+The data/model ratio is reported in the bottom panel of the figures for both cases.
 
 \begin{figure} [htb]
     \centering
@@ -600,24 +615,23 @@ The data/model ratio is reported for both cases.
 	\label{fig:pem2-2.5}
 \end{figure}
 
-The background description provided by the PEM model is not satisfactory in the whole \pt range
-considered.
 One can think that the discrepancies from data are due to some deuteron-pion correlation
 that are not considered.
 
-Therefore other two components of the PEM model have been derived mixing $d-\pip$ and
-$d-\pim$ pairs from the same event and other pion from another event.
-The resulting model is the weighted sum of the $\pi-\pi$, the $d-\pip$ and the $d-\pim$ components
-of the PEM model.
-The relative weights of the 3 contributions was found fitting the model to the data outside the RoI
-with the relative weights as fit parameters and the sum of the weights constrained to be one.
+Therefore, in order to improve the PEM model, other two components were added to the PEM model. 
+The first component is obtained by taking $d\pip$ from the same event and \pim from another, while the 
+second component taking $d\pim$ from the same event and \pip from another event.
+The resulting model is the weighted sum of the three components.
+The relative weights of the 3 contributions were found by fitting the model to the data outside the RoI
+with the relative weights used as fit parameters. The sum of the weights is constrained to be one.
+
 This new model improves the background description.
-In low \pt region \ -- $\pt < 1.5\ \gevc$ -- \ the data/model ratio is almost the same as in the case
+In the low \pt region \ -- $\pt < 1.5\ \gevc$ -- \ the data/model ratio is almost the same as in the case
 of the previous model, while for higher \pt the discrepancies in the left sideband are < 5\%.
-This value, compared with the previous 10\% of discrepancies shows that the new PEM
+This value, compared with the previous 10\% of discrepancy shows that the new PEM
 model provides a better background description: as an example 
 Figures~\ref{fig:pemimp05-1} and~\ref{fig:pemimp2-2.5} show the data-model comparison in the same 
-transverse momentum intervals reported in Figures~\ref{fig:pem05-1} and~\ref{fig:pemimp2-2.5}.
+transverse momentum intervals reported in Figures~\ref{fig:pem05-1} and~\ref{fig:pem2-2.5}.
 
 \begin{figure} [htb]
     \centering
@@ -632,51 +646,55 @@ transverse momentum intervals reported in Figures~\ref{fig:pem05-1} and~\ref{fig
 	\label{fig:pemimp2-2.5}
 \end{figure}
 
-The full list of figures related to the PEM and the improved PEM model as available in the 
+The full list of figures related to the PEM and the \textit{improved} PEM model are available in the 
 appendix~\ref{app:pem} and~\ref{app:pemimp}.
 
 %
 \subsection{Template + Event Mixing model} \label{sec:tem}
 
-The Template + Evnt Mixing model tries to reproduce the correlated backgrounds with a Monte Carlo
-based template for each background component, while the uncorrelated background is described with a
-real classical event mixing with all three tracks from three different events.
+The Template + Event Mixing model (called TEM from now on) tries to reproduce the backgrounds with a Monte Carlo
+based template for each correlated background component, while the uncorrelated background is described 
+with the event mixing by using, to reconstruct a \ds candidate, three tracks taken from three different events.
+
+% In the Monte Carlo every reconstructed pion pairs has been considered.
+% Looking at the Monte Carlo truth of the pion parent particle,
+% the pion sources that provide pion pairs with mass, summed with deuteron mass, in 2.120 - 2.600 \gevcs range, has been estimated.
+% Then for each source the template was obtained combining pion pairs \ -- with the same mother imposed
+% -- \ with deuterons from the data. 
 
 The templates are obtained combining deuterons from data \ -- to ensure that they have the correct
-momentum spectrum -- \ with pion pairs from Monte Carlo data \ -- in order to have the information
-about pion mothers.
-In the Monte Carlo every reconstructed pion pairs has been considered.
-Looking at the Monte Carlo truth of the pion mothers, the pion sources that provide pion pairs with 
-mass, summed with deuteron mass, in 2.120 - 2.600 \gevcs range, has been estimated.
-Then for each source the template was obtained combining pion pairs \ -- with the same mother imposed
--- \ with deuterons from the data. 
-Basically each template is a \minv histogram with pion pairs from MC \ -- from the same mother and 
-from the same source -- \ and deuterons from data. 
-Each pion pairs was mixed with 50 different deuterons in the same $z_{vertex}$ class in order to 
-increase the statistics of the templates.
+momentum spectrum -- \ with pion pairs from Monte Carlo data \ -- in order to tag the decay from which
+the pions have originated.
+Basically the template is an histogram for the invariant mass distribution of the \textit{\ds candidates} 
+in which the pions are taken from the Monte Carlo, while the deuterons are taken from the data.
+In each template the pions are imposed to be originated by the same species of parent particles.
+Each pion pairs was mixed with 50 different deuterons in order to increase the statistics of the templates.
 
-This process has been done for the three \pt intervals considered, obtaining different templates in 
+This process was carried out for three \pt intervals, obtaining different templates in 
 each \pt bin.
 The remaining background, which should be now totally uncorrelated, is described with a real event 
-mixing, obtained combining all three tracks from data from three different events in the same 
-$z_{vertex}$ class.
-Templates have been derived for sources with a contribution to the background at least of $10^{-4}$ of
-the total in each \pt bin:
+mixing, obtained combining three tracks obtained from three different real events.
+As in the case of the PEM model, events are classified in $10\ $ classes of $2\;$ cm in the 
+$-10 < z_{vertex} < 10$ cm interval, then the event mixing is performed combining particles belonging
+to the same class.
+
+Templates were derived for sources with a contribution to the background at least of $10^{-4}$ of
+the total in each \pt bin. 
+The sources of pions that are found, in the three considered \pt bin, are:
 \begin{itemize}
-  \item[] 0 -- 1 \gevc $\rightarrow \ \omega(782),\ \eta,\ \mathrm K_{0}^{S},\ \eta^{'}(958),\ \gamma $
-  \item[] 1 -- 2 \gevc $\rightarrow \ \omega(782),\ \eta,\ \mathrm K_{0}^{S},\ \eta^{'}(958),\ \gamma $
-  \item[] 2 -- 3 \gevc $\rightarrow \ \omega(782),\ \eta,\ \eta^{'}(958),\ \mathrm K_{0}^{S},\ \phi(1020),\ \gamma $
+  \item[] 0 -- 1 \gevc $\rightarrow \ \omega(782),\ \eta,\ \mathrm K_{0}^{S},\ \eta^{'}(958),\ \gamma $;
+  \item[] 1 -- 2 \gevc $\rightarrow \ \omega(782),\ \eta,\ \mathrm K_{0}^{S},\ \eta^{'}(958),\ \gamma $;
+  \item[] 2 -- 3 \gevc $\rightarrow \ \omega(782),\ \eta,\ \eta^{'}(958),\ \mathrm K_{0}^{S},\ \phi(1020),\ \gamma $.
 \end{itemize}
 
-In each \pt bin the TEM model has been obtained as the weighted sum of the templates and the
+In each \pt bin the TEM model was obtained as the weighted sum of the templates and the
 uncorrelated component, where the weights are the fractions with which each template contributes to
 the total background.
 The weights were estimated starting from the abundance of each background source considered in the MC
 production.
-Of course there is a degree of uncertainty on the MC abundances, therefore the models has been fitted
-to the data in each
-\pt bin with weights as fit parameters. The weights has been constrained to be in $\pm$10\% range of 
-the MC estimated value.
+Of course there is a degree of uncertainty on the MC abundances, therefore the models were fitted
+to the data \ -- outside the region of interest -- \ in each \pt bin with weights as fit parameters. 
+The weights were constrained to be in $\pm$10\% range of the MC estimated value.
 
 \begin{figure} [htb]
 \begin{subfigure}{.33\textwidth}
@@ -700,39 +718,40 @@ the MC estimated value.
   \caption{}
   \label{fig:tem23}
 \end{subfigure}
-\caption{The TEM model (magenta line) is compared with \minv from data (blue line) in 0 - 1 \gevc transverse momentum interval. The other lines represent different templates that contribute to the TEM model.}
+\caption{The TEM model (magenta line) is compared with \minv from data (blue line) in 0 - 1 \gevc transverse momentum interval. The other lines represent different templates that contribute to the TEM model. In the lower pad the data/model ratio is reported.}
 \label{fig:tem01}
 \end{figure}
 
-The TEM model provides a better background description then PEM model. In the first \pt bin
-(Fig.~\ref{fig:tem01}) the data/model ratio is flat in the right sideband, while in the left sideband 
-discrepancies are around 3\%. In the second bin (Fig.~\ref{fig:tem12}) the situation is a little worse
-with a linear trend in the data/model ratio visible in the right sideband \ -- differences from flat
-ratio < 2\% -- \ while in the left sideband the description is similar to that from the first bin. 
+In the first \pt bin (Fig.~\ref{fig:tem01}) the data/model ratio is flat in the right sideband, 
+while in the discrepancies  in the left sideband are around 3\%.
+In the second bin (Fig.~\ref{fig:tem12}) the situation is worse with a linear trend in the 
+data/model ratio visible in the right sideband \ -- differences from flat
+ratio < 2\% -- \ while in the left sideband the description is similar to that observed in the first bin. 
 In the last considered bin (Fig.~\ref{fig:tem23}) the description get worse, in the right sideband
 there is a linear trend similar to the one observed in the second bin, while in the left sideband 
 discrepancies from flat ratio are around 8-10\%.
+Therefore, the the TEM model does not provide a better background description than the PEM model.
+Nevertheless, the TEM model provides an estimation of the contribution to the total background
+of each background source and a model for its shape.
 
-The TEM model provides, not only a better background description, but also an estimation of
-the background sources and the shapes of their contribution to the total background.
-
-Except for the $K_{s}^{0}$ meson, the templates show a smooth shape, so it is expected that they do 
-not give rise to suspicious structures in the RoI. The situation is different for the $K_{s}^{0}$ 
-which template has the kinematic limit just where the \ds is expected to be.
-This can be a problem, but we can set the weight of the $K_{s}^{0}$ template measuring his production
-in the $\pip+\pim$ invariant mass distribution.
+All the templates show a smooth shape, so it is expected that they do not give rise to suspicious
+structures in the RoI. 
+It should be noted, however, that the $K_{s}^{0}$ template has the kinematic limit just where the
+ \ds is expected to be.
+% This behaviour suggests that, if in the background subtraction a peak
+% arises around the \ds mass value, we must consider the possibility that can be due to the 
+% $K_{s}^{0}$ contribution.
 
 %
 %
 \section{Significance of the measurement} \label{sec:significance}
 
-Before to perform the background subtraction to look for the \ds signal, the statistical significance
-of the measurement has been estimated.
+The statistical significance of the measurement was estimated, before subtracting the background.
 Three ingredients are needed to get the estimation of the significance: the expected signal shape, 
-a plausible background shape and normalisation and finally an the \ds yield.
+a plausible background shape and normalisation, and, finally  the \ds yield.
 
-In the previous sections the expected signal shape (Sec.~\ref{}) and the background shape (Sec~\ref{})
-have been discussed. 
+In the previous sections the expected signal shape (Sec.~\ref{sec:spectrum}) and the background shape
+(Sec~\ref{sec:background}) were discussed. 
 In this section the estimation of the expected \ds yield in \pPb collisions at \sctev \ -- based on the
 Statistical Hadronization Model -- \ and finally, the estimation of the significance, is presented.
 
@@ -741,19 +760,19 @@ Statistical Hadronization Model -- \ and finally, the estimation of the signific
 
 In the Statistical Hadronization Model framework, described in Section~\ref{sec:1.4.1}, is possible 
 to estimate the expected production yield of the \ds. Following equation~\eqref{eq:particleyields1}
-the average particle yield for a species $i$ is related to the mass of the specie itself by the 
+the average particle yield for a species $i$ is related to its mass $m_{i}$ by the 
 following relation:
 \begin{equation} \label{eq:tm_prod1}
     \langle N_{i} \rangle \propto g_{i} e^{\beta m_{i}},
 \end{equation}
 where $\beta$ is the inverse of the chemical freeze-out temperature ($\beta = 1/T_{ch}$) and 
-$g_{i}\ $ is the degree of degeneracy of the $i\ $ state. 
-Therefore, using Equation~\eqref{eq:tm_prod1} the \ds/d ratio can be expressed as:
+$g_{i}\ $ is the degree of degeneracy of the $i\ ^{th}$ state. 
+Therefore, using Equation~\eqref{eq:tm_prod1}, the \ds/d ratio, which relates the production of \ds to that of deuterons, can be expressed as:
 \begin{equation} \label{eq:tm_prod2}
 \frac{\langle N_{\ds} \rangle}{\langle N_d \rangle}=\frac{g_{\ds}}{g_d}e^{-\beta (m_{\ds} - m_d)}=\frac{7}{3}e^{-\beta (m_{\ds} - m_d)}.
 \end{equation}
-In the range of chemical freeze-out temperature that typically describe nuclei production in
-heavy ion collisions (between 155 and 170 MeV), the ratio is approximately $0.1$.
+In the range of chemical freeze-out temperature associated to nuclei productions in
+heavy ion collisions (between 155 and 170 MeV~\cite{nucleprod}), the ratio is approximately $0.1$.
 In order to compute the expected abundance of \ds in the 2016 \pPb data, an additional 
 $0.22$ factor has to be applied to keep into account the branching ratio of the \dstdecay
 decay channel under study.
@@ -761,53 +780,54 @@ decay channel under study.
 The rate of expected \dstdecay in p–Pb inelastic collisions at \sctev is then 
 approximately $2.46\times10^{-5}$ with an uncertainty of $14\%\ $ due to the $T_{ch}$
 range assumed in the calculations. The value of the deuteron yield used to compute the \ds/d
-ratio has been measured by the ALICE collaboration~\cite{deuteron_in_progress}.
+ratio was measured by the ALICE collaboration~\cite{deuteron_in_progress}.
 
 %
 \subsection{Significance estimation} \label{sec:sig_sub}
 
-While the signal shape has been obtained by reconstructing true \ds candidates in the Monte Carlo~\ref{sec:4.2.1},
-the background shape and normalisation was extracted by studying the like sign triplets in the data
-\ -- $\ds \rightarrow d+\pip+\pip$  and $\ds \rightarrow d+\pim+\pim$ and their respective charge conjugate). 
-As \ds yield has been considered the thermal model estimations presented in Section~\ref{sec:ds_production}.
+While the signal shape was obtained by reconstructing true MC generated \ds candidates,
+the background shape and normalisation were extracted with the PEM model (Sec.~\ref{sec:pem}).
+For the \ds yield  the thermal model production presented in Section~\ref{sec:ds_production} was
+considered.
 
 \begin{figure} [htb]
 \centering
 \includegraphics[width=0.7\linewidth]{gfx/sigcomp}
-\caption{Significance of the measurement as a function of transverse momentum compared for the TPC and the TPC+TOF$_{deuteron}$ PID configurations.}
+\caption{Significance of the measurement as a function of transverse momentum: a comparison of the TPC and the TPC+TOF$_{deuteron}$ PID configurations is reported.}
 \label{fig:significance}
 \end{figure}
 
-The significance has been estimated by integrating signal and background in a 70 \mevcs wide region around the
-expected mass peak of the \ds. 
+The significance was estimated by integrating signal and background in a 70 \mevcs wide region
+around the expected mass peak of the \ds. 
 Figure~\ref{fig:significance} shows the significance in various \pt bins for both the TPC and the
 TPC+TOF$_{deuteron}$ PID configurations.
-The first transverse momentum bin has been missed because the number of expected \ds correctly reconstructed 
-in this interval is negligible with respect to the background.
+The significance results to be < $0.25$ for both PID configurations. 
+The wide peak of the \ds makes its identification challenging for the experimental conditions at the LHC 
+and if the thermal model prediction is correct the best we can do with the statistics we have at disposal
+is to set an upper limit on the production yield of the \dst.
 
-While in the $0.5 \leq \pt \leq 2.0\ \gevc$ interval the TPC only PID guarantees an optimal identification of 
-pions and deuterons showing the maximum of significance, starting from  $2.0\ \gevc$ the TPC+TOF$_{deuteron}$ 
-configuration reduces the combinatorial background and improves the significance. 
-The wide peak of the \ds makes its identification challenging for the experimental condition at the LHC and 
-if the thermal model prediction is correct it is possible to set only an upper limit to the production yield
-of \ds.
+While in the $0.5 \leq \pt \leq 2.0\ \gevc$ interval the TPC only PID guarantees an optimal 
+identification of pions and deuterons showing the maximum of significance, starting from  $2.0\ \gevc$ the
+TPC+TOF$_{deuteron}$ configuration reduces the combinatorial background and improves the significance. 
+The first transverse momentum bin was omitted because the number of expected \ds correctly
+reconstructed in this interval is negligible with respect to the background.
 
-In the light of this study of the significance, the optimal choice of the PID configuration is to use the TPC
-configuration for \ds candidate up to $2.0\ \gevc$ of transverse momentum, while to use the the TPC+TOF$_{deuteron}$
-fot \ds candidate with transverse momentum $\geq 2.0\ \gevc$.
+In view of an upper limit estimation and for the study of the significance, the chosen PID configuration 
+is the TPC configuration for \ds candidate up to $2.0\ \gevc$ of transverse momentum, while the
+TPC+TOF$_{deuteron}$ one was used for \ds candidate with transverse momentum $\geq 2.0\ \gevc$.
 
 %
 %
 \section{Background subtraction} \label{sec:backsub}
 
 After the estimation of the significance and a detailed study of the background of the measurement,
-the region of interest has been \textit{unblinded} to look for the \ds signal.
-Firstly, the the improved PEM model \ -- described in Section~\ref{sec:pem} -- \ has been compared
-with the data in the region of interest, and the data/model ratio has been computed.
+the region of interest was \textit{unblinded} to look for the \ds signal.
+Firstly, the improved PEM model \ -- described in Section~\ref{sec:pem} -- \ was compared
+with the data in the region of interest, and the data/model ratio was computed.
 
 \begin{figure} [htb]
     \centering
-    \includegraphics[width=0.75\textwidth]{gfx/appendix/backsub/can_unblind1}
+    \includegraphics[width=0.70\textwidth]{gfx/appendix/backsub/can_unblind1}
     \caption{Improved PEM model compared with \minv, in the $0.5 < \pt \leq 1.0$ \gevc interval. In the lower pad the data/model ratio is reported.}
     \label{fig:unbl05-1}
 \end{figure}
@@ -819,7 +839,7 @@ to the \ds signal.
 
 \begin{figure} [htb]
     \centering
-    \includegraphics[width=0.75\textwidth]{gfx/appendix/backsub/can_unblind5}
+    \includegraphics[width=0.70\textwidth]{gfx/appendix/backsub/can_unblind5}
     \caption{Improved PEM model compared with \minv, in the $2.5 < \pt \leq 3.0$ \gevc interval. In the lower pad the data/model ratio is reported.}
 	\label{fig:unbl2.5-3}
 \end{figure}
@@ -829,38 +849,61 @@ in the transverse momentum interval in which the maximum of the production of th
 While Figure~\ref{fig:unbl2.5-3} shows the \pt interval in which the background description,
 provided by the improved PEM model, is worst.
 The data-model discrepancies reach a maximum of 5\% in the region of interest, which is in accordance 
-with the maximum of 4\% outside the RoI shown in Figure~\ref{fig:pemimp2.5-3}.
+with the maximum of 4\% outside the RoI.
 The full list of figures related to this study is available in Appendix~\ref{app:bs1}.
 
 Since there is no evidence of the presence of the \ds signal in the region of interest, it is possible
 to assume that the data-model discrepancies are due to a background component that is not described by 
 the model.
-Therefore a gaussian component has been included in the improved PEM model in order to
+Therefore a gaussian component was included in the improved PEM model in order to
 reproduce the residual background.
-The new background model \ -- i.e. improved PEM + gaussian component -- \ has been fitted to the data
-outside the region of interest, in order to determine the gaussian parameters.
-Then the model has been normalized to the data with the following normalizing constant:
-\begin{equation}
-    C = \frac{\int_{2.160}^{2.280}\mathrm{Data}(\minv) d\minv + \int_{2.480}^{2.620}\mathrm{Data}(\minv) d\minv}{\int_{2.160}^{2.280}\mathrm{Model}(\minv) d\minv + \int_{2.480}^{2.620}\mathrm{Model}(\minv) d\minv},
-\end{equation}
-% non è essenziale mettere la formula del fattore di normalizzazione, ma cosí è chiaro che cosa ho usato
-% per normalizzare il modello ai dati
-that ensure to not consider the signal region in the normalisation.
-Finally the normalized model has been subtracted from the data. Figure 
+The new background model \ -- i.e. improved PEM + gaussian component -- \ was fitted to the data
+outside the region of interest.
+Then the obtained model was normalised to the data outside the region of interest.
 
+Finally the normalised model was subtracted from the data.
+Figure~\ref{fig:bs1} (central Panel) shows the result of the background subtraction in the \pt interval
+in which the \ds production peak is expected to be. The residual of the background subtraction was
+fitted with a constant function and results to be compatible with zero.
+The right Panel report a $Z-$test performed bin-by-bin that shows that residual discrepancies 
+are basically, compatible with the null hypothesis \ -- i.e. the difference between data and model is zero. 
+The full list of figures related to the background subtraction for each \pt bin is reported in 
+Appendix~\ref{app:bs2}
 \begin{figure} [htb]
     \centering
     \includegraphics[width=\textwidth]{gfx/appendix/backsub/canvas1}
-    \caption{Improved PEM model compared with \minv, in the $0.5 < \pt \leq 1.0$ \gevc interval. In the lower pad the data/model ratio is reported.}
+    \caption{Left panel shows the background model compared with \minv, in the $0.5 < \pt \leq 1.0$ \gevc interval. In the central panel the residual discrepancies, after the background subtraction, are fitted with a constant function, while in the right panel the pull distribution is reported.}
     \label{fig:bs1}
 \end{figure}
 
+%
+\section{Upper limit on the \ds production in \pPb collision at \sctev} \label{sec:upperlimit}
+
+Since no signal in the invariant mass distributions is observed, upper limits are estimated for
+the \ds production in \pPb collisions at \sctev.
+For the estimation of upper limits on the double-differential yield
+$\frac{1}{N_{ev}}\frac{\mathrm{d}^{2}N}{\mathrm{d}\pt\mathrm{d}y}$ the method discussed in~\cite{rolke}
+was adopted. 
+This approach, utilises the profile likelihood method with the background rate as nuisance
+parameter. Then it estimates the maximum signal rate compatible with the null hypothesis \ -- i.e.
+no signal is observed -- \ with respect to a defined confidence level (CL).
+In particular, this calculation was performed using the software package \code{TRolke} 
+as implemented in ROOT~\cite{root}. 
+This method needs as input the efficiency, the branching ratio of the decay, the observed counts in the
+signal region and finally the background counts in the signal region.
+
 \begin{figure} [htb]
     \centering
-    \includegraphics[width=\textwidth]{gfx/appendix/backsub/canvas5}
-    \caption{Improved PEM model compared with \minv, in the $0.5 < \pt \leq 1.0$ \gevc interval. In the lower pad the data/model ratio is reported.}
-    \label{fig:bs5}
+    \includegraphics[width=0.85\textwidth]{gfx/upper}
+    \caption{Upper limit on the double-differential \ds yield as a function of the \pt. The blue (dashed) lines indicate the expectation of the thermal model assuming a temperature of 156 MeV.}
+	\label{fig:UL}
 \end{figure}
 
-
-
+The efficiency was estimated in Section~\ref{sec:eff}, the branching ratio is $0.23$ as 
+measured by WASA (see table ~\ref{tab:br}).
+The signal counts were computed in a 70 MeV/${c}^{2}\ $ interval around the expected \ds mass
+and the background counts were computed, in the same interval, from the model presented in Section~\ref{sec:backsub}.
+These calculations were estimated in different \pt intervals in order to
+compute the upper limits as a function of the transverse momentum.
+Figure~\ref{fig:UL} shows the limits obtained on double-differential yield of the investigated \ds dibaryon
+are found to be at least four orders of magnitude higher than the expectations of particle production models. 
