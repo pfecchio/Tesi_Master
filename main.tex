@@ -3,7 +3,7 @@
 % **************************************************
 \documentclass[%
 	paper=A4,					% paper size --> A4 is default in Germany
-	twoside=true,				% onesite or twoside printing
+	twoside=false,				% onesite or twoside printing
 	openright,					% doublepage cleaning ends up right side
 	parskip=full,				% spacing value / method for paragraphs
 	chapterprefix=true,			% prefix for chapter marks
@@ -27,7 +27,7 @@
 \newcommand{\thesisTitle}{Search of the \dst dibaryon at the LHC with the ALICE Experiment}
 \newcommand{\thesisName}{Pietro Fecchio}
 \newcommand{\thesisSubject}{Laurea Magistrale in Fisica}
-\newcommand{\thesisDate}{August 19, 2018}
+\newcommand{\thesisDate}{October 19, 2018}
 \newcommand{\thesisVersion}{First Draft}
 
 \newcommand{\thesisReviewer}{Prof. Stefano Spataro}
@@ -170,9 +170,6 @@
 \input{content/abstract}		% INCLUDE: the abstracts (english and german)
 \cleardoublepage
 
-% \input{content/acknowledgement} % INCLUDE: acknowledgement
-% \cleardoublepage
-
 \setcounter{tocdepth}{2}		% define depth of toc
 \tableofcontents				% display table of contents
 \cleardoublepage
@@ -203,12 +200,16 @@
 \printbibliography
 % \printbibliography[heading=subbibliography,title={Webseiten},type=online,prefixnumbers={@}]
 % }
+
 \cleardoublepage
 
 \listoffigures
 \cleardoublepage
 
 \listoftables
+\cleardoublepage
+
+\input{content/acknowledgement} % INCLUDE: acknowledgement
 \cleardoublepage
 
 % **************************************************
